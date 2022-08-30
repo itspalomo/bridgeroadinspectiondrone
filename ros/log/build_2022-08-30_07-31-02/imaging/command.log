@@ -1,0 +1,2 @@
+Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/build/imaging': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/build/imaging -- -j4 -l4
+Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/build/imaging' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/build/imaging -- -j4 -l4

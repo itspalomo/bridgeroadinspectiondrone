@@ -1,0 +1,14 @@
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/visible_light.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/visible_light.cpp:12:27:[m[K [01;31m[Kerror: [m[K‘[01m[KCAP_V4L2[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::CAP_V4L2[m[K’?
+   12 |   cv::VideoCapture camera([01;31m[KCAP_V4L2[m[K);
+      |                           [01;31m[K^~~~~~~~[m[K
+      |                           [32m[Kcv::CAP_V4L2[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/highgui.hpp:51[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:68[m[K,
+                 from [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/visible_light.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/videoio.hpp:93:8:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::CAP_V4L2[m[K’ declared here
+   93 |        [01;36m[KCAP_V4L2[m[K         = CAP_V4L,      //!< Same as CAP_V4L
+      |        [01;36m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/visible_light.dir/build.make:63: CMakeFiles/visible_light.dir/src/visible_light.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/visible_light.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

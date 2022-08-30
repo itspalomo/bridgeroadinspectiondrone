@@ -1,0 +1,57 @@
+[0.053s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/build/imaging': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install/imaging
+[1.226s] -- The C compiler identification is GNU 9.4.0
+[2.035s] -- The CXX compiler identification is GNU 9.4.0
+[2.064s] -- Check for working C compiler: /usr/bin/cc
+[2.378s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.384s] -- Detecting C compiler ABI info
+[2.665s] -- Detecting C compiler ABI info - done
+[2.725s] -- Detecting C compile features
+[2.734s] -- Detecting C compile features - done
+[2.750s] -- Check for working CXX compiler: /usr/bin/c++
+[3.067s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.072s] -- Detecting CXX compiler ABI info
+[3.386s] -- Detecting CXX compiler ABI info - done
+[3.423s] -- Detecting CXX compile features
+[3.424s] -- Detecting CXX compile features - done
+[3.457s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.594s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.595s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.563s] -- Found image_transport: 2.3.0 (/opt/ros/foxy/share/image_transport/cmake)
+[4.987s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.052s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[5.648s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[5.878s] -- Found FastRTPS: /opt/ros/foxy/include  
+[6.485s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.809s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[6.820s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.827s] -- Looking for pthread.h
+[7.164s] -- Looking for pthread.h - found
+[7.165s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.468s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[7.469s] -- Looking for pthread_create in pthreads
+[7.759s] -- Looking for pthread_create in pthreads - not found
+[7.760s] -- Looking for pthread_create in pthread
+[8.061s] -- Looking for pthread_create in pthread - found
+[8.066s] -- Found Threads: TRUE  
+[9.555s] -- Found cv_bridge: 2.2.1 (/opt/ros/foxy/share/cv_bridge/cmake)
+[9.783s] CMake Error at CMakeLists.txt:24 (find_package):
+[9.784s]   By not providing "Findopencv2.cmake" in CMAKE_MODULE_PATH this project has
+[9.784s]   asked CMake to find a package configuration file provided by "opencv2", but
+[9.785s]   CMake did not find one.
+[9.785s] 
+[9.785s]   Could not find a package configuration file provided by "opencv2" with any
+[9.785s]   of the following names:
+[9.786s] 
+[9.786s]     opencv2Config.cmake
+[9.786s]     opencv2-config.cmake
+[9.787s] 
+[9.787s]   Add the installation prefix of "opencv2" to CMAKE_PREFIX_PATH or set
+[9.787s]   "opencv2_DIR" to a directory containing one of the above files.  If
+[9.788s]   "opencv2" provides a separate development package or SDK, be sure it has
+[9.788s]   been installed.
+[9.788s] 
+[9.788s] 
+[9.799s] -- Configuring incomplete, errors occurred!
+[9.800s] See also "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/build/imaging/CMakeFiles/CMakeOutput.log".
+[9.800s] See also "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/build/imaging/CMakeFiles/CMakeError.log".
+[9.831s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/build/imaging' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install/imaging
