@@ -3,5 +3,5 @@
 ---|---
 | Jose Maciel Torres | Team Lead |
 | Christian Reeves |  |
-| Cruz Nieves | ELectrical Background |
+| Cruz Nieves | Electrical Background |
  |
