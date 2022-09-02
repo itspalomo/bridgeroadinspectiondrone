@@ -6,8 +6,6 @@
 
 int main(int argc, char ** argv)
 {
-  (void) argc;
-  (void) argv;
   
   cv::VideoCapture camera(cv::CAP_V4L2);
   if (!camera.isOpened()) 
