@@ -30,3 +30,4 @@ int main(int argc, char ** argv)
   camera.release();
   return 0;
 }
+
