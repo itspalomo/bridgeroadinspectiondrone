@@ -6,8 +6,10 @@
 
 int main(int argc, char ** argv)
 {
+  (void) argc;
+  (void) argv;
   
-  cv::VideoCapture camera(cv::CAP_V4L2);
+  cv::VideoCapture camera(10);
   if (!camera.isOpened()) 
   {
         std::cerr << "ERROR: Could not open camera" << std::endl;

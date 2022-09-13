@@ -1,0 +1,36 @@
+[0.063s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/build/imaging': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/build/imaging -- -j4 -l4
+[0.243s] [35m[1mScanning dependencies of target visible_light[0m
+[0.408s] [ 50%] [32mBuilding CXX object CMakeFiles/visible_light.dir/src/visible_light.cpp.o[0m
+[11.149s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/visible_light.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[11.149s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/visible_light.cpp:9:12:[m[K [01;35m[Kwarning: [m[Kcast to pointer from integer of different size [[01;35m[K-Wint-to-pointer-cast[m[K]
+[11.150s]     9 |   (void *) [01;35m[Kargc[m[K;
+[11.151s]       |            [01;35m[K^~~~[m[K
+[11.151s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/visible_light.cpp:9:3:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+[11.152s]     9 |   [01;35m[K(void *) argc[m[K;
+[11.152s]       |   [01;35m[K^~~~~~~~~~~~~[m[K
+[11.153s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/visible_light.cpp:10:3:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+[11.153s]    10 |   [01;35m[K(void *) argv[m[K;
+[11.154s]       |   [01;35m[K^~~~~~~~~~~~~[m[K
+[14.344s] [100%] [32m[1mLinking CXX executable visible_light[0m
+[15.890s] [100%] Built target visible_light
+[15.929s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/build/imaging' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/build/imaging -- -j4 -l4
+[16.085s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/build/imaging': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/build/imaging
+[16.116s] -- Install configuration: ""
+[16.117s] -- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install/imaging/lib/imaging/visible_light
+[16.120s] -- Set runtime path of "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install/imaging/lib/imaging/visible_light" to ""
+[16.121s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install/imaging/share/ament_index/resource_index/package_run_dependencies/imaging
+[16.122s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install/imaging/share/ament_index/resource_index/parent_prefix_path/imaging
+[16.122s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install/imaging/share/imaging/environment/ament_prefix_path.sh
+[16.123s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install/imaging/share/imaging/environment/ament_prefix_path.dsv
+[16.123s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install/imaging/share/imaging/environment/path.sh
+[16.124s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install/imaging/share/imaging/environment/path.dsv
+[16.124s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install/imaging/share/imaging/local_setup.bash
+[16.125s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install/imaging/share/imaging/local_setup.sh
+[16.125s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install/imaging/share/imaging/local_setup.zsh
+[16.125s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install/imaging/share/imaging/local_setup.dsv
+[16.126s] -- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install/imaging/share/imaging/package.dsv
+[16.126s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install/imaging/share/ament_index/resource_index/packages/imaging
+[16.127s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install/imaging/share/imaging/cmake/imagingConfig.cmake
+[16.127s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install/imaging/share/imaging/cmake/imagingConfig-version.cmake
+[16.128s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install/imaging/share/imaging/package.xml
+[16.134s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/build/imaging' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/build/imaging

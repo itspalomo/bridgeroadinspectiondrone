@@ -1,0 +1,10 @@
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/visible_light.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/visible_light.cpp:9:12:[m[K [01;35m[Kwarning: [m[Kcast to pointer from integer of different size [[01;35m[K-Wint-to-pointer-cast[m[K]
+    9 |   (void *) [01;35m[Kargc[m[K;
+      |            [01;35m[K^~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/visible_light.cpp:9:3:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+    9 |   [01;35m[K(void *) argc[m[K;
+      |   [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/visible_light.cpp:10:3:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+   10 |   [01;35m[K(void *) argv[m[K;
+      |   [01;35m[K^~~~~~~~~~~~~[m[K
