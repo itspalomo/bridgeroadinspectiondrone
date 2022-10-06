@@ -4,7 +4,7 @@ import argparse
 import imutils
 import os
 
-os.chdir("Road_Videos")
+os.chdir("Road_Videos")       #change into whatever directory your test videos are stored in
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--media", required=True,
 	help="path to input video or image")
