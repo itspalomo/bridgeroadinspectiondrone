@@ -18,18 +18,20 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(image_transport REQUIRED)
+find_package(OpenCV REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
-find_package(OpenCV REQUIRED)
+find_package(image_transport REQUIRED)
 
-add_executable(visible_light src/visible_light.cpp)
-target_include_directories(visible_light PUBLIC
+include_directories(${/home/ubuntu/ros2_ws/libseek-thermal/src/seek})
+
+add_executable(image_pub src/image_pub.cpp)
+target_include_directories(image_pub PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
 ament_target_dependencies(
-  visible_light
+  image_pub
   "rclcpp"
   "image_transport"
   "cv_bridge"
