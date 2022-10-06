@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 import argparse
-import imutils
 import os
 
 os.chdir("Road_Videos")       #change into whatever directory your test videos are stored in
