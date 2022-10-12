@@ -24,12 +24,13 @@ find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(image_transport REQUIRED)
 
-include_directories(${/home/ubuntu/ros2_ws/libseek-thermal/src/seek})
+include_directories(/home/ubuntu/ros2_ws/libseek-thermal/src/seek)
 
 add_executable(image_pub src/image_pub.cpp)
 target_include_directories(image_pub PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include>)
+  $<INSTALL_INTERFACE:include>
+  $</home/ubuntu/ros2_ws/libseek-thermal/src/seek>)
 ament_target_dependencies(
   image_pub
   "rclcpp"
