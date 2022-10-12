@@ -8,7 +8,7 @@ endif()
 
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
-  set(CMAKE_CXX_STANDARD 14)
+  set(CMAKE_CXX_STANDARD 17)
 endif()
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
@@ -24,13 +24,10 @@ find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(image_transport REQUIRED)
 
-include_directories(/home/ubuntu/ros2_ws/libseek-thermal/src/seek)
-
 add_executable(image_pub src/image_pub.cpp)
 target_include_directories(image_pub PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include>
-  $</home/ubuntu/ros2_ws/libseek-thermal/src/seek>)
+  $<INSTALL_INTERFACE:include>)
 ament_target_dependencies(
   image_pub
   "rclcpp"
@@ -41,7 +38,7 @@ ament_target_dependencies(
   "OpenCV"
 )
 
-install(TARGETS visible_light
+install(TARGETS image_pub
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

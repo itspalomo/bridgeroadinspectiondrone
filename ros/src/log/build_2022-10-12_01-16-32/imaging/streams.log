@@ -1,0 +1,24 @@
+[0.066s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[0.248s] [35m[1mScanning dependencies of target image_pub[0m
+[0.448s] [ 50%] [32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o[0m
+[11.122s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:[m[K In member function ‘[01m[Kvoid ImagePub::timer_callback()[m[K’:
+[11.122s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:41:14:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KLibSeek::SeekThermalPro ImagePub::seek()[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[11.123s]    41 |         if (![01;31m[Kseek[m[K.open())
+[11.123s]       |              [01;31m[K^~~~[m[K
+[11.124s]       |                  [32m[K()[m[K
+[11.124s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:41:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kopen[m[K’
+[11.125s]    41 |         if [34m[K([m[K!seek.[01;31m[Ko[m[K[32m[Kpen[m[K())
+[11.125s]       |            [34m[K~[m[K      [01;31m[K^[m[K[32m[K~~~[m[K
+[11.126s]       |                   [32m[K)[m[K
+[11.166s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:59:14:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KLibSeek::SeekThermalPro ImagePub::seek()[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[11.166s]    59 |         if (![01;31m[Kseek[m[K.read(frame)) {
+[11.167s]       |              [01;31m[K^~~~[m[K
+[11.167s]       |                  [32m[K()[m[K
+[11.168s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:59:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kread[m[K’
+[11.168s]    59 |         if [34m[K([m[K!seek.[01;31m[Kr[m[K[32m[Kead[m[K(frame)) {
+[11.169s]       |            [34m[K~[m[K      [01;31m[K^[m[K[32m[K~~~[m[K
+[11.169s]       |                   [32m[K)[m[K
+[16.207s] make[2]: *** [CMakeFiles/image_pub.dir/build.make:63: CMakeFiles/image_pub.dir/src/image_pub.cpp.o] Error 1
+[16.208s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+[16.208s] make: *** [Makefile:141: all] Error 2
+[16.214s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4

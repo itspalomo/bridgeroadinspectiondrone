@@ -1,0 +1,11 @@
+[0.090s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[0.282s] [35m[1mScanning dependencies of target image_pub[0m
+[0.492s] [ 50%] [32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o[0m
+[12.373s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:[m[K In member function ‘[01m[Kvoid ImagePub::timer_callback()[m[K’:
+[12.374s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:42:19:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kopen[m[K’ in ‘[01m[Kseek[m[K’, which is of non-class type ‘[01m[KLibSeek::SeekThermalPro()[m[K’
+[12.374s]    42 |         if (!seek.[01;31m[Kopen[m[K())
+[12.375s]       |                   [01;31m[K^~~~[m[K
+[17.468s] make[2]: *** [CMakeFiles/image_pub.dir/build.make:63: CMakeFiles/image_pub.dir/src/image_pub.cpp.o] Error 1
+[17.469s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+[17.470s] make: *** [Makefile:141: all] Error 2
+[17.476s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4

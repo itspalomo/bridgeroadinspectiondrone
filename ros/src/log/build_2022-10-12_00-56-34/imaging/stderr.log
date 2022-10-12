@@ -1,0 +1,44 @@
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:72:29:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+   72 |     cv::VideoCapture vl_cam([01;31m[K0[m[K);
+      |                             [01;31m[K^[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:72:29:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:[m[K In member function ‘[01m[Kvoid ImagePub::timer_callback()[m[K’:
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:41:14:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KLibSeek::SeekThermalPro ImagePub::seek()[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   41 |         if (![01;31m[Kseek[m[K.open())
+      |              [01;31m[K^~~~[m[K
+      |                  [32m[K()[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:41:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kopen[m[K’
+   41 |         if [34m[K([m[K!seek.[01;31m[Ko[m[K[32m[Kpen[m[K())
+      |            [34m[K~[m[K      [01;31m[K^[m[K[32m[K~~~[m[K
+      |                   [32m[K)[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:43:14:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kcv::VideoCapture ImagePub::vl_cam(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   43 |         if (![01;31m[Kvl_cam[m[K.isOpened())
+      |              [01;31m[K^~~~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:43:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[KisOpened[m[K’
+   43 |         if [34m[K([m[K!vl_cam.[01;31m[Ki[m[K[32m[KsOpened[m[K())
+      |            [34m[K~[m[K        [01;31m[K^[m[K[32m[K~~~~~~~[m[K
+      |                     [32m[K)[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:48:16:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kcv::VideoCapture ImagePub::vl_cam(int)[m[K’
+   48 |         [01;31m[Kvl_cam >> visible_light_sensor[m[K;
+      |         [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:72:22:[m[K [01;36m[Knote: [m[Kdeclared here
+   72 |     cv::VideoCapture [01;36m[Kvl_cam[m[K(0);
+      |                      [01;36m[K^~~~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:49:12:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kcv::VideoCapture ImagePub::vl_cam(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   49 |         if([01;31m[Kvl_cam[m[K.empty())
+      |            [01;31m[K^~~~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:49:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kempty[m[K’
+   49 |         if[34m[K([m[Kvl_cam.[01;31m[Ke[m[K[32m[Kmpty[m[K())
+      |           [34m[K~[m[K       [01;31m[K^[m[K[32m[K~~~~[m[K
+      |                   [32m[K)[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:59:14:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KLibSeek::SeekThermalPro ImagePub::seek()[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   59 |         if (![01;31m[Kseek[m[K.read(frame)) {
+      |              [01;31m[K^~~~[m[K
+      |                  [32m[K()[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:59:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kread[m[K’
+   59 |         if [34m[K([m[K!seek.[01;31m[Kr[m[K[32m[Kead[m[K(frame)) {
+      |            [34m[K~[m[K      [01;31m[K^[m[K[32m[K~~~[m[K
+      |                   [32m[K)[m[K
+make[2]: *** [CMakeFiles/image_pub.dir/build.make:63: CMakeFiles/image_pub.dir/src/image_pub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

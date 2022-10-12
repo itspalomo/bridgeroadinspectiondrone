@@ -1,0 +1,30 @@
+[0.054s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[0.232s] [35m[1mScanning dependencies of target image_pub[0m
+[0.440s] [ 50%] [32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o[0m
+[12.134s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:[m[K In member function ‘[01m[Kvoid ImagePub::timer_callback()[m[K’:
+[12.134s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:41:34:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kseekpro[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[12.135s]    41 |         LibSeek::SeekThermalPro *[01;35m[Kseekpro[m[K;
+[12.135s]       |                                  [01;35m[K^~~~~~~[m[K
+[20.330s] [100%] [32m[1mLinking CXX executable image_pub[0m
+[22.452s] [100%] Built target image_pub
+[22.485s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '0': /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[22.630s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': /usr/bin/cmake --install /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging
+[22.659s] -- Install configuration: ""
+[22.660s] -- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/lib/imaging/image_pub
+[22.668s] -- Set runtime path of "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/lib/imaging/image_pub" to ""
+[22.668s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/ament_index/resource_index/package_run_dependencies/imaging
+[22.669s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/ament_index/resource_index/parent_prefix_path/imaging
+[22.669s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/environment/ament_prefix_path.sh
+[22.670s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/environment/ament_prefix_path.dsv
+[22.670s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/environment/path.sh
+[22.670s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/environment/path.dsv
+[22.671s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/local_setup.bash
+[22.671s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/local_setup.sh
+[22.672s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/local_setup.zsh
+[22.672s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/local_setup.dsv
+[22.672s] -- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/package.dsv
+[22.673s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/ament_index/resource_index/packages/imaging
+[22.673s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/cmake/imagingConfig.cmake
+[22.674s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/cmake/imagingConfig-version.cmake
+[22.674s] -- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/package.xml
+[22.681s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '0': /usr/bin/cmake --install /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging

@@ -1,0 +1,22 @@
+[35m[1mScanning dependencies of target image_pub[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o[0m
+[100%] [32m[1mLinking CXX executable image_pub[0m
+[100%] Built target image_pub
+-- Install configuration: ""
+-- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/lib/imaging/image_pub
+-- Set runtime path of "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/lib/imaging/image_pub" to ""
+-- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/ament_index/resource_index/package_run_dependencies/imaging
+-- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/ament_index/resource_index/parent_prefix_path/imaging
+-- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/environment/path.sh
+-- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/environment/path.dsv
+-- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/local_setup.bash
+-- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/local_setup.sh
+-- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/local_setup.zsh
+-- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/local_setup.dsv
+-- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/package.dsv
+-- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/ament_index/resource_index/packages/imaging
+-- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/cmake/imagingConfig.cmake
+-- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/cmake/imagingConfig-version.cmake
+-- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/package.xml

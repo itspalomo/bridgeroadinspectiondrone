@@ -1,0 +1,259 @@
+[0.000000] (-) TimerEvent: {}
+[0.000980] (imaging) JobQueued: {'identifier': 'imaging', 'dependencies': OrderedDict()}
+[0.002349] (imaging) JobStarted: {'identifier': 'imaging'}
+[0.052297] (imaging) JobProgress: {'identifier': 'imaging', 'progress': 'cmake'}
+[0.055806] (imaging) JobProgress: {'identifier': 'imaging', 'progress': 'build'}
+[0.058923] (imaging) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '129.8.214.229 51697 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/bin/64bbfbf67ada9953918d72e1df2f4d8e537d340e/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/bin/64bbfbf67ada9953918d72e1df2f4d8e537d340e/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros'), ('TERM_PROGRAM_VERSION', '1.72.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-176d0275-b347-45ec-b3ba-006910091c1c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/bin/64bbfbf67ada9953918d72e1df2f4d8e537d340e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/bin/64bbfbf67ada9953918d72e1df2f4d8e537d340e/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.vscode-server/bin/64bbfbf67ada9953918d72e1df2f4d8e537d340e/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f69e2f3844.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '129.8.214.229 51697 10.0.0.10 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.099275] (-) TimerEvent: {}
+[0.200321] (-) TimerEvent: {}
+[0.245671] (imaging) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target image_pub\x1b[0m\n'}
+[0.300495] (-) TimerEvent: {}
+[0.401248] (-) TimerEvent: {}
+[0.431178] (imaging) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o\x1b[0m\n'}
+[0.501432] (-) TimerEvent: {}
+[0.602227] (-) TimerEvent: {}
+[0.702969] (-) TimerEvent: {}
+[0.803759] (-) TimerEvent: {}
+[0.904499] (-) TimerEvent: {}
+[1.005336] (-) TimerEvent: {}
+[1.106131] (-) TimerEvent: {}
+[1.207043] (-) TimerEvent: {}
+[1.307836] (-) TimerEvent: {}
+[1.408666] (-) TimerEvent: {}
+[1.509501] (-) TimerEvent: {}
+[1.610492] (-) TimerEvent: {}
+[1.711267] (-) TimerEvent: {}
+[1.812028] (-) TimerEvent: {}
+[1.912854] (-) TimerEvent: {}
+[2.013632] (-) TimerEvent: {}
+[2.114491] (-) TimerEvent: {}
+[2.215274] (-) TimerEvent: {}
+[2.316119] (-) TimerEvent: {}
+[2.417121] (-) TimerEvent: {}
+[2.517966] (-) TimerEvent: {}
+[2.618717] (-) TimerEvent: {}
+[2.719603] (-) TimerEvent: {}
+[2.820394] (-) TimerEvent: {}
+[2.921227] (-) TimerEvent: {}
+[3.021964] (-) TimerEvent: {}
+[3.122817] (-) TimerEvent: {}
+[3.223669] (-) TimerEvent: {}
+[3.324718] (-) TimerEvent: {}
+[3.425560] (-) TimerEvent: {}
+[3.526392] (-) TimerEvent: {}
+[3.627302] (-) TimerEvent: {}
+[3.728307] (-) TimerEvent: {}
+[3.829195] (-) TimerEvent: {}
+[3.930213] (-) TimerEvent: {}
+[4.031161] (-) TimerEvent: {}
+[4.132318] (-) TimerEvent: {}
+[4.233118] (-) TimerEvent: {}
+[4.333952] (-) TimerEvent: {}
+[4.434728] (-) TimerEvent: {}
+[4.535532] (-) TimerEvent: {}
+[4.636337] (-) TimerEvent: {}
+[4.737154] (-) TimerEvent: {}
+[4.837985] (-) TimerEvent: {}
+[4.938822] (-) TimerEvent: {}
+[5.039539] (-) TimerEvent: {}
+[5.140329] (-) TimerEvent: {}
+[5.241150] (-) TimerEvent: {}
+[5.341920] (-) TimerEvent: {}
+[5.442729] (-) TimerEvent: {}
+[5.543540] (-) TimerEvent: {}
+[5.644313] (-) TimerEvent: {}
+[5.745124] (-) TimerEvent: {}
+[5.845905] (-) TimerEvent: {}
+[5.946673] (-) TimerEvent: {}
+[6.047417] (-) TimerEvent: {}
+[6.148208] (-) TimerEvent: {}
+[6.248983] (-) TimerEvent: {}
+[6.349727] (-) TimerEvent: {}
+[6.450807] (-) TimerEvent: {}
+[6.551571] (-) TimerEvent: {}
+[6.652333] (-) TimerEvent: {}
+[6.753319] (-) TimerEvent: {}
+[6.854074] (-) TimerEvent: {}
+[6.954885] (-) TimerEvent: {}
+[7.055966] (-) TimerEvent: {}
+[7.157146] (-) TimerEvent: {}
+[7.258107] (-) TimerEvent: {}
+[7.359392] (-) TimerEvent: {}
+[7.460185] (-) TimerEvent: {}
+[7.560970] (-) TimerEvent: {}
+[7.661760] (-) TimerEvent: {}
+[7.762584] (-) TimerEvent: {}
+[7.863507] (-) TimerEvent: {}
+[7.964319] (-) TimerEvent: {}
+[8.065214] (-) TimerEvent: {}
+[8.165982] (-) TimerEvent: {}
+[8.266824] (-) TimerEvent: {}
+[8.367587] (-) TimerEvent: {}
+[8.468627] (-) TimerEvent: {}
+[8.569406] (-) TimerEvent: {}
+[8.670196] (-) TimerEvent: {}
+[8.771012] (-) TimerEvent: {}
+[8.871792] (-) TimerEvent: {}
+[8.972619] (-) TimerEvent: {}
+[9.073399] (-) TimerEvent: {}
+[9.174194] (-) TimerEvent: {}
+[9.274993] (-) TimerEvent: {}
+[9.375818] (-) TimerEvent: {}
+[9.476687] (-) TimerEvent: {}
+[9.577485] (-) TimerEvent: {}
+[9.678430] (-) TimerEvent: {}
+[9.779236] (-) TimerEvent: {}
+[9.880060] (-) TimerEvent: {}
+[9.980869] (-) TimerEvent: {}
+[10.081631] (-) TimerEvent: {}
+[10.182451] (-) TimerEvent: {}
+[10.283220] (-) TimerEvent: {}
+[10.384008] (-) TimerEvent: {}
+[10.484807] (-) TimerEvent: {}
+[10.585606] (-) TimerEvent: {}
+[10.686389] (-) TimerEvent: {}
+[10.787163] (-) TimerEvent: {}
+[10.887927] (-) TimerEvent: {}
+[10.988714] (-) TimerEvent: {}
+[11.089473] (-) TimerEvent: {}
+[11.107698] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:73:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcould not convert \xe2\x80\x98\x1b[01m\x1b[K(operator new(178360), (<statement>, ((LibSeek::SeekThermalPro*)<anonymous>)))\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[KLibSeek::SeekThermalPro*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[KLibSeek::SeekThermalPro\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.108521] (imaging) StderrLine: {'line': b'   73 |     LibSeek::SeekThermalPro seek = new LibSeek::SeekThermalPro(\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[11.109133] (imaging) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.109629] (imaging) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[11.110154] (imaging) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[KLibSeek::SeekThermalPro*\x1b[m\x1b[K\n'}
+[11.158609] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ImagePub::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.160431] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:48:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator>>\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoCapture*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[11.161174] (imaging) StderrLine: {'line': b'   48 |         \x1b[32m\x1b[Kvl_cam\x1b[m\x1b[K \x1b[01;31m\x1b[K>>\x1b[m\x1b[K \x1b[34m\x1b[Kvisible_light_sensor\x1b[m\x1b[K;\n'}
+[11.161690] (imaging) StderrLine: {'line': b'      |         \x1b[32m\x1b[K~~~~~~\x1b[m\x1b[K \x1b[01;31m\x1b[K^~\x1b[m\x1b[K \x1b[34m\x1b[K~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.162158] (imaging) StderrLine: {'line': b'      |         \x1b[32m\x1b[K|\x1b[m\x1b[K         \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[11.162587] (imaging) StderrLine: {'line': b'      |         \x1b[32m\x1b[K|\x1b[m\x1b[K         \x1b[34m\x1b[Kcv::Mat\x1b[m\x1b[K\n'}
+[11.163009] (imaging) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kcv::VideoCapture*\x1b[m\x1b[K\n'}
+[11.163481] (imaging) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:60\x1b[m\x1b[K,\n'}
+[11.163962] (imaging) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[11.164395] (imaging) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:2\x1b[m\x1b[K:\n'}
+[11.164898] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1242:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::FileNodeIterator& cv::operator>>(cv::FileNodeIterator&, _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.165391] (imaging) StderrLine: {'line': b' 1242 | FileNodeIterator& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K >> (FileNodeIterator& it, _Tp& value)\n'}
+[11.165862] (imaging) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.166352] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1242:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[11.166827] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:48:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K((ImagePub*)this)->ImagePub::vl_cam\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoCapture*\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kcv::FileNodeIterator&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.167269] (imaging) StderrLine: {'line': b'   48 |         \x1b[01;36m\x1b[Kvl_cam\x1b[m\x1b[K >> visible_light_sensor;\n'}
+[11.167725] (imaging) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[11.168142] (imaging) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:60\x1b[m\x1b[K,\n'}
+[11.168669] (imaging) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[11.169167] (imaging) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:2\x1b[m\x1b[K:\n'}
+[11.169634] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1251:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::FileNodeIterator& cv::operator>>(cv::FileNodeIterator&, std::vector<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.170091] (imaging) StderrLine: {'line': b' 1251 | FileNodeIterator& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K >> (FileNodeIterator& it, std::vector<_Tp>& vec)\n'}
+[11.170538] (imaging) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.170966] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1251:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[11.171434] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:48:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.171887] (imaging) StderrLine: {'line': b'   48 |         vl_cam >> \x1b[01;36m\x1b[Kvisible_light_sensor\x1b[m\x1b[K;\n'}
+[11.172316] (imaging) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.172806] (imaging) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:60\x1b[m\x1b[K,\n'}
+[11.173257] (imaging) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[11.173791] (imaging) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:2\x1b[m\x1b[K:\n'}
+[11.174284] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1266:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> void cv::operator>>(const cv::FileNode&, _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.174763] (imaging) StderrLine: {'line': b' 1266 | void \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K >> (const FileNode& n, _Tp& value)\n'}
+[11.175227] (imaging) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.175671] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1266:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[11.176126] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:48:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K((ImagePub*)this)->ImagePub::vl_cam\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoCapture*\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kconst cv::FileNode&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.176637] (imaging) StderrLine: {'line': b'   48 |         \x1b[01;36m\x1b[Kvl_cam\x1b[m\x1b[K >> visible_light_sensor;\n'}
+[11.177143] (imaging) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[11.177593] (imaging) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:60\x1b[m\x1b[K,\n'}
+[11.178062] (imaging) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[11.178601] (imaging) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:2\x1b[m\x1b[K:\n'}
+[11.179065] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1274:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> void cv::operator>>(const cv::FileNode&, std::vector<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.179538] (imaging) StderrLine: {'line': b' 1274 | void \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K >> (const FileNode& n, std::vector<_Tp>& vec)\n'}
+[11.180002] (imaging) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.180441] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1274:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[11.180933] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:48:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.181373] (imaging) StderrLine: {'line': b'   48 |         vl_cam >> \x1b[01;36m\x1b[Kvisible_light_sensor\x1b[m\x1b[K;\n'}
+[11.181828] (imaging) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.182254] (imaging) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:60\x1b[m\x1b[K,\n'}
+[11.182675] (imaging) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[11.183113] (imaging) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:2\x1b[m\x1b[K:\n'}
+[11.183597] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1284:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::operator>>(const cv::FileNode&, cv::KeyPoint&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.184024] (imaging) StderrLine: {'line': b' 1284 | void \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K >> (const FileNode& n, KeyPoint& kpt)\n'}
+[11.184471] (imaging) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.184980] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1284:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoCapture*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::FileNode&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.185432] (imaging) StderrLine: {'line': b' 1284 | void operator >> (\x1b[01;36m\x1b[Kconst FileNode& n\x1b[m\x1b[K, KeyPoint& kpt)\n'}
+[11.185863] (imaging) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[11.186285] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1292:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::operator>>(const cv::FileNode&, std::vector<cv::KeyPoint>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.186712] (imaging) StderrLine: {'line': b' 1292 | void \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K >> (const FileNode& n, std::vector<KeyPoint>& vec)\n'}
+[11.187195] (imaging) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.187616] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1292:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoCapture*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::FileNode&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.188111] (imaging) StderrLine: {'line': b' 1292 | void operator >> (\x1b[01;36m\x1b[Kconst FileNode& n\x1b[m\x1b[K, std::vector<KeyPoint>& vec)\n'}
+[11.188515] (imaging) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[11.189010] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1297:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::operator>>(const cv::FileNode&, std::vector<cv::DMatch>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.189422] (imaging) StderrLine: {'line': b' 1297 | void \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K >> (const FileNode& n, std::vector<DMatch>& vec)\n'}
+[11.189831] (-) TimerEvent: {}
+[11.190260] (imaging) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.190890] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1297:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoCapture*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::FileNode&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.191556] (imaging) StderrLine: {'line': b' 1297 | void operator >> (\x1b[01;36m\x1b[Kconst FileNode& n\x1b[m\x1b[K, std::vector<DMatch>& vec)\n'}
+[11.192033] (imaging) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[11.192537] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1307:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::operator>>(const cv::FileNode&, cv::DMatch&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.193237] (imaging) StderrLine: {'line': b' 1307 | void \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K >> (const FileNode& n, DMatch& m)\n'}
+[11.193780] (imaging) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.194243] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1307:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoCapture*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::FileNode&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.194678] (imaging) StderrLine: {'line': b' 1307 | void operator >> (\x1b[01;36m\x1b[Kconst FileNode& n\x1b[m\x1b[K, DMatch& m)\n'}
+[11.195093] (imaging) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[11.195484] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:49:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kempty\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[K((ImagePub*)this)->ImagePub::vl_cam\x1b[m\x1b[K\xe2\x80\x99, which is of pointer type \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoCapture*\x1b[m\x1b[K\xe2\x80\x99 (maybe you meant to use \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 ?)\n'}
+[11.195966] (imaging) StderrLine: {'line': b'   49 |         if(vl_cam.\x1b[01;31m\x1b[Kempty\x1b[m\x1b[K())\n'}
+[11.196460] (imaging) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.290033] (-) TimerEvent: {}
+[11.390938] (-) TimerEvent: {}
+[11.491699] (-) TimerEvent: {}
+[11.592498] (-) TimerEvent: {}
+[11.693311] (-) TimerEvent: {}
+[11.794092] (-) TimerEvent: {}
+[11.894884] (-) TimerEvent: {}
+[11.995667] (-) TimerEvent: {}
+[12.096450] (-) TimerEvent: {}
+[12.197248] (-) TimerEvent: {}
+[12.298117] (-) TimerEvent: {}
+[12.399096] (-) TimerEvent: {}
+[12.499895] (-) TimerEvent: {}
+[12.600710] (-) TimerEvent: {}
+[12.701472] (-) TimerEvent: {}
+[12.802233] (-) TimerEvent: {}
+[12.903076] (-) TimerEvent: {}
+[13.003933] (-) TimerEvent: {}
+[13.104722] (-) TimerEvent: {}
+[13.205475] (-) TimerEvent: {}
+[13.306400] (-) TimerEvent: {}
+[13.407237] (-) TimerEvent: {}
+[13.508137] (-) TimerEvent: {}
+[13.609080] (-) TimerEvent: {}
+[13.709859] (-) TimerEvent: {}
+[13.810626] (-) TimerEvent: {}
+[13.911424] (-) TimerEvent: {}
+[14.012192] (-) TimerEvent: {}
+[14.112977] (-) TimerEvent: {}
+[14.213749] (-) TimerEvent: {}
+[14.314510] (-) TimerEvent: {}
+[14.415327] (-) TimerEvent: {}
+[14.516091] (-) TimerEvent: {}
+[14.616857] (-) TimerEvent: {}
+[14.717641] (-) TimerEvent: {}
+[14.818455] (-) TimerEvent: {}
+[14.919282] (-) TimerEvent: {}
+[15.020071] (-) TimerEvent: {}
+[15.120846] (-) TimerEvent: {}
+[15.221639] (-) TimerEvent: {}
+[15.322496] (-) TimerEvent: {}
+[15.423334] (-) TimerEvent: {}
+[15.524112] (-) TimerEvent: {}
+[15.624905] (-) TimerEvent: {}
+[15.725695] (-) TimerEvent: {}
+[15.826446] (-) TimerEvent: {}
+[15.927256] (-) TimerEvent: {}
+[16.027985] (-) TimerEvent: {}
+[16.128802] (-) TimerEvent: {}
+[16.229611] (-) TimerEvent: {}
+[16.283907] (imaging) StderrLine: {'line': b'make[2]: *** [CMakeFiles/image_pub.dir/build.make:63: CMakeFiles/image_pub.dir/src/image_pub.cpp.o] Error 1\n'}
+[16.284785] (imaging) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2\n'}
+[16.285530] (imaging) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[16.290861] (imaging) CommandEnded: {'returncode': 2}
+[16.329864] (-) TimerEvent: {}
+[16.430690] (-) TimerEvent: {}
+[16.463898] (imaging) JobEnded: {'identifier': 'imaging', 'rc': 2}
+[16.475933] (-) EventReactorShutdown: {}

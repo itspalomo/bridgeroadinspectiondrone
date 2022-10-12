@@ -1,0 +1,219 @@
+[0.000000] (-) TimerEvent: {}
+[0.002528] (imaging) JobQueued: {'identifier': 'imaging', 'dependencies': OrderedDict()}
+[0.004129] (imaging) JobStarted: {'identifier': 'imaging'}
+[0.054054] (imaging) JobProgress: {'identifier': 'imaging', 'progress': 'cmake'}
+[0.057494] (imaging) JobProgress: {'identifier': 'imaging', 'progress': 'build'}
+[0.060195] (imaging) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '129.8.214.229 51697 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/bin/64bbfbf67ada9953918d72e1df2f4d8e537d340e/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/bin/64bbfbf67ada9953918d72e1df2f4d8e537d340e/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros'), ('TERM_PROGRAM_VERSION', '1.72.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-176d0275-b347-45ec-b3ba-006910091c1c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/bin/64bbfbf67ada9953918d72e1df2f4d8e537d340e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/bin/64bbfbf67ada9953918d72e1df2f4d8e537d340e/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.vscode-server/bin/64bbfbf67ada9953918d72e1df2f4d8e537d340e/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f69e2f3844.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '129.8.214.229 51697 10.0.0.10 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.097856] (-) TimerEvent: {}
+[0.198844] (-) TimerEvent: {}
+[0.247050] (imaging) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target image_pub\x1b[0m\n'}
+[0.299044] (-) TimerEvent: {}
+[0.399859] (-) TimerEvent: {}
+[0.440838] (imaging) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o\x1b[0m\n'}
+[0.500169] (-) TimerEvent: {}
+[0.601255] (-) TimerEvent: {}
+[0.702052] (-) TimerEvent: {}
+[0.802992] (-) TimerEvent: {}
+[0.904395] (-) TimerEvent: {}
+[1.005215] (-) TimerEvent: {}
+[1.109604] (-) TimerEvent: {}
+[1.210440] (-) TimerEvent: {}
+[1.311197] (-) TimerEvent: {}
+[1.411989] (-) TimerEvent: {}
+[1.512798] (-) TimerEvent: {}
+[1.613557] (-) TimerEvent: {}
+[1.714326] (-) TimerEvent: {}
+[1.815084] (-) TimerEvent: {}
+[1.915882] (-) TimerEvent: {}
+[2.016689] (-) TimerEvent: {}
+[2.117543] (-) TimerEvent: {}
+[2.218348] (-) TimerEvent: {}
+[2.319154] (-) TimerEvent: {}
+[2.419917] (-) TimerEvent: {}
+[2.520738] (-) TimerEvent: {}
+[2.621515] (-) TimerEvent: {}
+[2.722341] (-) TimerEvent: {}
+[2.823145] (-) TimerEvent: {}
+[2.923908] (-) TimerEvent: {}
+[3.024751] (-) TimerEvent: {}
+[3.125586] (-) TimerEvent: {}
+[3.226449] (-) TimerEvent: {}
+[3.327217] (-) TimerEvent: {}
+[3.428093] (-) TimerEvent: {}
+[3.529070] (-) TimerEvent: {}
+[3.630102] (-) TimerEvent: {}
+[3.731030] (-) TimerEvent: {}
+[3.832000] (-) TimerEvent: {}
+[3.932820] (-) TimerEvent: {}
+[4.033877] (-) TimerEvent: {}
+[4.134735] (-) TimerEvent: {}
+[4.235600] (-) TimerEvent: {}
+[4.336560] (-) TimerEvent: {}
+[4.437467] (-) TimerEvent: {}
+[4.538233] (-) TimerEvent: {}
+[4.639001] (-) TimerEvent: {}
+[4.739974] (-) TimerEvent: {}
+[4.840754] (-) TimerEvent: {}
+[4.941538] (-) TimerEvent: {}
+[5.042269] (-) TimerEvent: {}
+[5.143111] (-) TimerEvent: {}
+[5.243953] (-) TimerEvent: {}
+[5.344766] (-) TimerEvent: {}
+[5.445623] (-) TimerEvent: {}
+[5.546367] (-) TimerEvent: {}
+[5.647139] (-) TimerEvent: {}
+[5.747948] (-) TimerEvent: {}
+[5.848735] (-) TimerEvent: {}
+[5.949539] (-) TimerEvent: {}
+[6.050326] (-) TimerEvent: {}
+[6.151167] (-) TimerEvent: {}
+[6.252067] (-) TimerEvent: {}
+[6.352864] (-) TimerEvent: {}
+[6.453725] (-) TimerEvent: {}
+[6.554571] (-) TimerEvent: {}
+[6.655392] (-) TimerEvent: {}
+[6.756255] (-) TimerEvent: {}
+[6.857056] (-) TimerEvent: {}
+[6.957857] (-) TimerEvent: {}
+[7.058800] (-) TimerEvent: {}
+[7.159910] (-) TimerEvent: {}
+[7.260689] (-) TimerEvent: {}
+[7.361498] (-) TimerEvent: {}
+[7.462241] (-) TimerEvent: {}
+[7.563005] (-) TimerEvent: {}
+[7.663877] (-) TimerEvent: {}
+[7.764674] (-) TimerEvent: {}
+[7.865442] (-) TimerEvent: {}
+[7.966171] (-) TimerEvent: {}
+[8.066937] (-) TimerEvent: {}
+[8.167741] (-) TimerEvent: {}
+[8.268480] (-) TimerEvent: {}
+[8.369255] (-) TimerEvent: {}
+[8.470085] (-) TimerEvent: {}
+[8.570885] (-) TimerEvent: {}
+[8.671815] (-) TimerEvent: {}
+[8.772618] (-) TimerEvent: {}
+[8.873368] (-) TimerEvent: {}
+[8.974153] (-) TimerEvent: {}
+[9.074937] (-) TimerEvent: {}
+[9.175744] (-) TimerEvent: {}
+[9.276531] (-) TimerEvent: {}
+[9.377319] (-) TimerEvent: {}
+[9.478104] (-) TimerEvent: {}
+[9.578890] (-) TimerEvent: {}
+[9.679702] (-) TimerEvent: {}
+[9.780517] (-) TimerEvent: {}
+[9.881314] (-) TimerEvent: {}
+[9.982158] (-) TimerEvent: {}
+[10.082923] (-) TimerEvent: {}
+[10.183837] (-) TimerEvent: {}
+[10.284616] (-) TimerEvent: {}
+[10.385542] (-) TimerEvent: {}
+[10.486335] (-) TimerEvent: {}
+[10.587110] (-) TimerEvent: {}
+[10.687931] (-) TimerEvent: {}
+[10.788710] (-) TimerEvent: {}
+[10.889511] (-) TimerEvent: {}
+[10.990286] (-) TimerEvent: {}
+[11.091093] (-) TimerEvent: {}
+[11.141505] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:72:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected identifier before numeric constant\n'}
+[11.142565] (imaging) StderrLine: {'line': b'   72 |     cv::VideoCapture vl_cam(\x1b[01;31m\x1b[K0\x1b[m\x1b[K);\n'}
+[11.143477] (imaging) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.144127] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:72:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before numeric constant\n'}
+[11.191278] (-) TimerEvent: {}
+[11.193846] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ImagePub::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.194996] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:41:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of member function \xe2\x80\x98\x1b[01m\x1b[KLibSeek::SeekThermalPro ImagePub::seek()\x1b[m\x1b[K\xe2\x80\x99 (did you forget the \xe2\x80\x98\x1b[01m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99 ?)\n'}
+[11.195582] (imaging) StderrLine: {'line': b'   41 |         if (!\x1b[01;31m\x1b[Kseek\x1b[m\x1b[K.open())\n'}
+[11.196447] (imaging) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.197035] (imaging) StderrLine: {'line': b'      |                  \x1b[32m\x1b[K()\x1b[m\x1b[K\n'}
+[11.197604] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:41:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kopen\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.198177] (imaging) StderrLine: {'line': b'   41 |         if \x1b[34m\x1b[K(\x1b[m\x1b[K!seek.\x1b[01;31m\x1b[Ko\x1b[m\x1b[K\x1b[32m\x1b[Kpen\x1b[m\x1b[K())\n'}
+[11.198746] (imaging) StderrLine: {'line': b'      |            \x1b[34m\x1b[K~\x1b[m\x1b[K      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~\x1b[m\x1b[K\n'}
+[11.199384] (imaging) StderrLine: {'line': b'      |                   \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[11.199878] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:43:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of member function \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoCapture ImagePub::vl_cam(int)\x1b[m\x1b[K\xe2\x80\x99 (did you forget the \xe2\x80\x98\x1b[01m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99 ?)\n'}
+[11.200813] (imaging) StderrLine: {'line': b'   43 |         if (!\x1b[01;31m\x1b[Kvl_cam\x1b[m\x1b[K.isOpened())\n'}
+[11.201310] (imaging) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[11.201836] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:43:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[KisOpened\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.202299] (imaging) StderrLine: {'line': b'   43 |         if \x1b[34m\x1b[K(\x1b[m\x1b[K!vl_cam.\x1b[01;31m\x1b[Ki\x1b[m\x1b[K\x1b[32m\x1b[KsOpened\x1b[m\x1b[K())\n'}
+[11.202726] (imaging) StderrLine: {'line': b'      |            \x1b[34m\x1b[K~\x1b[m\x1b[K        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~~~~~\x1b[m\x1b[K\n'}
+[11.203149] (imaging) StderrLine: {'line': b'      |                     \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[11.203566] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:48:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static member function \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoCapture ImagePub::vl_cam(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.204053] (imaging) StderrLine: {'line': b'   48 |         \x1b[01;31m\x1b[Kvl_cam >> visible_light_sensor\x1b[m\x1b[K;\n'}
+[11.204550] (imaging) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.204989] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:72:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[11.205477] (imaging) StderrLine: {'line': b'   72 |     cv::VideoCapture \x1b[01;36m\x1b[Kvl_cam\x1b[m\x1b[K(0);\n'}
+[11.205972] (imaging) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[11.206445] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:49:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of member function \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoCapture ImagePub::vl_cam(int)\x1b[m\x1b[K\xe2\x80\x99 (did you forget the \xe2\x80\x98\x1b[01m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99 ?)\n'}
+[11.206950] (imaging) StderrLine: {'line': b'   49 |         if(\x1b[01;31m\x1b[Kvl_cam\x1b[m\x1b[K.empty())\n'}
+[11.207371] (imaging) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[11.207767] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:49:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kempty\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.208264] (imaging) StderrLine: {'line': b'   49 |         if\x1b[34m\x1b[K(\x1b[m\x1b[Kvl_cam.\x1b[01;31m\x1b[Ke\x1b[m\x1b[K\x1b[32m\x1b[Kmpty\x1b[m\x1b[K())\n'}
+[11.208801] (imaging) StderrLine: {'line': b'      |           \x1b[34m\x1b[K~\x1b[m\x1b[K       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[11.209273] (imaging) StderrLine: {'line': b'      |                   \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[11.242404] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:59:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of member function \xe2\x80\x98\x1b[01m\x1b[KLibSeek::SeekThermalPro ImagePub::seek()\x1b[m\x1b[K\xe2\x80\x99 (did you forget the \xe2\x80\x98\x1b[01m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99 ?)\n'}
+[11.243162] (imaging) StderrLine: {'line': b'   59 |         if (!\x1b[01;31m\x1b[Kseek\x1b[m\x1b[K.read(frame)) {\n'}
+[11.243632] (imaging) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.244089] (imaging) StderrLine: {'line': b'      |                  \x1b[32m\x1b[K()\x1b[m\x1b[K\n'}
+[11.244881] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:59:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kread\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.245477] (imaging) StderrLine: {'line': b'   59 |         if \x1b[34m\x1b[K(\x1b[m\x1b[K!seek.\x1b[01;31m\x1b[Kr\x1b[m\x1b[K\x1b[32m\x1b[Kead\x1b[m\x1b[K(frame)) {\n'}
+[11.245963] (imaging) StderrLine: {'line': b'      |            \x1b[34m\x1b[K~\x1b[m\x1b[K      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~\x1b[m\x1b[K\n'}
+[11.246385] (imaging) StderrLine: {'line': b'      |                   \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[11.291450] (-) TimerEvent: {}
+[11.392307] (-) TimerEvent: {}
+[11.493076] (-) TimerEvent: {}
+[11.593857] (-) TimerEvent: {}
+[11.694604] (-) TimerEvent: {}
+[11.795374] (-) TimerEvent: {}
+[11.896188] (-) TimerEvent: {}
+[11.996956] (-) TimerEvent: {}
+[12.097745] (-) TimerEvent: {}
+[12.198477] (-) TimerEvent: {}
+[12.299265] (-) TimerEvent: {}
+[12.400030] (-) TimerEvent: {}
+[12.500811] (-) TimerEvent: {}
+[12.601575] (-) TimerEvent: {}
+[12.702326] (-) TimerEvent: {}
+[12.803104] (-) TimerEvent: {}
+[12.903887] (-) TimerEvent: {}
+[13.004691] (-) TimerEvent: {}
+[13.105500] (-) TimerEvent: {}
+[13.206254] (-) TimerEvent: {}
+[13.307113] (-) TimerEvent: {}
+[13.408033] (-) TimerEvent: {}
+[13.508850] (-) TimerEvent: {}
+[13.609865] (-) TimerEvent: {}
+[13.710610] (-) TimerEvent: {}
+[13.811394] (-) TimerEvent: {}
+[13.912218] (-) TimerEvent: {}
+[14.012998] (-) TimerEvent: {}
+[14.113792] (-) TimerEvent: {}
+[14.214538] (-) TimerEvent: {}
+[14.315312] (-) TimerEvent: {}
+[14.416090] (-) TimerEvent: {}
+[14.516815] (-) TimerEvent: {}
+[14.617612] (-) TimerEvent: {}
+[14.718593] (-) TimerEvent: {}
+[14.819387] (-) TimerEvent: {}
+[14.920273] (-) TimerEvent: {}
+[15.021090] (-) TimerEvent: {}
+[15.121889] (-) TimerEvent: {}
+[15.222656] (-) TimerEvent: {}
+[15.323422] (-) TimerEvent: {}
+[15.424216] (-) TimerEvent: {}
+[15.525198] (-) TimerEvent: {}
+[15.625984] (-) TimerEvent: {}
+[15.726750] (-) TimerEvent: {}
+[15.827529] (-) TimerEvent: {}
+[15.928840] (-) TimerEvent: {}
+[16.030413] (-) TimerEvent: {}
+[16.131169] (-) TimerEvent: {}
+[16.232015] (-) TimerEvent: {}
+[16.332844] (-) TimerEvent: {}
+[16.360081] (imaging) StderrLine: {'line': b'make[2]: *** [CMakeFiles/image_pub.dir/build.make:63: CMakeFiles/image_pub.dir/src/image_pub.cpp.o] Error 1\n'}
+[16.361092] (imaging) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2\n'}
+[16.361955] (imaging) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[16.367358] (imaging) CommandEnded: {'returncode': 2}
+[16.433076] (-) TimerEvent: {}
+[16.535446] (-) TimerEvent: {}
+[16.538534] (imaging) JobEnded: {'identifier': 'imaging', 'rc': 2}
+[16.550290] (-) EventReactorShutdown: {}

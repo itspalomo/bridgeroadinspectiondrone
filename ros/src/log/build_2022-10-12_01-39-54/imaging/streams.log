@@ -1,0 +1,41 @@
+[0.071s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[0.174s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.268s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.009s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.168s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.180s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.049s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.211s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.216s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.749s] -- Found cv_bridge: 3.0.6 (/opt/ros/foxy/share/cv_bridge/cmake)
+[3.202s] -- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)
+[3.523s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.776s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.781s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.782s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/include>
+[3.782s] -- Configured cppcheck exclude dirs and/or files: 
+[3.787s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.787s] -- Configured cpplint exclude dirs and/or files: 
+[3.790s] -- Added test 'lint_cmake' to check CMake code style
+[3.795s] -- Added test 'uncrustify' to check C / C++ code style
+[3.796s] -- Configured uncrustify additional arguments: 
+[3.797s] -- Added test 'xmllint' to check XML markup files
+[3.817s] -- Configuring done
+[3.916s] -- Generating done
+[3.925s] -- Build files have been written to: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging
+[4.043s] [35m[1mScanning dependencies of target image_pub[0m
+[4.232s] [ 50%] [32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o[0m
+[23.683s] [100%] [32m[1mLinking CXX executable image_pub[0m
+[25.770s] /usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `LibSeek::SeekThermalPro::~SeekThermalPro()':
+[25.770s] image_pub.cpp:(.text._ZN7LibSeek14SeekThermalProD2Ev[_ZN7LibSeek14SeekThermalProD5Ev]+0xc): undefined reference to `vtable for LibSeek::SeekThermalPro'
+[25.771s] /usr/bin/ld: image_pub.cpp:(.text._ZN7LibSeek14SeekThermalProD2Ev[_ZN7LibSeek14SeekThermalProD5Ev]+0x10): undefined reference to `vtable for LibSeek::SeekThermalPro'
+[25.771s] /usr/bin/ld: image_pub.cpp:(.text._ZN7LibSeek14SeekThermalProD2Ev[_ZN7LibSeek14SeekThermalProD5Ev]+0x24): undefined reference to `LibSeek::SeekCam::~SeekCam()'
+[25.772s] /usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `ImagePub::ImagePub()':
+[25.772s] image_pub.cpp:(.text._ZN8ImagePubC2Ev[_ZN8ImagePubC5Ev]+0x118): undefined reference to `LibSeek::SeekThermalPro::SeekThermalPro()'
+[25.772s] /usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `ImagePub::timer_callback()':
+[25.773s] image_pub.cpp:(.text._ZN8ImagePub14timer_callbackEv[_ZN8ImagePub14timer_callbackEv]+0x2c): undefined reference to `LibSeek::SeekCam::open()'
+[25.788s] collect2: error: ld returned 1 exit status
+[25.795s] make[2]: *** [CMakeFiles/image_pub.dir/build.make:226: image_pub] Error 1
+[25.796s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+[25.797s] make: *** [Makefile:141: all] Error 2
+[25.805s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4

@@ -1,0 +1,4 @@
+Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '0': /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': /usr/bin/cmake --install /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging
+Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '0': /usr/bin/cmake --install /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging

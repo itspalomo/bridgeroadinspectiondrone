@@ -1,0 +1,13 @@
+[35m[1mScanning dependencies of target image_pub[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o[0m
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:[m[K In member function ‘[01m[Kvoid ImagePub::timer_callback()[m[K’:
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:42:22:[m[K [01;35m[Kwarning: [m[K‘[01m[Kseekpro[m[K’ is used uninitialized in this function [[01;35m[K-Wuninitialized[m[K]
+   42 |         [01;35m[Kseekpro->open()[m[K;
+      |         [01;35m[K~~~~~~~~~~~~~^~[m[K
+[100%] [32m[1mLinking CXX executable image_pub[0m
+/usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `ImagePub::timer_callback()':
+image_pub.cpp:(.text._ZN8ImagePub14timer_callbackEv[_ZN8ImagePub14timer_callbackEv]+0x28): undefined reference to `LibSeek::SeekCam::open()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/image_pub.dir/build.make:226: image_pub] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

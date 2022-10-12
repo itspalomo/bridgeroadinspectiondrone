@@ -1,0 +1,10 @@
+/usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `LibSeek::SeekThermalPro::~SeekThermalPro()':
+image_pub.cpp:(.text._ZN7LibSeek14SeekThermalProD2Ev[_ZN7LibSeek14SeekThermalProD5Ev]+0xc): undefined reference to `vtable for LibSeek::SeekThermalPro'
+/usr/bin/ld: image_pub.cpp:(.text._ZN7LibSeek14SeekThermalProD2Ev[_ZN7LibSeek14SeekThermalProD5Ev]+0x10): undefined reference to `vtable for LibSeek::SeekThermalPro'
+/usr/bin/ld: image_pub.cpp:(.text._ZN7LibSeek14SeekThermalProD2Ev[_ZN7LibSeek14SeekThermalProD5Ev]+0x24): undefined reference to `LibSeek::SeekCam::~SeekCam()'
+/usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `ImagePub::ImagePub()':
+image_pub.cpp:(.text._ZN8ImagePubC2Ev[_ZN8ImagePubC5Ev]+0x118): undefined reference to `LibSeek::SeekThermalPro::SeekThermalPro()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/image_pub.dir/build.make:226: image_pub] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

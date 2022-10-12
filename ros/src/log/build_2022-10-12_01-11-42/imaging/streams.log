@@ -1,0 +1,14 @@
+[0.077s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[0.264s] [35m[1mScanning dependencies of target image_pub[0m
+[0.451s] [ 50%] [32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o[0m
+[20.337s] [100%] [32m[1mLinking CXX executable image_pub[0m
+[23.374s] /usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `ImagePub::ImagePub()':
+[23.375s] image_pub.cpp:(.text._ZN8ImagePubC2Ev[_ZN8ImagePubC5Ev]+0x128): undefined reference to `LibSeek::SeekThermalPro::SeekThermalPro()'
+[23.375s] /usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `ImagePub::timer_callback()':
+[23.376s] image_pub.cpp:(.text._ZN8ImagePub14timer_callbackEv[_ZN8ImagePub14timer_callbackEv]+0x2c): undefined reference to `LibSeek::SeekCam::open()'
+[23.376s] /usr/bin/ld: image_pub.cpp:(.text._ZN8ImagePub14timer_callbackEv[_ZN8ImagePub14timer_callbackEv]+0x238): undefined reference to `LibSeek::SeekCam::read(cv::Mat&)'
+[23.393s] collect2: error: ld returned 1 exit status
+[23.400s] make[2]: *** [CMakeFiles/image_pub.dir/build.make:226: image_pub] Error 1
+[23.401s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+[23.402s] make: *** [Makefile:141: all] Error 2
+[23.409s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4

@@ -38,15 +38,13 @@ class ImagePub : public rclcpp::Node {
   private:
     void timer_callback() {
         //Check if the cameras are working properly
-        if (!seek.open()) 
-            std::cerr << "ERROR: Failed to open seek thermal pro." << std::endl;
-        if (!vl_cam.isOpened()) 
+        if (!vl_cam->open(0)) 
             std::cerr << "ERROR: Could not open visible light camera." << std::endl;
 
         cv::Mat visible_light_sensor;
         //get the frame and put it into a cv matrix
-        vl_cam >> visible_light_sensor;
-        if(vl_cam.empty())
+        *vl_cam >> visible_light_sensor;
+        if(visible_light_sensor.empty())
             std::cerr << "Something is wrong with the webcam, could not get frame." << std::endl;
 
 
@@ -54,12 +52,6 @@ class ImagePub : public rclcpp::Node {
 
         visible_pub->publish(*msg.get());
         std::cout << "Published visible light!" << std::endl;
-
-        cv::Mat frame, grey_frame;       
-        if (!seek.read(frame)) {
-                std::cerr << "ERROR: No more LWIR img." << std::endl;
-                return;
-            }
     }
 
     rclcpp::TimerBase::SharedPtr timer_;
@@ -69,8 +61,8 @@ class ImagePub : public rclcpp::Node {
 
     size_t count_;
 
-    cv::VideoCapture vl_cam(10);
-    LibSeek::SeekThermalPro seek();
+    cv::VideoCapture *vl_cam = new cv::VideoCapture();
+    
 };
 
 int main(int argc, char *argv[]) {

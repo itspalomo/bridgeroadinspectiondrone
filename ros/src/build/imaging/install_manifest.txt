@@ -1,0 +1,16 @@
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/lib/imaging/image_pub
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/ament_index/resource_index/package_run_dependencies/imaging
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/ament_index/resource_index/parent_prefix_path/imaging
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/environment/ament_prefix_path.sh
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/environment/ament_prefix_path.dsv
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/environment/path.sh
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/environment/path.dsv
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/local_setup.bash
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/local_setup.sh
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/local_setup.zsh
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/local_setup.dsv
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/package.dsv
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/ament_index/resource_index/packages/imaging
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/cmake/imagingConfig.cmake
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/cmake/imagingConfig-version.cmake
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/package.xml

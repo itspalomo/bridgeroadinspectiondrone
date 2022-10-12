@@ -1,0 +1,15 @@
+[0.049s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[0.221s] [35m[1mScanning dependencies of target image_pub[0m
+[0.407s] [ 50%] [32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o[0m
+[19.967s] [100%] [32m[1mLinking CXX executable image_pub[0m
+[22.024s] /usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `LibSeek::SeekThermalPro::~SeekThermalPro()':
+[22.025s] image_pub.cpp:(.text._ZN7LibSeek14SeekThermalProD2Ev[_ZN7LibSeek14SeekThermalProD5Ev]+0xc): undefined reference to `vtable for LibSeek::SeekThermalPro'
+[22.025s] /usr/bin/ld: image_pub.cpp:(.text._ZN7LibSeek14SeekThermalProD2Ev[_ZN7LibSeek14SeekThermalProD5Ev]+0x10): undefined reference to `vtable for LibSeek::SeekThermalPro'
+[22.026s] /usr/bin/ld: image_pub.cpp:(.text._ZN7LibSeek14SeekThermalProD2Ev[_ZN7LibSeek14SeekThermalProD5Ev]+0x24): undefined reference to `LibSeek::SeekCam::~SeekCam()'
+[22.026s] /usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `ImagePub::timer_callback()':
+[22.027s] image_pub.cpp:(.text._ZN8ImagePub14timer_callbackEv[_ZN8ImagePub14timer_callbackEv]+0x44): undefined reference to `LibSeek::SeekThermalPro::SeekThermalPro()'
+[22.027s] collect2: error: ld returned 1 exit status
+[22.030s] make[2]: *** [CMakeFiles/image_pub.dir/build.make:226: image_pub] Error 1
+[22.031s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+[22.032s] make: *** [Makefile:141: all] Error 2
+[22.038s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '2': /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4

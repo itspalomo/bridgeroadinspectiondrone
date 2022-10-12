@@ -1,0 +1,9 @@
+[35m[1mScanning dependencies of target image_pub[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o[0m
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:65:34:[m[K [01;31m[Kerror: [m[Kexpected identifier before string constant
+   65 |     LibSeek::SeekThermalPro seek([01;31m[K""[m[K);
+      |                                  [01;31m[K^~[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:65:34:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before string constant
+make[2]: *** [CMakeFiles/image_pub.dir/build.make:63: CMakeFiles/image_pub.dir/src/image_pub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,11 @@
+[0.048s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[0.216s] [35m[1mScanning dependencies of target image_pub[0m
+[0.398s] [ 50%] [32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o[0m
+[20.760s] [100%] [32m[1mLinking CXX executable image_pub[0m
+[22.871s] /usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `ImagePub::ImagePub()':
+[22.871s] image_pub.cpp:(.text._ZN8ImagePubC2Ev[_ZN8ImagePubC5Ev]+0x150): undefined reference to `LibSeek::SeekThermalPro::SeekThermalPro(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+[22.898s] collect2: error: ld returned 1 exit status
+[22.905s] make[2]: *** [CMakeFiles/image_pub.dir/build.make:226: image_pub] Error 1
+[22.907s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+[22.908s] make: *** [Makefile:141: all] Error 2
+[22.915s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '2': /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4

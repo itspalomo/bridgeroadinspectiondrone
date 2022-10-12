@@ -1,0 +1,16 @@
+[0.072s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[0.251s] [35m[1mScanning dependencies of target image_pub[0m
+[0.442s] [ 50%] [32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o[0m
+[19.543s] [100%] [32m[1mLinking CXX executable image_pub[0m
+[21.651s] /usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `LibSeek::SeekThermalPro::~SeekThermalPro()':
+[21.651s] image_pub.cpp:(.text._ZN7LibSeek14SeekThermalProD2Ev[_ZN7LibSeek14SeekThermalProD5Ev]+0xc): undefined reference to `vtable for LibSeek::SeekThermalPro'
+[21.652s] /usr/bin/ld: image_pub.cpp:(.text._ZN7LibSeek14SeekThermalProD2Ev[_ZN7LibSeek14SeekThermalProD5Ev]+0x10): undefined reference to `vtable for LibSeek::SeekThermalPro'
+[21.652s] /usr/bin/ld: image_pub.cpp:(.text._ZN7LibSeek14SeekThermalProD2Ev[_ZN7LibSeek14SeekThermalProD5Ev]+0x24): undefined reference to `LibSeek::SeekCam::~SeekCam()'
+[21.652s] /usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `ImagePub::timer_callback()':
+[21.653s] image_pub.cpp:(.text._ZN8ImagePub14timer_callbackEv[_ZN8ImagePub14timer_callbackEv]+0x4c): undefined reference to `ImagePub::seek()'
+[21.653s] /usr/bin/ld: image_pub.cpp:(.text._ZN8ImagePub14timer_callbackEv[_ZN8ImagePub14timer_callbackEv]+0x54): undefined reference to `LibSeek::SeekCam::open()'
+[21.668s] collect2: error: ld returned 1 exit status
+[21.674s] make[2]: *** [CMakeFiles/image_pub.dir/build.make:226: image_pub] Error 1
+[21.676s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+[21.677s] make: *** [Makefile:141: all] Error 2
+[21.684s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4

@@ -1,0 +1,7 @@
+/usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `ImagePub::timer_callback()':
+image_pub.cpp:(.text._ZN8ImagePub14timer_callbackEv[_ZN8ImagePub14timer_callbackEv]+0x38): undefined reference to `LibSeek::SeekThermalPro::SeekThermalPro()'
+/usr/bin/ld: image_pub.cpp:(.text._ZN8ImagePub14timer_callbackEv[_ZN8ImagePub14timer_callbackEv]+0x44): undefined reference to `LibSeek::SeekCam::open()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/image_pub.dir/build.make:226: image_pub] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

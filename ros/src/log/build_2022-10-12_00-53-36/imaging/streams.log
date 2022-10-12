@@ -1,0 +1,48 @@
+[0.059s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[0.243s] [35m[1mScanning dependencies of target image_pub[0m
+[0.437s] [ 50%] [32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o[0m
+[11.138s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:72:29:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+[11.139s]    72 |     cv::VideoCapture vl_cam([01;31m[K0[m[K);
+[11.140s]       |                             [01;31m[K^[m[K
+[11.140s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:72:29:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+[11.190s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:[m[K In member function ‘[01m[Kvoid ImagePub::timer_callback()[m[K’:
+[11.191s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:41:14:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KLibSeek::SeekThermalPro ImagePub::seek()[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[11.192s]    41 |         if (![01;31m[Kseek[m[K.open())
+[11.193s]       |              [01;31m[K^~~~[m[K
+[11.193s]       |                  [32m[K()[m[K
+[11.194s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:41:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kopen[m[K’
+[11.194s]    41 |         if [34m[K([m[K!seek.[01;31m[Ko[m[K[32m[Kpen[m[K())
+[11.195s]       |            [34m[K~[m[K      [01;31m[K^[m[K[32m[K~~~[m[K
+[11.195s]       |                   [32m[K)[m[K
+[11.196s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:43:14:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kcv::VideoCapture ImagePub::vl_cam(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[11.197s]    43 |         if (![01;31m[Kvl_cam[m[K.isOpened())
+[11.197s]       |              [01;31m[K^~~~~~[m[K
+[11.198s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:43:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[KisOpened[m[K’
+[11.198s]    43 |         if [34m[K([m[K!vl_cam.[01;31m[Ki[m[K[32m[KsOpened[m[K())
+[11.199s]       |            [34m[K~[m[K        [01;31m[K^[m[K[32m[K~~~~~~~[m[K
+[11.199s]       |                     [32m[K)[m[K
+[11.200s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:48:16:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kcv::VideoCapture ImagePub::vl_cam(int)[m[K’
+[11.200s]    48 |         [01;31m[Kvl_cam >> visible_light_sensor[m[K;
+[11.201s]       |         [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.201s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:72:22:[m[K [01;36m[Knote: [m[Kdeclared here
+[11.202s]    72 |     cv::VideoCapture [01;36m[Kvl_cam[m[K(0);
+[11.202s]       |                      [01;36m[K^~~~~~[m[K
+[11.202s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:49:12:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kcv::VideoCapture ImagePub::vl_cam(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[11.203s]    49 |         if([01;31m[Kvl_cam[m[K.empty())
+[11.203s]       |            [01;31m[K^~~~~~[m[K
+[11.204s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:49:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kempty[m[K’
+[11.204s]    49 |         if[34m[K([m[Kvl_cam.[01;31m[Ke[m[K[32m[Kmpty[m[K())
+[11.205s]       |           [34m[K~[m[K       [01;31m[K^[m[K[32m[K~~~~[m[K
+[11.205s]       |                   [32m[K)[m[K
+[11.239s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:59:14:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KLibSeek::SeekThermalPro ImagePub::seek()[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[11.239s]    59 |         if (![01;31m[Kseek[m[K.read(frame)) {
+[11.240s]       |              [01;31m[K^~~~[m[K
+[11.240s]       |                  [32m[K()[m[K
+[11.241s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:59:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kread[m[K’
+[11.242s]    59 |         if [34m[K([m[K!seek.[01;31m[Kr[m[K[32m[Kead[m[K(frame)) {
+[11.242s]       |            [34m[K~[m[K      [01;31m[K^[m[K[32m[K~~~[m[K
+[11.242s]       |                   [32m[K)[m[K
+[16.356s] make[2]: *** [CMakeFiles/image_pub.dir/build.make:63: CMakeFiles/image_pub.dir/src/image_pub.cpp.o] Error 1
+[16.357s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+[16.358s] make: *** [Makefile:141: all] Error 2
+[16.364s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4

@@ -1,0 +1,88 @@
+[0.086s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[0.355s] [ 50%] [32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o[0m
+[11.012s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:73:64:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K(operator new(178360), (<statement>, ((LibSeek::SeekThermalPro*)<anonymous>)))[m[K’ from ‘[01m[KLibSeek::SeekThermalPro*[m[K’ to ‘[01m[KLibSeek::SeekThermalPro[m[K’
+[11.012s]    73 |     LibSeek::SeekThermalPro seek = new LibSeek::SeekThermalPro([01;31m[K)[m[K;
+[11.013s]       |                                                                [01;31m[K^[m[K
+[11.014s]       |                                                                [01;31m[K|[m[K
+[11.014s]       |                                                                [01;31m[KLibSeek::SeekThermalPro*[m[K
+[11.065s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:[m[K In member function ‘[01m[Kvoid ImagePub::timer_callback()[m[K’:
+[11.066s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:48:16:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator>>[m[K’ (operand types are ‘[01m[Kcv::VideoCapture*[m[K’ and ‘[01m[Kcv::Mat[m[K’)
+[11.067s]    48 |         [32m[Kvl_cam[m[K [01;31m[K>>[m[K [34m[Kvisible_light_sensor[m[K;
+[11.067s]       |         [32m[K~~~~~~[m[K [01;31m[K^~[m[K [34m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[11.068s]       |         [32m[K|[m[K         [34m[K|[m[K
+[11.068s]       |         [32m[K|[m[K         [34m[Kcv::Mat[m[K
+[11.069s]       |         [32m[Kcv::VideoCapture*[m[K
+[11.069s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:60[m[K,
+[11.070s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[11.070s]                  from [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:2[m[K:
+[11.071s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1242:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::FileNodeIterator& cv::operator>>(cv::FileNodeIterator&, _Tp&)[m[K’
+[11.071s]  1242 | FileNodeIterator& [01;36m[Koperator[m[K >> (FileNodeIterator& it, _Tp& value)
+[11.072s]       |                   [01;36m[K^~~~~~~~[m[K
+[11.072s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1242:19:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.073s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:48:9:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((ImagePub*)this)->ImagePub::vl_cam[m[K’ (type ‘[01m[Kcv::VideoCapture*[m[K’) to type ‘[01m[Kcv::FileNodeIterator&[m[K’
+[11.073s]    48 |         [01;36m[Kvl_cam[m[K >> visible_light_sensor;
+[11.074s]       |         [01;36m[K^~~~~~[m[K
+[11.074s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:60[m[K,
+[11.075s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[11.075s]                  from [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:2[m[K:
+[11.076s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1251:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::FileNodeIterator& cv::operator>>(cv::FileNodeIterator&, std::vector<_Tp>&)[m[K’
+[11.076s]  1251 | FileNodeIterator& [01;36m[Koperator[m[K >> (FileNodeIterator& it, std::vector<_Tp>& vec)
+[11.077s]       |                   [01;36m[K^~~~~~~~[m[K
+[11.077s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1251:19:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.078s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:48:19:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kstd::vector<_Tp>[m[K’
+[11.078s]    48 |         vl_cam >> [01;36m[Kvisible_light_sensor[m[K;
+[11.079s]       |                   [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[11.079s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:60[m[K,
+[11.080s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[11.080s]                  from [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:2[m[K:
+[11.081s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1266:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::operator>>(const cv::FileNode&, _Tp&)[m[K’
+[11.081s]  1266 | void [01;36m[Koperator[m[K >> (const FileNode& n, _Tp& value)
+[11.082s]       |      [01;36m[K^~~~~~~~[m[K
+[11.082s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1266:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.083s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:48:9:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((ImagePub*)this)->ImagePub::vl_cam[m[K’ (type ‘[01m[Kcv::VideoCapture*[m[K’) to type ‘[01m[Kconst cv::FileNode&[m[K’
+[11.083s]    48 |         [01;36m[Kvl_cam[m[K >> visible_light_sensor;
+[11.084s]       |         [01;36m[K^~~~~~[m[K
+[11.084s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:60[m[K,
+[11.085s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[11.086s]                  from [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:2[m[K:
+[11.087s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1274:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::operator>>(const cv::FileNode&, std::vector<_Tp>&)[m[K’
+[11.087s]  1274 | void [01;36m[Koperator[m[K >> (const FileNode& n, std::vector<_Tp>& vec)
+[11.088s]       |      [01;36m[K^~~~~~~~[m[K
+[11.089s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1274:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.089s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:48:19:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’ is not derived from ‘[01m[Kstd::vector<_Tp>[m[K’
+[11.090s]    48 |         vl_cam >> [01;36m[Kvisible_light_sensor[m[K;
+[11.090s]       |                   [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[11.091s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:60[m[K,
+[11.091s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[11.092s]                  from [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:2[m[K:
+[11.092s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1284:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::operator>>(const cv::FileNode&, cv::KeyPoint&)[m[K’
+[11.093s]  1284 | void [01;36m[Koperator[m[K >> (const FileNode& n, KeyPoint& kpt)
+[11.093s]       |      [01;36m[K^~~~~~~~[m[K
+[11.094s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1284:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::VideoCapture*[m[K’ to ‘[01m[Kconst cv::FileNode&[m[K’
+[11.094s]  1284 | void operator >> ([01;36m[Kconst FileNode& n[m[K, KeyPoint& kpt)
+[11.095s]       |                   [01;36m[K~~~~~~~~~~~~~~~~^[m[K
+[11.095s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1292:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::operator>>(const cv::FileNode&, std::vector<cv::KeyPoint>&)[m[K’
+[11.096s]  1292 | void [01;36m[Koperator[m[K >> (const FileNode& n, std::vector<KeyPoint>& vec)
+[11.096s]       |      [01;36m[K^~~~~~~~[m[K
+[11.097s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1292:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::VideoCapture*[m[K’ to ‘[01m[Kconst cv::FileNode&[m[K’
+[11.097s]  1292 | void operator >> ([01;36m[Kconst FileNode& n[m[K, std::vector<KeyPoint>& vec)
+[11.098s]       |                   [01;36m[K~~~~~~~~~~~~~~~~^[m[K
+[11.098s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1297:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::operator>>(const cv::FileNode&, std::vector<cv::DMatch>&)[m[K’
+[11.099s]  1297 | void [01;36m[Koperator[m[K >> (const FileNode& n, std::vector<DMatch>& vec)
+[11.099s]       |      [01;36m[K^~~~~~~~[m[K
+[11.100s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1297:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::VideoCapture*[m[K’ to ‘[01m[Kconst cv::FileNode&[m[K’
+[11.100s]  1297 | void operator >> ([01;36m[Kconst FileNode& n[m[K, std::vector<DMatch>& vec)
+[11.100s]       |                   [01;36m[K~~~~~~~~~~~~~~~~^[m[K
+[11.101s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1307:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::operator>>(const cv::FileNode&, cv::DMatch&)[m[K’
+[11.101s]  1307 | void [01;36m[Koperator[m[K >> (const FileNode& n, DMatch& m)
+[11.102s]       |      [01;36m[K^~~~~~~~[m[K
+[11.102s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1307:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::VideoCapture*[m[K’ to ‘[01m[Kconst cv::FileNode&[m[K’
+[11.103s]  1307 | void operator >> ([01;36m[Kconst FileNode& n[m[K, DMatch& m)
+[11.104s]       |                   [01;36m[K~~~~~~~~~~~~~~~~^[m[K
+[11.104s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:49:19:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kempty[m[K’ in ‘[01m[K((ImagePub*)this)->ImagePub::vl_cam[m[K’, which is of pointer type ‘[01m[Kcv::VideoCapture*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+[11.105s]    49 |         if(vl_cam.[01;31m[Kempty[m[K())
+[11.105s]       |                   [01;31m[K^~~~~[m[K
+[16.179s] make[2]: *** [CMakeFiles/image_pub.dir/build.make:63: CMakeFiles/image_pub.dir/src/image_pub.cpp.o] Error 1
+[16.180s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+[16.181s] make: *** [Makefile:141: all] Error 2
+[16.187s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4

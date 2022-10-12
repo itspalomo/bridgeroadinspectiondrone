@@ -1,0 +1,13 @@
+[0.533s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[3.621s] [35m[1mScanning dependencies of target image_pub[0m
+[3.871s] [ 50%] [32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o[0m
+[15.214s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:65:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kargc[m[K’ was not declared in this scope
+[15.215s]    65 |     LibSeek::SeekThermalPro *seek = new LibSeek::SeekThermalPro([01;31m[Kargc[m[K == 2 ? argv[1] : "");
+[15.216s]       |                                                                 [01;31m[K^~~~[m[K
+[15.223s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:65:77:[m[K [01;31m[Kerror: [m[K‘[01m[Kargv[m[K’ was not declared in this scope
+[15.224s]    65 |     LibSeek::SeekThermalPro *seek = new LibSeek::SeekThermalPro(argc == 2 ? [01;31m[Kargv[m[K[1] : "");
+[15.224s]       |                                                                             [01;31m[K^~~~[m[K
+[20.277s] make[2]: *** [CMakeFiles/image_pub.dir/build.make:63: CMakeFiles/image_pub.dir/src/image_pub.cpp.o] Error 1
+[20.278s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+[20.278s] make: *** [Makefile:141: all] Error 2
+[20.284s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '2': /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4

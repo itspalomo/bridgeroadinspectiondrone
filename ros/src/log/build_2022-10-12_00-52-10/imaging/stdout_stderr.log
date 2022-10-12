@@ -1,0 +1,70 @@
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found cv_bridge: 3.0.6 (/opt/ros/foxy/share/cv_bridge/cmake)
+-- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)
+-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging
+[35m[1mScanning dependencies of target image_pub[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o[0m
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:72:29:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+   72 |     cv::VideoCapture vl_cam([01;31m[K10[m[K);
+      |                             [01;31m[K^~[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:72:29:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:[m[K In member function ‘[01m[Kvoid ImagePub::timer_callback()[m[K’:
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:41:14:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KLibSeek::SeekThermalPro ImagePub::seek()[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   41 |         if (![01;31m[Kseek[m[K.open())
+      |              [01;31m[K^~~~[m[K
+      |                  [32m[K()[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:41:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kopen[m[K’
+   41 |         if [34m[K([m[K!seek.[01;31m[Ko[m[K[32m[Kpen[m[K())
+      |            [34m[K~[m[K      [01;31m[K^[m[K[32m[K~~~[m[K
+      |                   [32m[K)[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:43:14:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kcv::VideoCapture ImagePub::vl_cam(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   43 |         if (![01;31m[Kvl_cam[m[K.isOpened())
+      |              [01;31m[K^~~~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:43:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[KisOpened[m[K’
+   43 |         if [34m[K([m[K!vl_cam.[01;31m[Ki[m[K[32m[KsOpened[m[K())
+      |            [34m[K~[m[K        [01;31m[K^[m[K[32m[K~~~~~~~[m[K
+      |                     [32m[K)[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:48:16:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kcv::VideoCapture ImagePub::vl_cam(int)[m[K’
+   48 |         [01;31m[Kvl_cam >> visible_light_sensor[m[K;
+      |         [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:72:22:[m[K [01;36m[Knote: [m[Kdeclared here
+   72 |     cv::VideoCapture [01;36m[Kvl_cam[m[K(10);
+      |                      [01;36m[K^~~~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:49:12:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kcv::VideoCapture ImagePub::vl_cam(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   49 |         if([01;31m[Kvl_cam[m[K.empty())
+      |            [01;31m[K^~~~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:49:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kempty[m[K’
+   49 |         if[34m[K([m[Kvl_cam.[01;31m[Ke[m[K[32m[Kmpty[m[K())
+      |           [34m[K~[m[K       [01;31m[K^[m[K[32m[K~~~~[m[K
+      |                   [32m[K)[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:59:14:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KLibSeek::SeekThermalPro ImagePub::seek()[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   59 |         if (![01;31m[Kseek[m[K.read(frame)) {
+      |              [01;31m[K^~~~[m[K
+      |                  [32m[K()[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:59:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kread[m[K’
+   59 |         if [34m[K([m[K!seek.[01;31m[Kr[m[K[32m[Kead[m[K(frame)) {
+      |            [34m[K~[m[K      [01;31m[K^[m[K[32m[K~~~[m[K
+      |                   [32m[K)[m[K
+make[2]: *** [CMakeFiles/image_pub.dir/build.make:63: CMakeFiles/image_pub.dir/src/image_pub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,7 @@
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:[m[K In member function ‘[01m[Kvoid ImagePub::timer_callback()[m[K’:
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:42:19:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kopen[m[K’ in ‘[01m[Kseek[m[K’, which is of non-class type ‘[01m[KLibSeek::SeekThermalPro()[m[K’
+   42 |         if (!seek.[01;31m[Kopen[m[K())
+      |                   [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/image_pub.dir/build.make:63: CMakeFiles/image_pub.dir/src/image_pub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

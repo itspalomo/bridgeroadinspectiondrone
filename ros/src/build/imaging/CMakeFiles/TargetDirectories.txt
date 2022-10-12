@@ -1,0 +1,10 @@
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/install/strip.dir
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/install/local.dir
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/edit_cache.dir
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/test.dir
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/image_pub.dir
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/install.dir
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/list_install_components.dir
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/imaging_uninstall.dir
+/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/uninstall.dir
