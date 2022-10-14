@@ -1,0 +1,3 @@
+[console_scripts]
+controls = controls.controls:main
+

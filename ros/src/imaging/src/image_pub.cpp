@@ -29,7 +29,7 @@ class ImagePub : public rclcpp::Node {
     ImagePub() : Node("imagepub"), count_(0) {
         visible_pub =
             this->create_publisher<sensor_msgs::msg::Image>("imagepub/visible_light", 10);
-            this->create_publisher<sensor_msgs::msg::Image>("imagepub/seek_thermal", 10);
+            //this->create_publisher<sensor_msgs::msg::Image>("imagepub/seek_thermal", 10);
 
         timer_ = this->create_wall_timer(
             100ms, std::bind(&ImagePub::timer_callback, this));
@@ -57,7 +57,7 @@ class ImagePub : public rclcpp::Node {
     rclcpp::TimerBase::SharedPtr timer_;
 
     rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr visible_pub;
-    rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr thermal_pub;
+    //rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr thermal_pub;
 
     size_t count_;
 

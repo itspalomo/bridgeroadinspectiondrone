@@ -1,0 +1,3 @@
+[console_scripts]
+road_nav = road_nav.road_nav:main
+
