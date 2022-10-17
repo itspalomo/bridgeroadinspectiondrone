@@ -1,6 +1,6 @@
 import rclpy
 import cv2
-import cv_bridge
+from cv_bridge import CvBridge, CvBridgeError
 import numpy as np
 import os
 from rclpy.node import Node
@@ -22,6 +22,7 @@ class RoadNav(Node):
         timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
+        self.bridge = CvBridge()
 
     def timer_callback(self):
         msg = std_msgs.msg.String()
@@ -29,9 +30,30 @@ class RoadNav(Node):
         self.publisher_.publish(msg)
         self.get_logger().info('Publishing: "%s"' % msg.data)
         self.i += 1
+    
+    # sensor_msgs::msg::Image::SharedPtr msg = 
+    # cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", visible_light_sensor).toImageMsg();
 
     def listener_callback(self, msg):
-        self.get_logger().info('I heard: "%s"' % msg.data)
+        try:
+            #convert from ros image to opencv image
+            visible_light_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
+        except CvBridgeError as e:
+            print(e)
+            #HoughLine detection
+        while True:
+            ret,frame = visible_light_image.read()
+            img = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+            edge = cv2.Canny(img,300,350)
+            lines =cv2.HoughLinesP(edge, rho = 1, theta = 1*np.pi/180, threshold = 100, minLineLength = 170, maxLineGap = 10)
+
+            try:
+                for i in lines:
+                    x1,x2,y1,y2 = i[0]
+                    cv2.line(frame,(x1,x2), (y1,y2), (0,255,0),3)
+            except:
+                print(f'No lines detected')
+
 
 def main(args=None):
     rclpy.init(args=args)
