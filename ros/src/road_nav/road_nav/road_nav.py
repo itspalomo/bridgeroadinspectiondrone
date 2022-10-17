@@ -1,17 +1,21 @@
 import rclpy
+import cv2
+import cv_bridge
+import numpy as np
+import os
 from rclpy.node import Node
-
-from std_msgs.msg import String
-
+import std_msgs.msg
+from sensor_msgs.msg import Image as Image_msg
 
 class RoadNav(Node):
 
     def __init__(self):
         super().__init__('road_nav')
-        self.publisher_ = self.create_publisher(String, 'road_nav/fog_line', 10)
+        self.publisher_ = self.create_publisher(std_msgs.msg.String, 'road_nav/fog_line', 10)
+        #self.publisher_ = self.create_publisher(std_msgs.msg.String, 'road_nav/analysis_mode', 10)
         self.subscription = self.create_subscription(
-            String,
-            'topic',
+            Image_msg,
+            'imagepub/visible_light',
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
@@ -20,7 +24,7 @@ class RoadNav(Node):
         self.i = 0
 
     def timer_callback(self):
-        msg = String()
+        msg = std_msgs.msg.String()
         msg.data = 'Hello World: %d' % self.i
         self.publisher_.publish(msg)
         self.get_logger().info('Publishing: "%s"' % msg.data)
