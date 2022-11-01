@@ -1,0 +1,33 @@
+[4.259s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/offboard_testing': PYTHONPATH=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/offboard_testing build --build-base /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/offboard_testing/build install --prefix /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing --record /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/offboard_testing/install.log --single-version-externally-managed
+[5.222s] running egg_info
+[5.223s] creating ../build/offboard_testing/offboard_testing.egg-info
+[5.224s] writing ../build/offboard_testing/offboard_testing.egg-info/PKG-INFO
+[5.226s] writing dependency_links to ../build/offboard_testing/offboard_testing.egg-info/dependency_links.txt
+[5.227s] writing entry points to ../build/offboard_testing/offboard_testing.egg-info/entry_points.txt
+[5.227s] writing requirements to ../build/offboard_testing/offboard_testing.egg-info/requires.txt
+[5.228s] writing top-level names to ../build/offboard_testing/offboard_testing.egg-info/top_level.txt
+[5.239s] writing manifest file '../build/offboard_testing/offboard_testing.egg-info/SOURCES.txt'
+[5.366s] reading manifest file '../build/offboard_testing/offboard_testing.egg-info/SOURCES.txt'
+[5.370s] writing manifest file '../build/offboard_testing/offboard_testing.egg-info/SOURCES.txt'
+[5.370s] running build
+[5.371s] running build_py
+[5.372s] creating /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/offboard_testing/build
+[5.373s] creating /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/offboard_testing/build/lib
+[5.374s] creating /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/offboard_testing/build/lib/offboard_testing
+[5.374s] copying offboard_testing/__init__.py -> /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/offboard_testing/build/lib/offboard_testing
+[5.375s] running install
+[5.376s] running install_lib
+[5.380s] creating /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/lib/python3.8/site-packages/offboard_testing
+[5.381s] copying /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/offboard_testing/build/lib/offboard_testing/__init__.py -> /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/lib/python3.8/site-packages/offboard_testing
+[5.383s] byte-compiling /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/lib/python3.8/site-packages/offboard_testing/__init__.py to __init__.cpython-38.pyc
+[5.387s] running install_data
+[5.390s] creating /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/share/ament_index
+[5.390s] creating /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/share/ament_index/resource_index
+[5.391s] creating /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/share/ament_index/resource_index/packages
+[5.391s] copying resource/offboard_testing -> /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/share/ament_index/resource_index/packages
+[5.392s] copying package.xml -> /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/share/offboard_testing
+[5.392s] running install_egg_info
+[5.397s] Copying ../build/offboard_testing/offboard_testing.egg-info to /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/lib/python3.8/site-packages/offboard_testing-0.0.0-py3.8.egg-info
+[5.402s] running install_scripts
+[5.465s] writing list of installed files to '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/offboard_testing/install.log'
+[5.567s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/offboard_testing' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/offboard_testing build --build-base /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/offboard_testing/build install --prefix /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing --record /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/offboard_testing/install.log --single-version-externally-managed
