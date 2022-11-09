@@ -1,0 +1,672 @@
+ubuntu@ubuntu:~/ros2_ws$ git pull origin
+fatal: not a git repository (or any of the parent directories): .git
+ubuntu@ubuntu:~/ros2_ws$ cd bridgeroadinspectiondrone/
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone$ git pull origin
+Already up to date.
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone$ pip3 install --upgrade opencv-python
+Collecting opencv-python
+  Downloading opencv_python-4.6.0.66-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (39.5 MB)
+     |████████████████████████████████| 39.5 MB 9.0 kB/s 
+Collecting numpy>=1.19.3; python_version >= "3.6" and platform_system == "Linux" and platform_machine == "aarch64"
+  Downloading numpy-1.23.4-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (14.0 MB)
+     |████████████████████████████████| 14.0 MB 16 kB/s 
+Installing collected packages: numpy, opencv-python
+Successfully installed numpy-1.23.4 opencv-python-4.6.0.66
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone$ dmsg
+
+Command 'dmsg' not found, did you mean:
+
+  command 'dms' from deb anacrolix-dms (1.1.0-1)
+  command 'dmesg' from deb util-linux (2.34-0.1ubuntu9.3)
+
+Try: sudo apt install <deb name>
+
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone$ dmesg
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd083]
+[    0.000000] Linux version 5.4.0-1073-raspi (buildd@bos02-arm64-037) (gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1)) #84-Ubuntu SMP PREEMPT Sat Oct 15 11:13:36 UTC 2022 (Ubuntu 5.4.0-1073.84-raspi 5.4.210)
+[    0.000000] Machine model: Raspberry Pi 4 Model B Rev 1.4
+[    0.000000] efi: Getting EFI parameters from FDT:
+[    0.000000] efi: UEFI not found.
+[    0.000000] Reserved memory: created CMA memory pool at 0x000000002c000000, size 64 MiB
+[    0.000000] OF: reserved mem: initialized node linux,cma, compatible id shared-dma-pool
+[    0.000000] On node 0 totalpages: 2061312
+[    0.000000]   DMA zone: 3792 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 242688 pages, LIFO batch:63
+[    0.000000]   DMA32 zone: 12288 pages used for memmap
+[    0.000000]   DMA32 zone: 770048 pages, LIFO batch:63
+[    0.000000]   Normal zone: 16384 pages used for memmap
+[    0.000000]   Normal zone: 1048576 pages, LIFO batch:63
+[    0.000000] percpu: Embedded 32 pages/cpu s92504 r8192 d30376 u131072
+[    0.000000] pcpu-alloc: s92504 r8192 d30376 u131072 alloc=32*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: EL2 vector hardening
+[    0.000000] CPU features: kernel page table isolation forced ON by KASLR
+[    0.000000] CPU features: detected: Kernel page table isolation (KPTI)
+[    0.000000] ARM_SMCCC_ARCH_WORKAROUND_1 missing from firmware
+[    0.000000] CPU features: detected: Spectre-BHB
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 2028848
+[    0.000000] Kernel command line:  coherent_pool=1M 8250.nr_uarts=1 snd_bcm2835.enable_compat_alsa=0 snd_bcm2835.enable_hdmi=1 bcm2708_fb.fbwidth=0 bcm2708_fb.fbheight=0 bcm2708_fb.fbswap=1 smsc95xx.macaddr=DC:A6:32:ED:6F:9A vc_mem.mem_base=0x3ec00000 vc_mem.mem_size=0x40000000  elevator=deadline net.ifnames=0 console=ttyS0,115200 dwc_otg.lpm_enable=0 console=tty1 root=LABEL=writable rootfstype=ext4 rootwait fixrtc quiet splash quiet splash
+[    0.000000] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] software IO TLB: mapped [mem 0x37400000-0x3b400000] (64MB)
+[    0.000000] Memory: 7897328K/8245248K available (13820K kernel code, 1278K rwdata, 4324K rodata, 4096K init, 1077K bss, 282384K reserved, 65536K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] ftrace: allocating 39432 entries in 155 pages
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000]  Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GIC: Using split EOI/Deactivate mode
+[    0.000000] arch_timer: cp15 timer(s) running at 54.00MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0xc743ce346, max_idle_ns: 440795203123 ns
+[    0.000006] sched_clock: 56 bits at 54MHz, resolution 18ns, wraps every 4398046511102ns
+[    0.000244] Console: colour dummy device 80x25
+[    0.000269] printk: console [tty1] enabled
+[    0.000326] Calibrating delay loop (skipped), value calculated using timer frequency.. 108.00 BogoMIPS (lpj=216000)
+[    0.000342] pid_max: default: 32768 minimum: 301
+[    0.000782] LSM: Security Framework initializing
+[    0.000850] Yama: becoming mindful.
+[    0.000988] AppArmor: AppArmor initialized
+[    0.001349] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.001446] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.001577] *** VALIDATE tmpfs ***
+[    0.002370] *** VALIDATE proc ***
+[    0.002860] cgroup: Disabling memory control group subsystem
+[    0.003049] *** VALIDATE cgroup1 ***
+[    0.003060] *** VALIDATE cgroup2 ***
+[    0.004656] ASID allocator initialised with 32768 entries
+[    0.004861] rcu: Hierarchical SRCU implementation.
+[    0.007113] EFI services will not be available.
+[    0.008214] smp: Bringing up secondary CPUs ...
+[    0.009304] Detected PIPT I-cache on CPU1
+[    0.009361] CPU1: Booted secondary processor 0x0000000001 [0x410fd083]
+[    0.010582] Detected PIPT I-cache on CPU2
+[    0.010620] CPU2: Booted secondary processor 0x0000000002 [0x410fd083]
+[    0.011813] Detected PIPT I-cache on CPU3
+[    0.011851] CPU3: Booted secondary processor 0x0000000003 [0x410fd083]
+[    0.012017] smp: Brought up 1 node, 4 CPUs
+[    0.012027] SMP: Total of 4 processors activated.
+[    0.012038] CPU features: detected: 32-bit EL0 Support
+[    0.012049] CPU features: detected: CRC32 instructions
+[    0.019809] CPU features: emulated: Privileged Access Never (PAN) using TTBR0_EL1 switching
+[    0.019820] CPU: All CPU(s) started at EL2
+[    0.019880] alternatives: patching kernel code
+[    0.022899] devtmpfs: initialized
+[    0.034659] Enabled cp15_barrier support
+[    0.034686] Enabled setend support
+[    0.035147] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.035172] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+[    0.037350] pinctrl core: initialized pinctrl subsystem
+[    0.038087] DMI not present or invalid.
+[    0.039115] NET: Registered protocol family 16
+[    0.041762] DMA: preallocated 1024 KiB pool for atomic allocations
+[    0.041781] audit: initializing netlink subsys (disabled)
+[    0.042100] audit: type=2000 audit(0.040:1): state=initialized audit_enabled=0 res=1
+[    0.042747] cpuidle: using governor ladder
+[    0.043045] cpuidle: using governor menu
+[    0.043524] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.043941] Serial: AMBA PL011 UART driver
+[    0.046817] bcm2835-mbox fe00b880.mailbox: mailbox enabled
+[    0.060462] raspberrypi-firmware soc:firmware: Attached to firmware from 2021-11-18 16:17, variant start_x
+[    0.064466] raspberrypi-firmware soc:firmware: Firmware hash is d9b293558b4cef6aabedcc53c178e7604de90788
+[    0.098202] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.098216] HugeTLB registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.098226] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.098236] HugeTLB registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.109628] bcm2835-dma fe007000.dma: DMA legacy API manager, dmachans=0x1
+[    0.112804] iommu: Default domain type: Translated 
+[    0.114387] SCSI subsystem initialized
+[    0.114876] libata version 3.00 loaded.
+[    0.115155] usbcore: registered new interface driver usbfs
+[    0.115201] usbcore: registered new interface driver hub
+[    0.115252] usbcore: registered new device driver usb
+[    0.115663] pps_core: LinuxPPS API ver. 1 registered
+[    0.115671] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.115690] PTP clock support registered
+[    0.115970] EDAC MC: Ver: 3.0.0
+[    0.117373] NetLabel: Initializing
+[    0.117384] NetLabel:  domain hash size = 128
+[    0.117392] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.117463] NetLabel:  unlabeled traffic allowed by default
+[    0.118492] clocksource: Switched to clocksource arch_sys_counter
+[    0.225026] *** VALIDATE bpf ***
+[    0.225437] VFS: Disk quotas dquot_6.6.0
+[    0.225548] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.225684] *** VALIDATE ramfs ***
+[    0.225726] *** VALIDATE hugetlbfs ***
+[    0.226604] AppArmor: AppArmor Filesystem Enabled
+[    0.237632] thermal_sys: Registered thermal governor 'fair_share'
+[    0.237638] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.237648] thermal_sys: Registered thermal governor 'step_wise'
+[    0.237656] thermal_sys: Registered thermal governor 'user_space'
+[    0.237664] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.238325] NET: Registered protocol family 2
+[    0.239283] IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.244578] tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.244661] TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.245051] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+[    0.245978] TCP: Hash tables configured (established 65536 bind 65536)
+[    0.246302] UDP hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.246400] UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.246903] NET: Registered protocol family 1
+[    0.246936] NET: Registered protocol family 44
+[    0.246953] PCI: CLS 0 bytes, default 64
+[    0.247231] Trying to unpack rootfs image as initramfs...
+[    0.954295] Freeing initrd memory: 29720K
+[    0.956031] hw perfevents: enabled with armv8_cortex_a72 PMU driver, 7 counters available
+[    0.956241] kvm [1]: IPA Size Limit: 44 bits
+[    0.957178] kvm [1]: vgic interrupt IRQ1
+[    0.957410] kvm [1]: Hyp mode initialized successfully
+[    0.959875] Initialise system trusted keyrings
+[    0.959941] Key type blacklist registered
+[    0.960239] workingset: timestamp_bits=46 max_order=21 bucket_order=0
+[    0.968181] zbud: loaded
+[    0.970835] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.972062] fuse: init (API version 7.31)
+[    0.972207] *** VALIDATE fuse ***
+[    0.972222] *** VALIDATE fuse ***
+[    0.997556] Key type asymmetric registered
+[    0.997567] Asymmetric key parser 'x509' registered
+[    0.997614] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+[    0.997811] io scheduler mq-deadline registered
+[    1.002354] brcm-pcie fd500000.pcie: host bridge /scb/pcie@7d500000 ranges:
+[    1.002373] brcm-pcie fd500000.pcie:   No bus range found for /scb/pcie@7d500000, using [bus 00-ff]
+[    1.002425] brcm-pcie fd500000.pcie:      MEM 0x0600000000..0x0603ffffff -> 0x00f8000000
+[    1.002507] brcm-pcie fd500000.pcie:   IB MEM 0x0000000000..0x00bfffffff -> 0x0400000000
+[    1.068588] brcm-pcie fd500000.pcie: link up, 5.0 GT/s PCIe x1 (SSC)
+[    1.068887] brcm-pcie fd500000.pcie: PCI host bridge to bus 0000:00
+[    1.068900] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    1.068915] pci_bus 0000:00: root bus resource [mem 0x600000000-0x603ffffff] (bus address [0xf8000000-0xfbffffff])
+[    1.068960] pci 0000:00:00.0: [14e4:2711] type 01 class 0x060400
+[    1.069160] pci 0000:00:00.0: PME# supported from D0 D3hot
+[    1.072835] pci 0000:01:00.0: [1106:3483] type 00 class 0x0c0330
+[    1.072964] pci 0000:01:00.0: reg 0x10: [mem 0x00000000-0x00000fff 64bit]
+[    1.073313] pci 0000:01:00.0: PME# supported from D0 D3hot
+[    1.076953] pci 0000:00:00.0: BAR 14: assigned [mem 0x600000000-0x6000fffff]
+[    1.076972] pci 0000:01:00.0: BAR 0: assigned [mem 0x600000000-0x600000fff 64bit]
+[    1.077002] pci 0000:00:00.0: PCI bridge to [bus 01]
+[    1.077019] pci 0000:00:00.0:   bridge window [mem 0x600000000-0x6000fffff]
+[    1.077338] pcieport 0000:00:00.0: enabling device (0000 -> 0002)
+[    1.077560] pcieport 0000:00:00.0: PME: Signaling with IRQ 43
+[    1.077967] pcieport 0000:00:00.0: AER: enabled with IRQ 43
+[    1.078224] pci 0000:01:00.0: enabling device (0000 -> 0002)
+[    1.122857] pci 0000:01:00.0: quirk_usb_early_handoff+0x0/0x658 took 43576 usecs
+[    1.124034] bcm2708_fb soc:fb: Unable to determine number of FBs. Disabling driver.
+[    1.124076] bcm2708_fb: probe of soc:fb failed with error -2
+[    1.193618] Serial: 8250/16550 driver, 1 ports, IRQ sharing enabled
+[    1.196276] iproc-rng200 fe104000.rng: hwrng registered
+[    1.196717] vc-mem: phys_addr:0x00000000 mem_base=0x3ec00000 mem_size:0x40000000(1024 MiB)
+[    1.197552] gpiomem-bcm2835 fe200000.gpiomem: Initialised: Registers at 0xfe200000
+[    1.197908] cacheinfo: Unable to detect cache hierarchy for CPU 0
+[    1.326654] loop: module loaded
+[    1.329450] spi-bcm2835 fe204000.spi: could not get clk: -517
+[    1.331384] tun: Universal TUN/TAP device driver, 1.6
+[    1.332064] bcmgenet fd580000.ethernet: failed to get enet clock
+[    1.332079] bcmgenet fd580000.ethernet: GENET 5.0 EPHY: 0x0000
+[    1.332095] bcmgenet fd580000.ethernet: failed to get enet-wol clock
+[    1.332111] bcmgenet fd580000.ethernet: failed to get enet-eee clock
+[    1.332132] bcmgenet: Skipping UMAC reset
+[    1.402591] unimac-mdio unimac-mdio.-19: Broadcom UniMAC MDIO bus
+[    1.403473] PPP generic driver version 2.4.2
+[    1.403744] usbcore: registered new interface driver lan78xx
+[    1.403795] usbcore: registered new interface driver smsc95xx
+[    1.403832] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.403874] ehci-pci: EHCI PCI platform driver
+[    1.403931] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.403948] ohci-pci: OHCI PCI platform driver
+[    1.404012] uhci_hcd: USB Universal Host Controller Interface driver
+[    1.404513] xhci_hcd 0000:01:00.0: xHCI Host Controller
+[    1.404541] xhci_hcd 0000:01:00.0: new USB bus registered, assigned bus number 1
+[    1.405332] xhci_hcd 0000:01:00.0: hcc params 0x002841eb hci version 0x100 quirks 0x0000009000000890
+[    1.406388] xhci_hcd 0000:01:00.0: xHCI Host Controller
+[    1.406406] xhci_hcd 0000:01:00.0: new USB bus registered, assigned bus number 2
+[    1.406447] xhci_hcd 0000:01:00.0: Host supports USB 3.0 SuperSpeed
+[    1.406846] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.04
+[    1.406859] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.406870] usb usb1: Product: xHCI Host Controller
+[    1.406881] usb usb1: Manufacturer: Linux 5.4.0-1073-raspi xhci-hcd
+[    1.406891] usb usb1: SerialNumber: 0000:01:00.0
+[    1.407516] hub 1-0:1.0: USB hub found
+[    1.407577] hub 1-0:1.0: 1 port detected
+[    1.408379] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.04
+[    1.408391] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.408402] usb usb2: Product: xHCI Host Controller
+[    1.408413] usb usb2: Manufacturer: Linux 5.4.0-1073-raspi xhci-hcd
+[    1.408423] usb usb2: SerialNumber: 0000:01:00.0
+[    1.409005] hub 2-0:1.0: USB hub found
+[    1.409063] hub 2-0:1.0: 4 ports detected
+[    1.410082] dwc_otg: version 3.00a 10-AUG-2012 (platform bus)
+[    1.410352] dwc_otg: FIQ enabled
+[    1.410360] dwc_otg: NAK holdoff enabled
+[    1.410367] dwc_otg: FIQ split-transaction FSM enabled
+[    1.410378] Module dwc_common_port init
+[    1.410972] mousedev: PS/2 mouse device common for all mice
+[    1.411440] i2c /dev entries driver
+[    1.414423] bcm2835-wdt bcm2835-wdt: Broadcom BCM2835 watchdog timer
+[    1.414731] device-mapper: uevent: version 1.0.3
+[    1.415051] device-mapper: ioctl: 4.41.0-ioctl (2019-09-16) initialised: dm-devel@redhat.com
+[    1.420247] sdhci: Secure Digital Host Controller Interface driver
+[    1.420250] sdhci: Copyright(c) Pierre Ossman
+[    1.420455] mmc-bcm2835 fe300000.mmcnr: could not get clk, deferring probe
+[    1.420598] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.422641] ledtrig-cpu: registered to indicate activity on CPUs
+[    1.422757] hidraw: raw HID events driver (C) Jiri Kosina
+[    1.423422] vchiq: vchiq_init_state: slot_zero = (____ptrval____)
+[    1.425518] drop_monitor: Initializing network drop monitor service
+[    1.425946] NET: Registered protocol family 10
+[    1.442686] Segment Routing with IPv6
+[    1.442748] NET: Registered protocol family 17
+[    1.442844] Key type dns_resolver registered
+[    1.443187] registered taskstats version 1
+[    1.443215] Loading compiled-in X.509 certificates
+[    1.444420] Loaded X.509 cert 'Build time autogenerated kernel key: 4669dcbc2f0ee502ebe7b6bd0e0513ea341018ac'
+[    1.445405] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+[    1.446399] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+[    1.446403] blacklist: Loading compiled-in revocation X.509 certificates
+[    1.446445] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+[    1.446645] Key type ._fscrypt registered
+[    1.446648] Key type .fscrypt registered
+[    1.462240] cryptd: max_cpu_qlen set to 1000
+[    1.473409] Key type big_key registered
+[    1.489178] Key type encrypted registered
+[    1.489188] AppArmor: AppArmor sha1 policy hashing enabled
+[    1.489208] ima: No TPM chip found, activating TPM-bypass!
+[    1.489230] ima: Allocated hash algorithm: sha1
+[    1.489245] ima: No architecture policies found
+[    1.489287] evm: Initialising EVM extended attributes:
+[    1.489290] evm: security.selinux
+[    1.489293] evm: security.SMACK64
+[    1.489295] evm: security.SMACK64EXEC
+[    1.489298] evm: security.SMACK64TRANSMUTE
+[    1.489300] evm: security.SMACK64MMAP
+[    1.489303] evm: security.apparmor
+[    1.489305] evm: security.ima
+[    1.489307] evm: security.capability
+[    1.489310] evm: HMAC attrs: 0x1
+[    1.492893] uart-pl011 fe201000.serial: cts_event_workaround enabled
+[    1.492943] fe201000.serial: ttyAMA0 at MMIO 0xfe201000 (irq = 14, base_baud = 0) is a PL011 rev2
+[    1.497551] printk: console [ttyS0] disabled
+[    1.497579] fe215040.serial: ttyS0 at MMIO 0x0 (irq = 16, base_baud = 62500000) is a 16550
+[    1.511220] printk: console [ttyS0] enabled
+[    1.511526] bcm2835-power bcm2835-power: Broadcom BCM2835 power domains driver
+[    1.513048] mmc-bcm2835 fe300000.mmcnr: mmc_debug:0 mmc_debug2:0
+[    1.513052] mmc-bcm2835 fe300000.mmcnr: DMA channel allocated
+[    1.562158] mmc1: queuing unknown CIS tuple 0x80 (2 bytes)
+[    1.563666] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+[    1.565172] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+[    1.567880] mmc1: queuing unknown CIS tuple 0x80 (7 bytes)
+[    1.569387] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+[    1.578075] mmc0: SDHCI controller on fe340000.emmc2 [fe340000.emmc2] using ADMA
+[    1.579255] of_cfs_init
+[    1.579322] of_cfs_init: OK
+[    1.584135] Freeing unused kernel memory: 4096K
+[    1.607753] Checked W+X mappings: passed, no W+X pages found
+[    1.607759] Run /init as init process
+[    1.629111] mmc1: new high speed SDIO card at address 0001
+[    1.666524] usb 1-1: new high-speed USB device number 2 using xhci_hcd
+[    1.677901] mmc0: new ultra high speed DDR50 SDHC card at address 0001
+[    1.678649] mmcblk0: mmc0:0001 EB1QT 29.8 GiB
+[    1.681909]  mmcblk0: p1 p2
+[    1.817154] usb 1-1: New USB device found, idVendor=2109, idProduct=3431, bcdDevice= 4.21
+[    1.817162] usb 1-1: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+[    1.817166] usb 1-1: Product: USB2.0 Hub
+[    1.818328] hub 1-1:1.0: USB hub found
+[    1.818802] hub 1-1:1.0: 4 ports detected
+[    1.994802] usb_phy_generic phy: phy supply vcc not found, using dummy regulator
+[    2.082713] dwc2 fe980000.usb: fe980000.usb supply vusb_d not found, using dummy regulator
+[    2.082833] dwc2 fe980000.usb: fe980000.usb supply vusb_a not found, using dummy regulator
+[    2.294787] dwc2 fe980000.usb: EPs: 8, dedicated fifos, 4080 entries in SPRAM
+[    2.295002] dwc2 fe980000.usb: DWC OTG Controller
+[    2.295017] dwc2 fe980000.usb: new USB bus registered, assigned bus number 3
+[    2.295042] dwc2 fe980000.usb: irq 18, io mem 0xfe980000
+[    2.295180] usb usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.04
+[    2.295185] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    2.295189] usb usb3: Product: DWC OTG Controller
+[    2.295193] usb usb3: Manufacturer: Linux 5.4.0-1073-raspi dwc2_hsotg
+[    2.295197] usb usb3: SerialNumber: fe980000.usb
+[    2.295511] hub 3-0:1.0: USB hub found
+[    2.295538] hub 3-0:1.0: 1 port detected
+[    3.574480] raid6: neonx8   gen()  3943 MB/s
+[    3.622473] raid6: neonx8   xor()  3471 MB/s
+[    3.670473] raid6: neonx4   gen()  3440 MB/s
+[    3.718486] raid6: neonx4   xor()  2782 MB/s
+[    3.766492] raid6: neonx2   gen()  2999 MB/s
+[    3.814476] raid6: neonx2   xor()  2413 MB/s
+[    3.862476] raid6: neonx1   gen()  2245 MB/s
+[    3.910481] raid6: neonx1   xor()  1795 MB/s
+[    3.958512] raid6: int64x8  gen()  2361 MB/s
+[    4.006485] raid6: int64x8  xor()  1491 MB/s
+[    4.054513] raid6: int64x4  gen()  1852 MB/s
+[    4.102492] raid6: int64x4  xor()  1262 MB/s
+[    4.150475] raid6: int64x2  gen()  1630 MB/s
+[    4.198499] raid6: int64x2  xor()  1009 MB/s
+[    4.246520] raid6: int64x1  gen()  1135 MB/s
+[    4.294481] raid6: int64x1  xor()   711 MB/s
+[    4.294484] raid6: using algorithm neonx8 gen() 3943 MB/s
+[    4.294487] raid6: .... xor() 3471 MB/s, rmw enabled
+[    4.294490] raid6: using neon recovery algorithm
+[    4.297733] xor: measuring software checksum speed
+[    4.334476]    8regs     :  7132.000 MB/sec
+[    4.374473]    32regs    :  8136.000 MB/sec
+[    4.414474]    arm64_neon:  7343.000 MB/sec
+[    4.414477] xor: using function: 32regs (8136.000 MB/sec)
+[    4.416055] async_tx: api initialized (async)
+[    4.554066] Btrfs loaded, crc32c=crc32c-generic
+[    5.068289] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+[    5.697464] systemd[1]: System time before build time, advancing clock.
+[    5.749127] systemd[1]: Inserted module 'autofs4'
+[    5.807356] systemd[1]: systemd 245.4-4ubuntu3.18 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+[    5.807955] systemd[1]: Detected architecture arm64.
+[    5.871843] systemd[1]: Set hostname to <ubuntu>.
+[    6.256176] random: lvmconfig: uninitialized urandom read (4 bytes read)
+[    6.345711] systemd[364]: /usr/lib/systemd/system-generators/netplan failed with exit status 1.
+[    6.653560] random: systemd: uninitialized urandom read (16 bytes read)
+[    6.655738] systemd[1]: Created slice system-modprobe.slice.
+[    6.655928] random: systemd: uninitialized urandom read (16 bytes read)
+[    6.656919] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[    6.657896] systemd[1]: Created slice system-systemd\x2dfsck.slice.
+[    6.658765] systemd[1]: Created slice User and Session Slice.
+[    6.659029] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    6.663705] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[    6.663877] systemd[1]: Reached target User and Group Name Lookups.
+[    6.663942] systemd[1]: Reached target Slices.
+[    6.664000] systemd[1]: Reached target Swap.
+[    6.664264] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[    6.664623] systemd[1]: Listening on LVM2 poll daemon socket.
+[    6.664838] systemd[1]: Listening on multipathd control socket.
+[    6.667920] systemd[1]: Listening on Syslog Socket.
+[    6.668301] systemd[1]: Listening on fsck to fsckd communication Socket.
+[    6.668489] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[    6.669064] systemd[1]: Listening on Journal Audit Socket.
+[    6.669496] systemd[1]: Listening on Journal Socket (/dev/log).
+[    6.669892] systemd[1]: Listening on Journal Socket.
+[    6.670315] systemd[1]: Listening on Network Service Netlink Socket.
+[    6.670715] systemd[1]: Listening on udev Control Socket.
+[    6.670963] systemd[1]: Listening on udev Kernel Socket.
+[    6.674345] systemd[1]: Mounting Huge Pages File System...
+[    6.678317] systemd[1]: Mounting POSIX Message Queue File System...
+[    6.682901] systemd[1]: Mounting Kernel Debug File System...
+[    6.687008] systemd[1]: Mounting Kernel Trace File System...
+[    6.692252] systemd[1]: Starting Journal Service...
+[    6.696922] systemd[1]: Starting Set the console keyboard layout...
+[    6.701385] systemd[1]: Starting Create list of static device nodes for the current kernel...
+[    6.706042] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[    6.711391] systemd[1]: Starting Load Kernel Module chromeos_pstore...
+[    6.715847] systemd[1]: Starting Load Kernel Module drm...
+[    6.724118] systemd[1]: Starting Load Kernel Module efi_pstore...
+[    6.729779] systemd[1]: Starting Load Kernel Module pstore_blk...
+[    6.737310] systemd[1]: Starting Load Kernel Module pstore_zone...
+[    6.741713] systemd[1]: Starting Load Kernel Module ramoops...
+[    6.760204] systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+[    6.760297] systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+[    6.799236] systemd[1]: Starting Load Kernel Modules...
+[    6.803558] systemd[1]: Starting Remount Root and Kernel File Systems...
+[    6.818735] systemd[1]: Starting udev Coldplug all Devices...
+[    6.826061] systemd[1]: Starting Uncomplicated firewall...
+[    6.833112] systemd[1]: Mounted Huge Pages File System.
+[    6.837718] systemd[1]: Mounted POSIX Message Queue File System.
+[    6.838001] IPMI message handler: version 39.2
+[    6.838824] systemd[1]: Mounted Kernel Debug File System.
+[    6.839930] systemd[1]: Mounted Kernel Trace File System.
+[    6.840901] EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+[    6.843796] systemd[1]: Finished Create list of static device nodes for the current kernel.
+[    6.849395] systemd[1]: Finished Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+[    6.850335] ipmi device interface
+[    6.851598] systemd[1]: modprobe@chromeos_pstore.service: Succeeded.
+[    6.852991] systemd[1]: Finished Load Kernel Module chromeos_pstore.
+[    6.853688] systemd[1]: Started Journal Service.
+[    6.928574] systemd-journald[403]: Received client request to flush runtime journal.
+[    6.955655] systemd-journald[403]: File /var/log/journal/1ec70c79fb5c415b8c836328b5ca16ae/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[    7.608757] random: systemd-journal: uninitialized urandom read (16 bytes read)
+[    7.609990] random: systemd-journal: uninitialized urandom read (16 bytes read)
+[    7.611002] random: systemd-journal: uninitialized urandom read (16 bytes read)
+[    8.006132] rpivid-mem feb00000.hevc-decoder: rpivid-hevcmem initialised: Registers at 0xfeb00000 length 0x00010000
+[    8.042133] rpivid-mem feb10000.rpivid-local-intc: rpivid-intcmem initialised: Registers at 0xfeb10000 length 0x00001000
+[    8.042414] rpivid-mem feb20000.h264-decoder: rpivid-h264mem initialised: Registers at 0xfeb20000 length 0x00010000
+[    8.047887] rpivid-mem feb30000.vp9-decoder: rpivid-vp9mem initialised: Registers at 0xfeb30000 length 0x00010000
+[    8.059484] mc: Linux media interface: v0.10
+[    8.063272] vc_sm_cma: module is from the staging directory, the quality is unknown, you have been warned.
+[    8.063667] vc_sm_cma: module verification failed: signature and/or required key missing - tainting kernel
+[    8.069772] bcm2835_vc_sm_cma_probe: Videocore shared memory driver
+[    8.069782] [vc_sm_connected_init]: start
+[    8.109719] [vc_sm_connected_init]: installed successfully
+[    8.129267] videodev: Linux video capture interface: v2.00
+[    8.146397] snd_bcm2835: module is from the staging directory, the quality is unknown, you have been warned.
+[    8.151911] bcm2835_audio bcm2835_audio: card created with 8 channels
+[    8.263975] bcm2835_mmal_vchiq: module is from the staging directory, the quality is unknown, you have been warned.
+[    8.275865] bcm2835_v4l2: module is from the staging directory, the quality is unknown, you have been warned.
+[    8.295797] bcm2835_isp: module is from the staging directory, the quality is unknown, you have been warned.
+[    8.306593] bcm2835_codec: module is from the staging directory, the quality is unknown, you have been warned.
+[    8.336478] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    8.354513] random: crng init done
+[    8.354521] random: 91 urandom warning(s) missed due to ratelimiting
+[    8.356023] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    8.476822] brcmfmac: F1 signature read @0x18000000=0x15264345
+[    8.499555] brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43455-sdio for chip BCM4345/6
+[    8.512852] usbcore: registered new interface driver brcmfmac
+[    8.721736] Bluetooth: Core ver 2.22
+[    8.721822] NET: Registered protocol family 31
+[    8.721825] Bluetooth: HCI device and connection manager initialized
+[    8.721839] Bluetooth: HCI socket layer initialized
+[    8.721845] Bluetooth: L2CAP socket layer initialized
+[    8.721855] Bluetooth: SCO socket layer initialized
+[    8.781438] brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43455-sdio for chip BCM4345/6
+[    8.795408] brcmfmac: brcmf_c_preinit_dcmds: Firmware: BCM4345/6 wl0: Nov  1 2021 00:37:25 version 7.45.241 (1a2f2fa CY) FWID 01-703fd60
+[    8.908140] bcm2835-isp bcm2835-isp: bcm2835_isp_get_supported_fmts: port has more encoding than we provided space for. Some are dropped.
+[    8.909870] bcm2835-codec bcm2835-codec: Device registered as /dev/video10
+[    8.920778] bcm2835-codec bcm2835-codec: Loaded V4L2 decode
+[    8.921006] bcm2835-isp bcm2835-isp: Device node output[0] registered as /dev/video13
+[    8.921409] bcm2835-isp bcm2835-isp: Device node capture[0] registered as /dev/video14
+[    8.922116] bcm2835-isp bcm2835-isp: Device node capture[1] registered as /dev/video15
+[    8.922241] bcm2835-isp bcm2835-isp: Device node stats[2] registered as /dev/video16
+[    8.922251] bcm2835-isp bcm2835-isp: Register output node 0 with media controller
+[    8.922258] bcm2835-isp bcm2835-isp: Register capture node 1 with media controller
+[    8.922266] bcm2835-isp bcm2835-isp: Register capture node 2 with media controller
+[    8.922271] bcm2835-isp bcm2835-isp: Register capture node 3 with media controller
+[    8.922356] bcm2835-isp bcm2835-isp: Loaded V4L2 bcm2835-isp
+[    8.922650] bcm2835-codec bcm2835-codec: Device registered as /dev/video11
+[    8.922668] bcm2835-codec bcm2835-codec: Loaded V4L2 encode
+[    8.930060] : bcm2835_codec_get_supported_fmts: port has more encoding than we provided space for. Some are dropped.
+[    8.941458] bcm2835-codec bcm2835-codec: Device registered as /dev/video12
+[    8.941477] bcm2835-codec bcm2835-codec: Loaded V4L2 isp
+[    9.151708] alua: device handler registered
+[    9.155030] emc: device handler registered
+[    9.158306] rdac: device handler registered
+[    9.946632] audit: type=1400 audit(1661959657.247:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=591 comm="apparmor_parser"
+[    9.946649] audit: type=1400 audit(1661959657.247:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=591 comm="apparmor_parser"
+[    9.946659] audit: type=1400 audit(1661959657.247:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=591 comm="apparmor_parser"
+[    9.958554] audit: type=1400 audit(1661959657.255:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ippusbxd" pid=592 comm="apparmor_parser"
+[    9.966063] audit: type=1400 audit(1661959657.263:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/tcpdump" pid=590 comm="apparmor_parser"
+[    9.966995] audit: type=1400 audit(1661959657.267:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=593 comm="apparmor_parser"
+[    9.967010] audit: type=1400 audit(1661959657.267:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=593 comm="apparmor_parser"
+[    9.967019] audit: type=1400 audit(1661959657.267:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=593 comm="apparmor_parser"
+[    9.967028] audit: type=1400 audit(1661959657.267:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/{,usr/}sbin/dhclient" pid=593 comm="apparmor_parser"
+[    9.981556] audit: type=1400 audit(1661959657.279:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=595 comm="apparmor_parser"
+[   17.989442] brcmfmac: brcmf_cfg80211_set_power_mgmt: power save enabled
+[   24.033647] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   38.705469] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[   38.705479] Bluetooth: BNEP filters: protocol multicast
+[   38.705495] Bluetooth: BNEP socket layer initialized
+[ 1030.307357] usb 1-1.1: new full-speed USB device number 3 using xhci_hcd
+[ 1030.419860] usb 1-1.1: New USB device found, idVendor=1e4e, idProduct=0100, bcdDevice= 2.00
+[ 1030.419878] usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 1030.419891] usb 1-1.1: Product: PureThermal (fw:v1.3.0)
+[ 1030.419902] usb 1-1.1: Manufacturer: GroupGets
+[ 1030.419913] usb 1-1.1: SerialNumber: 00070034-5119-3138-3931-383900000000
+[ 1030.463724] uvcvideo: Found UVC 1.00 device PureThermal (fw:v1.3.0) (1e4e:0100)
+[ 1030.471787] input: PureThermal (fw:v1.3.0): PureTh as /devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1/1-1.1:1.0/input/input0
+[ 1030.471974] usbcore: registered new interface driver uvcvideo
+[ 1030.471978] USB Video Class driver (1.1.1)
+[ 1031.253788] usb 1-1.1: USB disconnect, device number 3
+[ 1031.535367] usb 1-1.1: new full-speed USB device number 4 using xhci_hcd
+[ 1031.647768] usb 1-1.1: New USB device found, idVendor=1e4e, idProduct=0100, bcdDevice= 2.00
+[ 1031.647784] usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 1031.647794] usb 1-1.1: Product: PureThermal (fw:v1.3.0)
+[ 1031.647804] usb 1-1.1: Manufacturer: GroupGets
+[ 1031.647813] usb 1-1.1: SerialNumber: 00070034-5119-3138-3931-383900000000
+[ 1031.653613] uvcvideo: Found UVC 1.00 device PureThermal (fw:v1.3.0) (1e4e:0100)
+[ 1031.661696] input: PureThermal (fw:v1.3.0): PureTh as /devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1/1-1.1:1.0/input/input1
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone$ ls usb
+ls: cannot access 'usb': No such file or directory
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone$ lsusb
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 1e4e:0100 Cubeternet WebCam
+Bus 001 Device 002: ID 2109:3431 VIA Labs, Inc. Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone$ sudo chmod 666 /dev/bus/usb/001/004
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone$ export OPENCV_LOG_LEVEL=DEBUG
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone$ export OPENCV_VIDEOIO_DEBUG=1
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone$ export OPENCV_VIDEOWRITER_DEBUG=1
+ OPENCV_VIDEOCAPTURE_DEBUG=1
+export OPENCV_DUMP_ERubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone$ export OPENCV_VIDEOCAPTURE_DEBUG=1
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone$ export OPENCV_DUMP_ERRORS=1
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone$ export OPENCV_DUMP_CONFIG=1
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone$ export OPENCV_TRACE=1
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone$ export OPENCV_FFMPEG_DEBUG=1
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone$ export OPENCV_FFMPEG_LOGLEVEL=trace
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone$ cd image_processing/
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone/image_processing$ ls
+color_detection_mask.py  dualcamp.py        edge_detection.ipynb         vl_pics_10_25
+DeepCrackTF.ipynb        DualCamTest.ipynb  Edge_HoughLine_detection.py
+dmesg.txt                dualcamtest.py     Sample_Road_Videos
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone/image_processing$ export OPENCV_LOG_LEVEL=DEBUGO_DEBUG=1
+export OPENCV_VIDEOWRITER_DEBUG=1
+exportubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone/image_processing$ export OPENCV_VIDEOIO_1ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone/image_processing$ export OPENCV_VIDEOWRITER_DEBUG=1
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone/image_processing$ export OPENCV_VIDEOCAPTURE_DEBUG=1
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone/image_processing$ export OPENCV_DUMP_ERRORS=1
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone/image_processing$ export OPENCV_DUMP_CONFIG=1
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone/image_processing$ export OPENCV_TRACE=1
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone/image_processing$ export OPENCV_FFMPEG_DEBUG=1
+FFMPEG_LOGLEVEL=traceubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone/image_processing$ export OPENCV_FFMPEG_LOGLEVEL=trace
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone/image_processing$ python3 dualcamp.py
+
+OpenCV build configuration is:
+
+General configuration for OpenCV 4.6.0 =====================================
+  Version control:               4.6.0-dirty
+
+  Platform:
+    Timestamp:                   2022-06-07T12:50:51Z
+    Host:                        Linux 4.9.140-tegra aarch64
+    CMake:                       3.22.5
+    CMake generator:             Unix Makefiles
+    CMake build tool:            /bin/gmake
+    Configuration:               Release
+
+  CPU/HW features:
+    Baseline:                    NEON FP16
+
+  C/C++:
+    Built as dynamic libs?:      NO
+    C++ standard:                11
+    C++ Compiler:                /opt/rh/devtoolset-10/root/usr/bin/c++  (ver 10.2.1)
+    C++ flags (Release):         -Wl,-strip-all   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -fvisibility-inlines-hidden -O3 -DNDEBUG  -DNDEBUG
+    C++ flags (Debug):           -Wl,-strip-all   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -fvisibility-inlines-hidden -g  -O0 -DDEBUG -D_DEBUG
+    C Compiler:                  /opt/rh/devtoolset-10/root/usr/bin/cc
+    C flags (Release):           -Wl,-strip-all   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -O3 -DNDEBUG  -DNDEBUG
+    C flags (Debug):             -Wl,-strip-all   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -g  -O0 -DDEBUG -D_DEBUG
+    Linker flags (Release):      -L/root/ffmpeg_build/lib  -Wl,--gc-sections -Wl,--as-needed -Wl,--no-undefined  
+    Linker flags (Debug):        -L/root/ffmpeg_build/lib  -Wl,--gc-sections -Wl,--as-needed -Wl,--no-undefined  
+    ccache:                      YES
+    Precompiled headers:         NO
+    Extra dependencies:          /lib64/libopenblas.so Qt5::Core Qt5::Gui Qt5::Widgets Qt5::Test Qt5::Concurrent /usr/local/lib/libpng.so /lib64/libz.so dl m pthread rt
+    3rdparty dependencies:       libprotobuf ade ittnotify libjpeg-turbo libwebp libtiff libopenjp2 IlmImf quirc tegra_hal
+
+  OpenCV modules:
+    To be built:                 calib3d core dnn features2d flann gapi highgui imgcodecs imgproc ml objdetect photo python3 stitching video videoio
+    Disabled:                    world
+    Disabled by dependency:      -
+    Unavailable:                 java python2 ts
+    Applications:                -
+    Documentation:               NO
+    Non-free algorithms:         NO
+
+  GUI:                           QT5
+    QT:                          YES (ver 5.15.0 )
+      QT OpenGL support:         NO
+    GTK+:                        NO
+    VTK support:                 NO
+
+  Media I/O: 
+    ZLib:                        /lib64/libz.so (ver 1.2.7)
+    JPEG:                        libjpeg-turbo (ver 2.1.2-62)
+    WEBP:                        build (ver encoder: 0x020f)
+    PNG:                         /usr/local/lib/libpng.so (ver 1.6.37)
+    TIFF:                        build (ver 42 - 4.2.0)
+    JPEG 2000:                   build (ver 2.4.0)
+    OpenEXR:                     build (ver 2.3.0)
+    HDR:                         YES
+    SUNRASTER:                   YES
+    PXM:                         YES
+    PFM:                         YES
+
+  Video I/O:
+    DC1394:                      NO
+    FFMPEG:                      YES
+      avcodec:                   YES (58.134.100)
+      avformat:                  YES (58.76.100)
+      avutil:                    YES (56.70.100)
+      swscale:                   YES (5.9.100)
+      avresample:                NO
+    GStreamer:                   NO
+    v4l/v4l2:                    YES (linux/videodev2.h)
+
+  Parallel framework:            pthreads
+
+  Trace:                         YES (with Intel ITT)
+
+  Other third-party libraries:
+    Lapack:                      YES (/lib64/libopenblas.so)
+    Eigen:                       NO
+    Custom HAL:                  YES (carotene (ver 0.0.1))
+    Protobuf:                    build (3.19.1)
+
+  OpenCL:                        YES (no extra features)
+    Include path:                /io/opencv/3rdparty/include/opencl/1.2
+    Link libraries:              Dynamic load
+
+  Python 3:
+    Interpreter:                 /opt/python/cp36-cp36m/bin/python3.6 (ver 3.6.15)
+    Libraries:                   libpython3.6m.a (ver 3.6.15)
+    numpy:                       /opt/python/cp36-cp36m/lib/python3.6/site-packages/numpy/core/include (ver 1.19.3)
+    install path:                python/cv2/python-3
+
+  Python (for build):            /bin/python2.7
+
+  Java:                          
+    ant:                         NO
+    JNI:                         NO
+    Java wrappers:               NO
+    Java tests:                  NO
+
+  Install to:                    /io/_skbuild/linux-aarch64-3.6/cmake-install
+-----------------------------------------------------------------
+
+
+[DEBUG:0@0.024] global /io/opencv/modules/videoio/src/videoio_registry.cpp (197) VideoBackendRegistry VIDEOIO: Builtin backends(7): FFMPEG(1000); GSTREAMER(990); INTEL_MFX(980); V4L2(970); CV_IMAGES(960); CV_MJPEG(950); UEYE(940)
+[DEBUG:0@0.024] global /io/opencv/modules/videoio/src/videoio_registry.cpp (221) VideoBackendRegistry VIDEOIO: Available backends(7): FFMPEG(1000); GSTREAMER(990); INTEL_MFX(980); V4L2(970); CV_IMAGES(960); CV_MJPEG(950); UEYE(940)
+[ INFO:0@0.024] global /io/opencv/modules/videoio/src/videoio_registry.cpp (223) VideoBackendRegistry VIDEOIO: Enabled backends(7, sorted by priority): FFMPEG(1000); GSTREAMER(990); INTEL_MFX(980); V4L2(970); CV_IMAGES(960); CV_MJPEG(950); UEYE(940)
+[DEBUG:0@0.024] global /io/opencv/modules/highgui/src/backend.cpp (120) createDefaultUIBackend UI: Initializing backend...
+[DEBUG:0@0.024] global /io/opencv/modules/highgui/src/registry.impl.hpp (87) UIBackendRegistry UI: Builtin backends(3): GTK(1000); GTK3(990); GTK2(980) + BUILTIN(QT5)
+[DEBUG:0@0.024] global /io/opencv/modules/highgui/src/registry.impl.hpp (112) UIBackendRegistry UI: Available backends(3): GTK(1000); GTK3(990); GTK2(980) + BUILTIN(QT5)
+[ INFO:0@0.024] global /io/opencv/modules/highgui/src/registry.impl.hpp (114) UIBackendRegistry UI: Enabled backends(3, sorted by priority): GTK(1000); GTK3(990); GTK2(980) + BUILTIN(QT5)
+[DEBUG:0@0.024] global /io/opencv/modules/highgui/src/backend.cpp (78) createUIBackend UI: trying backend: GTK (priority=1000)
+[DEBUG:0@0.025] global /io/opencv/modules/highgui/src/plugin_wrapper.impl.hpp (220) getPluginCandidates UI: GTK plugin's glob is 'libopencv_highgui_gtk*.so', 1 location(s)
+[DEBUG:0@0.025] global /io/opencv/modules/highgui/src/plugin_wrapper.impl.hpp (230) getPluginCandidates     - /home/ubuntu/.local/lib/python3.8/site-packages/cv2: 0
+[DEBUG:0@0.025] global /io/opencv/modules/highgui/src/plugin_wrapper.impl.hpp (234) getPluginCandidates Found 0 plugin(s) for GTK
+[DEBUG:0@0.025] global /io/opencv/modules/highgui/src/backend.cpp (78) createUIBackend UI: trying backend: GTK3 (priority=990)
+[DEBUG:0@0.025] global /io/opencv/modules/highgui/src/plugin_wrapper.impl.hpp (220) getPluginCandidates UI: GTK3 plugin's glob is 'libopencv_highgui_gtk3*.so', 1 location(s)
+[DEBUG:0@0.026] global /io/opencv/modules/highgui/src/plugin_wrapper.impl.hpp (230) getPluginCandidates     - /home/ubuntu/.local/lib/python3.8/site-packages/cv2: 0
+[DEBUG:0@0.026] global /io/opencv/modules/highgui/src/plugin_wrapper.impl.hpp (234) getPluginCandidates Found 0 plugin(s) for GTK3
+[DEBUG:0@0.026] global /io/opencv/modules/highgui/src/backend.cpp (78) createUIBackend UI: trying backend: GTK2 (priority=980)
+[DEBUG:0@0.026] global /io/opencv/modules/highgui/src/plugin_wrapper.impl.hpp (220) getPluginCandidates UI: GTK2 plugin's glob is 'libopencv_highgui_gtk2*.so', 1 location(s)
+[DEBUG:0@0.027] global /io/opencv/modules/highgui/src/plugin_wrapper.impl.hpp (230) getPluginCandidates     - /home/ubuntu/.local/lib/python3.8/site-packages/cv2: 0
+[DEBUG:0@0.027] global /io/opencv/modules/highgui/src/plugin_wrapper.impl.hpp (234) getPluginCandidates Found 0 plugin(s) for GTK2
+[DEBUG:0@0.027] global /io/opencv/modules/highgui/src/backend.cpp (106) createUIBackend UI: fallback on builtin code: QT5
+[ INFO:0@0.112] global /io/opencv/modules/core/src/trace.cpp (882) ~TraceManager Trace: Total events: 7
+[ WARN:0@0.112] global /io/opencv/modules/core/src/trace.cpp (886) ~TraceManager Trace: Total skipped events: 6
+ubuntu@ubuntu:~/ros2_ws/bridgeroadinspectiondrone/image_processing$ 
