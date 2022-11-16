@@ -1,0 +1,95 @@
+[0.940s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros']
+[0.941s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], base_paths=['/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros'], build_base='build', ignore_user_meta=False, log_base=None, log_level=None, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0xffffb3cbf100>>, metas=['./colcon.meta'], names_only=False, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, paths=None, paths_only=True, topological_graph=False, topological_graph_density=False, topological_graph_dot=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, topological_graph_legend=False, topological_order=False, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0xffffb3cbf100>, verb_name='list', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb3c2ddf0>)
+[1.096s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.097s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.098s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.098s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.098s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.099s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros'
+[1.099s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros) by extensions ['ignore', 'ignore_ament_install']
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros) by extension 'ignore'
+[1.101s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros) by extension 'ignore_ament_install'
+[1.101s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros) by extensions ['colcon_pkg']
+[1.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros) by extension 'colcon_pkg'
+[1.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros) by extensions ['colcon_meta']
+[1.103s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros) by extension 'colcon_meta'
+[1.103s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros) by extensions ['ros']
+[1.103s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros) by extension 'ros'
+[1.162s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros) by extensions ['cmake', 'python']
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros) by extension 'cmake'
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros) by extension 'python'
+[1.164s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros) by extensions ['python_setup_py']
+[1.164s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros) by extension 'python_setup_py'
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/build) by extensions ['ignore', 'ignore_ament_install']
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/build) by extension 'ignore'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/build) ignored
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install) by extensions ['ignore', 'ignore_ament_install']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install) by extension 'ignore'
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/install) ignored
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/log) by extensions ['ignore', 'ignore_ament_install']
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/log) by extension 'ignore'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/log) ignored
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src) by extensions ['ignore', 'ignore_ament_install']
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src) by extension 'ignore'
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src) by extension 'ignore_ament_install'
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src) by extensions ['colcon_pkg']
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src) by extension 'colcon_pkg'
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src) by extensions ['colcon_meta']
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src) by extension 'colcon_meta'
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src) by extensions ['ros']
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src) by extension 'ros'
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src) by extensions ['cmake', 'python']
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src) by extension 'cmake'
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src) by extension 'python'
+[1.178s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src) by extensions ['python_setup_py']
+[1.179s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src) by extension 'python_setup_py'
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build) by extensions ['ignore', 'ignore_ament_install']
+[1.180s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build) by extension 'ignore'
+[1.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build) ignored
+[1.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/controls) by extensions ['ignore', 'ignore_ament_install']
+[1.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/controls) by extension 'ignore'
+[1.184s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/controls) by extension 'ignore_ament_install'
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/controls) by extensions ['colcon_pkg']
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/controls) by extension 'colcon_pkg'
+[1.186s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/controls) by extensions ['colcon_meta']
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/controls) by extension 'colcon_meta'
+[1.188s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/controls) by extensions ['ros']
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/controls) by extension 'ros'
+[1.207s] DEBUG:colcon.colcon_core.package_identification:Package '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/controls' with type 'ros.ament_python' and name 'controls'
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging) by extensions ['ignore', 'ignore_ament_install']
+[1.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging) by extension 'ignore'
+[1.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging) by extension 'ignore_ament_install'
+[1.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging) by extensions ['colcon_pkg']
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging) by extension 'colcon_pkg'
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging) by extensions ['colcon_meta']
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging) by extension 'colcon_meta'
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging) by extensions ['ros']
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging) by extension 'ros'
+[1.215s] DEBUG:colcon.colcon_core.package_identification:Package '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging' with type 'ros.ament_cmake' and name 'imaging'
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install) by extensions ['ignore', 'ignore_ament_install']
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install) by extension 'ignore'
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install) ignored
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/log) by extensions ['ignore', 'ignore_ament_install']
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/log) by extension 'ignore'
+[1.220s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/log) ignored
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/model_defect) by extensions ['ignore', 'ignore_ament_install']
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/model_defect) by extension 'ignore'
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/model_defect) by extension 'ignore_ament_install'
+[1.223s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/model_defect) by extensions ['colcon_pkg']
+[1.223s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/model_defect) by extension 'colcon_pkg'
+[1.223s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/model_defect) by extensions ['colcon_meta']
+[1.224s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/model_defect) by extension 'colcon_meta'
+[1.224s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/model_defect) by extensions ['ros']
+[1.224s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/model_defect) by extension 'ros'
+[1.229s] DEBUG:colcon.colcon_core.package_identification:Package '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/model_defect' with type 'ros.ament_python' and name 'model_defect'
+[1.230s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/road_nav) by extensions ['ignore', 'ignore_ament_install']
+[1.231s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/road_nav) by extension 'ignore'
+[1.232s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/road_nav) by extension 'ignore_ament_install'
+[1.232s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/road_nav) by extensions ['colcon_pkg']
+[1.233s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/road_nav) by extension 'colcon_pkg'
+[1.233s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/road_nav) by extensions ['colcon_meta']
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/road_nav) by extension 'colcon_meta'
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/road_nav) by extensions ['ros']
+[1.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/road_nav) by extension 'ros'
+[1.239s] DEBUG:colcon.colcon_core.package_identification:Package '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/road_nav' with type 'ros.ament_python' and name 'road_nav'
+[1.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
