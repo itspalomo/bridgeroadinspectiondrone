@@ -1,0 +1,54 @@
+[0.065s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[0.185s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.287s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.396s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.612s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.630s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.610s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.875s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.883s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.680s] -- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)
+[4.279s] -- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)
+[4.824s] CMake Warning at CMakeLists.txt:28 (find_package):
+[4.825s]   By not providing "Findlibseek.cmake" in CMAKE_MODULE_PATH this project has
+[4.826s]   asked CMake to find a package configuration file provided by "libseek", but
+[4.827s]   CMake did not find one.
+[4.827s] 
+[4.828s]   Could not find a package configuration file provided by "libseek" with any
+[4.829s]   of the following names:
+[4.829s] 
+[4.830s]     libseekConfig.cmake
+[4.831s]     libseek-config.cmake
+[4.834s] 
+[4.836s]   Add the installation prefix of "libseek" to CMAKE_PREFIX_PATH or set
+[4.838s]   "libseek_DIR" to a directory containing one of the above files.  If
+[4.840s]   "libseek" provides a separate development package or SDK, be sure it has
+[4.842s]   been installed.
+[4.844s] 
+[4.846s] 
+[4.960s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[5.414s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.424s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.427s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/include>
+[5.429s] -- Configured cppcheck exclude dirs and/or files: 
+[5.438s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.440s] -- Configured cpplint exclude dirs and/or files: 
+[5.446s] -- Added test 'lint_cmake' to check CMake code style
+[5.459s] -- Added test 'uncrustify' to check C / C++ code style
+[5.460s] -- Configured uncrustify additional arguments: 
+[5.462s] -- Added test 'xmllint' to check XML markup files
+[5.510s] -- Configuring done
+[5.682s] -- Generating done
+[5.692s] -- Build files have been written to: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging
+[5.997s] [ 50%] [32m[1mLinking CXX executable image_pub[0m
+[8.655s] /usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `main':
+[8.657s] image_pub.cpp:(.text+0x1c8): undefined reference to `LibSeek::SeekThermal::SeekThermal()'
+[8.658s] /usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `LibSeek::SeekThermal::~SeekThermal()':
+[8.658s] image_pub.cpp:(.text._ZN7LibSeek11SeekThermalD2Ev[_ZN7LibSeek11SeekThermalD5Ev]+0xc): undefined reference to `vtable for LibSeek::SeekThermal'
+[8.659s] /usr/bin/ld: image_pub.cpp:(.text._ZN7LibSeek11SeekThermalD2Ev[_ZN7LibSeek11SeekThermalD5Ev]+0x10): undefined reference to `vtable for LibSeek::SeekThermal'
+[8.660s] /usr/bin/ld: image_pub.cpp:(.text._ZN7LibSeek11SeekThermalD2Ev[_ZN7LibSeek11SeekThermalD5Ev]+0x24): undefined reference to `LibSeek::SeekCam::~SeekCam()'
+[8.664s] collect2: error: ld returned 1 exit status
+[8.675s] make[2]: *** [CMakeFiles/image_pub.dir/build.make:226: image_pub] Error 1
+[8.677s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+[8.688s] make: *** [Makefile:141: all] Error 2
+[8.692s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4

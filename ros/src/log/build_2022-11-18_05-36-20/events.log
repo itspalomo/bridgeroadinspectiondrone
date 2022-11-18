@@ -1,0 +1,104 @@
+[0.000000] (-) TimerEvent: {}
+[0.001117] (-) JobUnselected: {'identifier': 'controls'}
+[0.001552] (-) JobUnselected: {'identifier': 'model_defect'}
+[0.002558] (-) JobUnselected: {'identifier': 'offboard_testing'}
+[0.004806] (-) JobUnselected: {'identifier': 'road_nav'}
+[0.005100] (imaging) JobQueued: {'identifier': 'imaging', 'dependencies': OrderedDict()}
+[0.005250] (imaging) JobStarted: {'identifier': 'imaging'}
+[0.057279] (imaging) JobProgress: {'identifier': 'imaging', 'progress': 'cmake'}
+[0.060673] (imaging) JobProgress: {'identifier': 'imaging', 'progress': 'build'}
+[0.063364] (imaging) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('OPENCV_TRACE', '1'), ('WORKON_HOME', '/home/ubuntu/.virtualenvs'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.0.0.83 51602 22'), ('XDG_SESSION_TYPE', 'tty'), ('OPENCV_VIDEOWRITER_DEBUG', '1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib:/usr/local/lib:'), ('BROWSER', '/home/ubuntu/.vscode-server/bin/6261075646f055b99068d3688932416f2346dd3b/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('VIRTUALENVWRAPPER_PYTHON', '/usr/bin/python3'), ('OLDPWD', '/home/ubuntu/ros2_ws'), ('TERM_PROGRAM_VERSION', '1.73.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-caee8733-76ca-4db4-8482-7c87fdf3ac38.sock'), ('ROS_PYTHON_VERSION', '3'), ('OPENCV_DUMP_CONFIG', '1'), ('OPENCV_DUMP_ERRORS', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('OPENCV_LOG_LEVEL', 'DEBUG'), ('ROS_LOCALHOST_ONLY', '0'), ('OPENCV_VIDEOCAPTURE_DEBUG', '1'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.vscode-server/bin/6261075646f055b99068d3688932416f2346dd3b/bin/remote-cli:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-80a56359ea.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('OPENCV_VIDEOIO_DEBUG', '1'), ('PWD', '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.0.83 51602 10.0.0.12 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('VIRTUALENVWRAPPER_VIRTUALENV', '/home/ubuntu/.local/bin/virtualenv'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('VIRTUALENVWRAPPER_ENV_BIN_DIR', 'bin'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.098920] (-) TimerEvent: {}
+[0.188043] (imaging) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.199082] (-) TimerEvent: {}
+[0.291143] (imaging) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.299269] (-) TimerEvent: {}
+[0.400110] (-) TimerEvent: {}
+[0.500963] (-) TimerEvent: {}
+[0.601772] (-) TimerEvent: {}
+[0.703574] (-) TimerEvent: {}
+[0.807019] (-) TimerEvent: {}
+[0.908039] (-) TimerEvent: {}
+[1.009042] (-) TimerEvent: {}
+[1.109963] (-) TimerEvent: {}
+[1.211006] (-) TimerEvent: {}
+[1.311857] (-) TimerEvent: {}
+[1.416281] (-) TimerEvent: {}
+[1.420219] (imaging) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.516531] (-) TimerEvent: {}
+[1.620194] (-) TimerEvent: {}
+[1.729489] (-) TimerEvent: {}
+[1.802960] (imaging) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.829697] (-) TimerEvent: {}
+[1.837612] (imaging) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.929907] (-) TimerEvent: {}
+[2.032618] (-) TimerEvent: {}
+[2.133379] (-) TimerEvent: {}
+[2.234332] (-) TimerEvent: {}
+[2.335517] (-) TimerEvent: {}
+[2.436492] (-) TimerEvent: {}
+[2.537298] (-) TimerEvent: {}
+[2.638287] (-) TimerEvent: {}
+[2.741097] (-) TimerEvent: {}
+[2.842167] (-) TimerEvent: {}
+[2.862838] (imaging) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.942478] (-) TimerEvent: {}
+[3.044047] (-) TimerEvent: {}
+[3.099930] (imaging) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[3.106656] (imaging) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.144223] (-) TimerEvent: {}
+[3.245058] (-) TimerEvent: {}
+[3.346923] (-) TimerEvent: {}
+[3.449144] (-) TimerEvent: {}
+[3.550392] (-) TimerEvent: {}
+[3.652647] (-) TimerEvent: {}
+[3.753615] (-) TimerEvent: {}
+[3.832391] (imaging) StdoutLine: {'line': b'-- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)\n'}
+[3.853838] (-) TimerEvent: {}
+[3.955097] (-) TimerEvent: {}
+[4.057441] (-) TimerEvent: {}
+[4.161331] (-) TimerEvent: {}
+[4.267333] (-) TimerEvent: {}
+[4.371131] (-) TimerEvent: {}
+[4.434081] (imaging) StdoutLine: {'line': b'-- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)\n'}
+[4.471318] (-) TimerEvent: {}
+[4.572229] (-) TimerEvent: {}
+[4.672997] (-) TimerEvent: {}
+[4.716128] (imaging) StderrLine: {'line': b'CMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:145 (target_link_libraries):\n'}
+[4.717232] (imaging) StderrLine: {'line': b'  The keyword signature for target_link_libraries has already been used with\n'}
+[4.717903] (imaging) StderrLine: {'line': b'  the target "image_pub".  All uses of target_link_libraries with a target\n'}
+[4.718518] (imaging) StderrLine: {'line': b'  must be either all-keyword or all-plain.\n'}
+[4.719141] (imaging) StderrLine: {'line': b'\n'}
+[4.719823] (imaging) StderrLine: {'line': b'  The uses of the keyword signature are here:\n'}
+[4.720492] (imaging) StderrLine: {'line': b'\n'}
+[4.721095] (imaging) StderrLine: {'line': b'   * CMakeLists.txt:31 (target_link_libraries)\n'}
+[4.721701] (imaging) StderrLine: {'line': b'\n'}
+[4.722306] (imaging) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[4.722940] (imaging) StderrLine: {'line': b'  CMakeLists.txt:37 (ament_target_dependencies)\n'}
+[4.723530] (imaging) StderrLine: {'line': b'\n'}
+[4.724252] (imaging) StderrLine: {'line': b'\n'}
+[4.773163] (-) TimerEvent: {}
+[4.789859] (imaging) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[4.873361] (-) TimerEvent: {}
+[4.974125] (-) TimerEvent: {}
+[5.075097] (-) TimerEvent: {}
+[5.129616] (imaging) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.135128] (imaging) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.135933] (imaging) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/include>\n'}
+[5.136503] (imaging) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.140901] (imaging) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[5.141478] (imaging) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[5.144257] (imaging) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.149654] (imaging) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.150240] (imaging) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.151420] (imaging) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.170952] (imaging) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[5.171576] (imaging) StdoutLine: {'line': b'See also "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/CMakeOutput.log".\n'}
+[5.172075] (imaging) StdoutLine: {'line': b'See also "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/CMakeError.log".\n'}
+[5.175260] (-) TimerEvent: {}
+[5.199442] (imaging) StderrLine: {'line': b'make: *** [Makefile:266: cmake_check_build_system] Error 1\n'}
+[5.204451] (imaging) CommandEnded: {'returncode': 2}
+[5.275518] (-) TimerEvent: {}
+[5.376538] (-) TimerEvent: {}
+[5.405697] (imaging) JobEnded: {'identifier': 'imaging', 'rc': 2}
+[5.410017] (-) EventReactorShutdown: {}

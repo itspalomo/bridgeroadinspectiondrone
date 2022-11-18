@@ -1,0 +1,3 @@
+[console_scripts]
+model_defect_detect = model_defect.model_defect_detect:main
+

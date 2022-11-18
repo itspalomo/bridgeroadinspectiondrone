@@ -1,0 +1,27 @@
+CMake Warning at CMakeLists.txt:28 (find_package):
+  By not providing "Findseek.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "seek", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "seek" with any of
+  the following names:
+
+    seekConfig.cmake
+    seek-config.cmake
+
+  Add the installation prefix of "seek" to CMAKE_PREFIX_PATH or set
+  "seek_DIR" to a directory containing one of the above files.  If "seek"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+
+/usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `main':
+image_pub.cpp:(.text+0x1c8): undefined reference to `LibSeek::SeekThermal::SeekThermal()'
+/usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `LibSeek::SeekThermal::~SeekThermal()':
+image_pub.cpp:(.text._ZN7LibSeek11SeekThermalD2Ev[_ZN7LibSeek11SeekThermalD5Ev]+0xc): undefined reference to `vtable for LibSeek::SeekThermal'
+/usr/bin/ld: image_pub.cpp:(.text._ZN7LibSeek11SeekThermalD2Ev[_ZN7LibSeek11SeekThermalD5Ev]+0x10): undefined reference to `vtable for LibSeek::SeekThermal'
+/usr/bin/ld: image_pub.cpp:(.text._ZN7LibSeek11SeekThermalD2Ev[_ZN7LibSeek11SeekThermalD5Ev]+0x24): undefined reference to `LibSeek::SeekCam::~SeekCam()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/image_pub.dir/build.make:226: image_pub] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

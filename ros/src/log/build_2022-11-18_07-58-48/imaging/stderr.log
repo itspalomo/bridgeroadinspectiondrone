@@ -1,0 +1,10 @@
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:69:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   69 | int main([01;35m[Kint argc[m[K, char *argv[]) {
+      |          [01;35m[K~~~~^~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:69:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   69 | int main(int argc, [01;35m[Kchar *argv[][m[K) {
+      |                    [01;35m[K~~~~~~^~~~~~[m[K
+/usr/bin/ld: warning: libopencv_imgcodecs.so.4.2, needed by /usr/local/lib/libseek.so, may conflict with libopencv_imgcodecs.so.406
+/usr/bin/ld: warning: libopencv_imgproc.so.4.2, needed by /usr/local/lib/libseek.so, may conflict with libopencv_imgproc.so.406
+/usr/bin/ld: warning: libopencv_core.so.4.2, needed by /usr/local/lib/libseek.so, may conflict with libopencv_core.so.406

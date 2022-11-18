@@ -1,0 +1,21 @@
+[10.463s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/model_defect': PYTHONPATH=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/model_defect build --build-base /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/model_defect/build install --prefix /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect --record /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/model_defect/install.log --single-version-externally-managed
+[13.239s] running egg_info
+[13.242s] writing ../build/model_defect/model_defect.egg-info/PKG-INFO
+[13.246s] writing dependency_links to ../build/model_defect/model_defect.egg-info/dependency_links.txt
+[13.248s] writing entry points to ../build/model_defect/model_defect.egg-info/entry_points.txt
+[13.249s] writing requirements to ../build/model_defect/model_defect.egg-info/requires.txt
+[13.250s] writing top-level names to ../build/model_defect/model_defect.egg-info/top_level.txt
+[13.506s] reading manifest file '../build/model_defect/model_defect.egg-info/SOURCES.txt'
+[13.524s] writing manifest file '../build/model_defect/model_defect.egg-info/SOURCES.txt'
+[13.525s] running build
+[13.526s] running build_py
+[13.527s] running install
+[13.543s] running install_lib
+[13.565s] running install_data
+[13.569s] running install_egg_info
+[13.595s] removing '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/lib/python3.8/site-packages/model_defect-0.0.0-py3.8.egg-info' (and everything under it)
+[13.610s] Copying ../build/model_defect/model_defect.egg-info to /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/lib/python3.8/site-packages/model_defect-0.0.0-py3.8.egg-info
+[13.643s] running install_scripts
+[13.848s] Installing model_defect_detect script to /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/lib/model_defect
+[13.854s] writing list of installed files to '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/model_defect/install.log'
+[14.304s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/model_defect' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/model_defect build --build-base /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/model_defect/build install --prefix /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect --record /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/model_defect/install.log --single-version-externally-managed

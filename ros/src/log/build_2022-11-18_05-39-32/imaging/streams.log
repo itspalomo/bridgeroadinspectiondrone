@@ -1,0 +1,33 @@
+[0.064s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[0.187s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.290s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.423s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.649s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.671s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.636s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.897s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.906s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.670s] -- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)
+[4.231s] -- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)
+[4.707s] CMake Error at CMakeLists.txt:27 (find_package):
+[4.708s]   By not providing "Findseek.cmake" in CMAKE_MODULE_PATH this project has
+[4.708s]   asked CMake to find a package configuration file provided by "seek", but
+[4.709s]   CMake did not find one.
+[4.710s] 
+[4.710s]   Could not find a package configuration file provided by "seek" with any of
+[4.711s]   the following names:
+[4.711s] 
+[4.712s]     seekConfig.cmake
+[4.712s]     seek-config.cmake
+[4.713s] 
+[4.714s]   Add the installation prefix of "seek" to CMAKE_PREFIX_PATH or set
+[4.717s]   "seek_DIR" to a directory containing one of the above files.  If "seek"
+[4.719s]   provides a separate development package or SDK, be sure it has been
+[4.722s]   installed.
+[4.737s] 
+[4.740s] 
+[4.755s] -- Configuring incomplete, errors occurred!
+[4.763s] See also "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/CMakeOutput.log".
+[4.776s] See also "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/CMakeError.log".
+[4.792s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[4.795s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4

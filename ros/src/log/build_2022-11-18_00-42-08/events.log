@@ -1,0 +1,286 @@
+[0.000000] (-) TimerEvent: {}
+[0.000662] (-) JobUnselected: {'identifier': 'controls'}
+[0.001161] (-) JobUnselected: {'identifier': 'model_defect'}
+[0.001464] (-) JobUnselected: {'identifier': 'offboard_testing'}
+[0.001667] (-) JobUnselected: {'identifier': 'road_nav'}
+[0.002342] (imaging) JobQueued: {'identifier': 'imaging', 'dependencies': OrderedDict()}
+[0.003952] (imaging) JobStarted: {'identifier': 'imaging'}
+[0.071229] (imaging) JobProgress: {'identifier': 'imaging', 'progress': 'cmake'}
+[0.074331] (imaging) JobProgress: {'identifier': 'imaging', 'progress': 'build'}
+[0.077004] (imaging) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('OPENCV_TRACE', '1'), ('WORKON_HOME', '/home/ubuntu/.virtualenvs'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.0.0.83 51602 22'), ('XDG_SESSION_TYPE', 'tty'), ('OPENCV_VIDEOWRITER_DEBUG', '1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib:/usr/local/lib:'), ('BROWSER', '/home/ubuntu/.vscode-server/bin/6261075646f055b99068d3688932416f2346dd3b/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('VIRTUALENVWRAPPER_PYTHON', '/usr/bin/python3'), ('OLDPWD', '/home/ubuntu/ros2_ws'), ('TERM_PROGRAM_VERSION', '1.73.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-caee8733-76ca-4db4-8482-7c87fdf3ac38.sock'), ('ROS_PYTHON_VERSION', '3'), ('OPENCV_DUMP_CONFIG', '1'), ('OPENCV_DUMP_ERRORS', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('OPENCV_LOG_LEVEL', 'DEBUG'), ('ROS_LOCALHOST_ONLY', '0'), ('OPENCV_VIDEOCAPTURE_DEBUG', '1'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.vscode-server/bin/6261075646f055b99068d3688932416f2346dd3b/bin/remote-cli:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-80a56359ea.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('OPENCV_VIDEOIO_DEBUG', '1'), ('PWD', '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.0.83 51602 10.0.0.12 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('VIRTUALENVWRAPPER_VIRTUALENV', '/home/ubuntu/.local/bin/virtualenv'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('VIRTUALENVWRAPPER_ENV_BIN_DIR', 'bin'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.099062] (-) TimerEvent: {}
+[0.200016] (-) TimerEvent: {}
+[0.276559] (imaging) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target image_pub\x1b[0m\n'}
+[0.300225] (-) TimerEvent: {}
+[0.401134] (-) TimerEvent: {}
+[0.493254] (imaging) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o\x1b[0m\n'}
+[0.501386] (-) TimerEvent: {}
+[0.602373] (-) TimerEvent: {}
+[0.703525] (-) TimerEvent: {}
+[0.804502] (-) TimerEvent: {}
+[0.908795] (-) TimerEvent: {}
+[1.010068] (-) TimerEvent: {}
+[1.110984] (-) TimerEvent: {}
+[1.211861] (-) TimerEvent: {}
+[1.315906] (-) TimerEvent: {}
+[1.419902] (-) TimerEvent: {}
+[1.524059] (-) TimerEvent: {}
+[1.627077] (-) TimerEvent: {}
+[1.730161] (-) TimerEvent: {}
+[1.834134] (-) TimerEvent: {}
+[1.935419] (-) TimerEvent: {}
+[2.036292] (-) TimerEvent: {}
+[2.137181] (-) TimerEvent: {}
+[2.238071] (-) TimerEvent: {}
+[2.339991] (-) TimerEvent: {}
+[2.442653] (-) TimerEvent: {}
+[2.543667] (-) TimerEvent: {}
+[2.644626] (-) TimerEvent: {}
+[2.750055] (-) TimerEvent: {}
+[2.850993] (-) TimerEvent: {}
+[2.952101] (-) TimerEvent: {}
+[3.053138] (-) TimerEvent: {}
+[3.154100] (-) TimerEvent: {}
+[3.255361] (-) TimerEvent: {}
+[3.356624] (-) TimerEvent: {}
+[3.457698] (-) TimerEvent: {}
+[3.559985] (-) TimerEvent: {}
+[3.664848] (-) TimerEvent: {}
+[3.769171] (-) TimerEvent: {}
+[3.871834] (-) TimerEvent: {}
+[3.983338] (-) TimerEvent: {}
+[4.087748] (-) TimerEvent: {}
+[4.191978] (-) TimerEvent: {}
+[4.292968] (-) TimerEvent: {}
+[4.397224] (-) TimerEvent: {}
+[4.499614] (-) TimerEvent: {}
+[4.600527] (-) TimerEvent: {}
+[4.701683] (-) TimerEvent: {}
+[4.803532] (-) TimerEvent: {}
+[4.904725] (-) TimerEvent: {}
+[5.006285] (-) TimerEvent: {}
+[5.107334] (-) TimerEvent: {}
+[5.208633] (-) TimerEvent: {}
+[5.309679] (-) TimerEvent: {}
+[5.410959] (-) TimerEvent: {}
+[5.515593] (-) TimerEvent: {}
+[5.620275] (-) TimerEvent: {}
+[5.724528] (-) TimerEvent: {}
+[5.828908] (-) TimerEvent: {}
+[5.930091] (-) TimerEvent: {}
+[6.031280] (-) TimerEvent: {}
+[6.134187] (-) TimerEvent: {}
+[6.237089] (-) TimerEvent: {}
+[6.341964] (-) TimerEvent: {}
+[6.442881] (-) TimerEvent: {}
+[6.543801] (-) TimerEvent: {}
+[6.644886] (-) TimerEvent: {}
+[6.745944] (-) TimerEvent: {}
+[6.847037] (-) TimerEvent: {}
+[6.947968] (-) TimerEvent: {}
+[7.048799] (-) TimerEvent: {}
+[7.149666] (-) TimerEvent: {}
+[7.250646] (-) TimerEvent: {}
+[7.351568] (-) TimerEvent: {}
+[7.452526] (-) TimerEvent: {}
+[7.553465] (-) TimerEvent: {}
+[7.654445] (-) TimerEvent: {}
+[7.755345] (-) TimerEvent: {}
+[7.856276] (-) TimerEvent: {}
+[7.957273] (-) TimerEvent: {}
+[8.058330] (-) TimerEvent: {}
+[8.159270] (-) TimerEvent: {}
+[8.260188] (-) TimerEvent: {}
+[8.361502] (-) TimerEvent: {}
+[8.462403] (-) TimerEvent: {}
+[8.563303] (-) TimerEvent: {}
+[8.664153] (-) TimerEvent: {}
+[8.765100] (-) TimerEvent: {}
+[8.865986] (-) TimerEvent: {}
+[8.966856] (-) TimerEvent: {}
+[9.067912] (-) TimerEvent: {}
+[9.169319] (-) TimerEvent: {}
+[9.270191] (-) TimerEvent: {}
+[9.371007] (-) TimerEvent: {}
+[9.472209] (-) TimerEvent: {}
+[9.573521] (-) TimerEvent: {}
+[9.674465] (-) TimerEvent: {}
+[9.775242] (-) TimerEvent: {}
+[9.876151] (-) TimerEvent: {}
+[9.977048] (-) TimerEvent: {}
+[10.078258] (-) TimerEvent: {}
+[10.179075] (-) TimerEvent: {}
+[10.279976] (-) TimerEvent: {}
+[10.380771] (-) TimerEvent: {}
+[10.481744] (-) TimerEvent: {}
+[10.582784] (-) TimerEvent: {}
+[10.683673] (-) TimerEvent: {}
+[10.784426] (-) TimerEvent: {}
+[10.885207] (-) TimerEvent: {}
+[10.985949] (-) TimerEvent: {}
+[11.086798] (-) TimerEvent: {}
+[11.187751] (-) TimerEvent: {}
+[11.288644] (-) TimerEvent: {}
+[11.389464] (-) TimerEvent: {}
+[11.490264] (-) TimerEvent: {}
+[11.591139] (-) TimerEvent: {}
+[11.691919] (-) TimerEvent: {}
+[11.792726] (-) TimerEvent: {}
+[11.893530] (-) TimerEvent: {}
+[11.994290] (-) TimerEvent: {}
+[12.095194] (-) TimerEvent: {}
+[12.196031] (-) TimerEvent: {}
+[12.296828] (-) TimerEvent: {}
+[12.397669] (-) TimerEvent: {}
+[12.498448] (-) TimerEvent: {}
+[12.599273] (-) TimerEvent: {}
+[12.700045] (-) TimerEvent: {}
+[12.800811] (-) TimerEvent: {}
+[12.901629] (-) TimerEvent: {}
+[13.002385] (-) TimerEvent: {}
+[13.103214] (-) TimerEvent: {}
+[13.203993] (-) TimerEvent: {}
+[13.304790] (-) TimerEvent: {}
+[13.405604] (-) TimerEvent: {}
+[13.506406] (-) TimerEvent: {}
+[13.607246] (-) TimerEvent: {}
+[13.708039] (-) TimerEvent: {}
+[13.808853] (-) TimerEvent: {}
+[13.909683] (-) TimerEvent: {}
+[14.010470] (-) TimerEvent: {}
+[14.111296] (-) TimerEvent: {}
+[14.212044] (-) TimerEvent: {}
+[14.312804] (-) TimerEvent: {}
+[14.413594] (-) TimerEvent: {}
+[14.514371] (-) TimerEvent: {}
+[14.615206] (-) TimerEvent: {}
+[14.715941] (-) TimerEvent: {}
+[14.816719] (-) TimerEvent: {}
+[14.917509] (-) TimerEvent: {}
+[15.018280] (-) TimerEvent: {}
+[15.119603] (-) TimerEvent: {}
+[15.182290] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.183828] (imaging) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:71:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kcam\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[15.184766] (imaging) StderrLine: {'line': b'   71 |     LibSeek::SeekCam* \x1b[01;35m\x1b[Kcam\x1b[m\x1b[K;\n'}
+[15.185502] (imaging) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[15.219789] (-) TimerEvent: {}
+[15.320559] (-) TimerEvent: {}
+[15.421361] (-) TimerEvent: {}
+[15.522129] (-) TimerEvent: {}
+[15.622951] (-) TimerEvent: {}
+[15.723713] (-) TimerEvent: {}
+[15.824476] (-) TimerEvent: {}
+[15.925272] (-) TimerEvent: {}
+[16.026018] (-) TimerEvent: {}
+[16.126825] (-) TimerEvent: {}
+[16.227583] (-) TimerEvent: {}
+[16.328582] (-) TimerEvent: {}
+[16.429379] (-) TimerEvent: {}
+[16.530129] (-) TimerEvent: {}
+[16.630923] (-) TimerEvent: {}
+[16.731694] (-) TimerEvent: {}
+[16.832456] (-) TimerEvent: {}
+[16.933219] (-) TimerEvent: {}
+[17.034014] (-) TimerEvent: {}
+[17.134774] (-) TimerEvent: {}
+[17.235564] (-) TimerEvent: {}
+[17.336342] (-) TimerEvent: {}
+[17.437126] (-) TimerEvent: {}
+[17.537902] (-) TimerEvent: {}
+[17.638829] (-) TimerEvent: {}
+[17.739608] (-) TimerEvent: {}
+[17.840393] (-) TimerEvent: {}
+[17.941154] (-) TimerEvent: {}
+[18.041876] (-) TimerEvent: {}
+[18.142651] (-) TimerEvent: {}
+[18.243457] (-) TimerEvent: {}
+[18.344294] (-) TimerEvent: {}
+[18.445120] (-) TimerEvent: {}
+[18.545878] (-) TimerEvent: {}
+[18.646657] (-) TimerEvent: {}
+[18.747484] (-) TimerEvent: {}
+[18.848274] (-) TimerEvent: {}
+[18.949089] (-) TimerEvent: {}
+[19.049835] (-) TimerEvent: {}
+[19.150596] (-) TimerEvent: {}
+[19.251412] (-) TimerEvent: {}
+[19.352200] (-) TimerEvent: {}
+[19.452976] (-) TimerEvent: {}
+[19.553773] (-) TimerEvent: {}
+[19.654525] (-) TimerEvent: {}
+[19.755269] (-) TimerEvent: {}
+[19.856070] (-) TimerEvent: {}
+[19.956837] (-) TimerEvent: {}
+[20.057670] (-) TimerEvent: {}
+[20.158581] (-) TimerEvent: {}
+[20.259430] (-) TimerEvent: {}
+[20.360323] (-) TimerEvent: {}
+[20.496818] (-) TimerEvent: {}
+[20.597622] (-) TimerEvent: {}
+[20.698374] (-) TimerEvent: {}
+[20.799128] (-) TimerEvent: {}
+[20.899892] (-) TimerEvent: {}
+[21.000690] (-) TimerEvent: {}
+[21.101454] (-) TimerEvent: {}
+[21.202217] (-) TimerEvent: {}
+[21.302972] (-) TimerEvent: {}
+[21.403776] (-) TimerEvent: {}
+[21.504526] (-) TimerEvent: {}
+[21.605280] (-) TimerEvent: {}
+[21.706030] (-) TimerEvent: {}
+[21.806790] (-) TimerEvent: {}
+[21.907534] (-) TimerEvent: {}
+[22.008270] (-) TimerEvent: {}
+[22.109102] (-) TimerEvent: {}
+[22.209849] (-) TimerEvent: {}
+[22.310575] (-) TimerEvent: {}
+[22.411300] (-) TimerEvent: {}
+[22.512069] (-) TimerEvent: {}
+[22.612817] (-) TimerEvent: {}
+[22.713660] (-) TimerEvent: {}
+[22.814473] (-) TimerEvent: {}
+[22.915324] (-) TimerEvent: {}
+[23.016087] (-) TimerEvent: {}
+[23.116931] (-) TimerEvent: {}
+[23.217825] (-) TimerEvent: {}
+[23.318950] (-) TimerEvent: {}
+[23.420635] (-) TimerEvent: {}
+[23.426875] (imaging) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable image_pub\x1b[0m\n'}
+[23.521064] (-) TimerEvent: {}
+[23.622486] (-) TimerEvent: {}
+[23.724065] (-) TimerEvent: {}
+[23.826118] (-) TimerEvent: {}
+[23.927169] (-) TimerEvent: {}
+[24.028217] (-) TimerEvent: {}
+[24.129523] (-) TimerEvent: {}
+[24.231134] (-) TimerEvent: {}
+[24.332780] (-) TimerEvent: {}
+[24.434950] (-) TimerEvent: {}
+[24.536796] (-) TimerEvent: {}
+[24.638170] (-) TimerEvent: {}
+[24.738955] (-) TimerEvent: {}
+[24.839704] (-) TimerEvent: {}
+[24.940522] (-) TimerEvent: {}
+[25.041363] (-) TimerEvent: {}
+[25.142405] (-) TimerEvent: {}
+[25.243246] (-) TimerEvent: {}
+[25.344132] (-) TimerEvent: {}
+[25.445215] (-) TimerEvent: {}
+[25.546117] (-) TimerEvent: {}
+[25.646978] (-) TimerEvent: {}
+[25.747657] (-) TimerEvent: {}
+[25.779972] (imaging) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `main':\n"}
+[25.780749] (imaging) StderrLine: {'line': b"image_pub.cpp:(.text+0x1c8): undefined reference to `LibSeek::SeekThermal::SeekThermal()'\n"}
+[25.781276] (imaging) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/image_pub.dir/src/image_pub.cpp.o: in function `LibSeek::SeekThermal::~SeekThermal()':\n"}
+[25.781722] (imaging) StderrLine: {'line': b"image_pub.cpp:(.text._ZN7LibSeek11SeekThermalD2Ev[_ZN7LibSeek11SeekThermalD5Ev]+0xc): undefined reference to `vtable for LibSeek::SeekThermal'\n"}
+[25.782128] (imaging) StderrLine: {'line': b"/usr/bin/ld: image_pub.cpp:(.text._ZN7LibSeek11SeekThermalD2Ev[_ZN7LibSeek11SeekThermalD5Ev]+0x10): undefined reference to `vtable for LibSeek::SeekThermal'\n"}
+[25.782457] (imaging) StderrLine: {'line': b"/usr/bin/ld: image_pub.cpp:(.text._ZN7LibSeek11SeekThermalD2Ev[_ZN7LibSeek11SeekThermalD5Ev]+0x24): undefined reference to `LibSeek::SeekCam::~SeekCam()'\n"}
+[25.793783] (imaging) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[25.800135] (imaging) StderrLine: {'line': b'make[2]: *** [CMakeFiles/image_pub.dir/build.make:226: image_pub] Error 1\n'}
+[25.801647] (imaging) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2\n'}
+[25.802819] (imaging) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[25.809134] (imaging) CommandEnded: {'returncode': 2}
+[25.847947] (-) TimerEvent: {}
+[25.949705] (-) TimerEvent: {}
+[26.003341] (imaging) JobEnded: {'identifier': 'imaging', 'rc': 2}
+[26.007978] (-) EventReactorShutdown: {}

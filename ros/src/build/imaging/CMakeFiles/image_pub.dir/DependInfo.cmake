@@ -19,7 +19,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/include"
   "/opt/ros/foxy/include"
-  "/usr/include/opencv4"
+  "/usr/local/include/opencv4"
   )
 
 # Targets to which this target links.

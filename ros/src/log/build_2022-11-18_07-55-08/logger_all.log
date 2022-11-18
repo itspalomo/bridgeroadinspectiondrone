@@ -1,0 +1,308 @@
+[1.117s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.117s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8f2224c0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8f2224c0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff8f222970>)
+[1.270s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.271s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.271s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.271s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.271s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.272s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src'
+[1.272s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.274s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.274s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.274s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.346s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.346s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.346s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.346s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.347s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.347s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.348s] Level 1:colcon.colcon_core.package_identification:_identify(controls) by extensions ['ignore', 'ignore_ament_install']
+[1.348s] Level 1:colcon.colcon_core.package_identification:_identify(controls) by extension 'ignore'
+[1.348s] Level 1:colcon.colcon_core.package_identification:_identify(controls) by extension 'ignore_ament_install'
+[1.348s] Level 1:colcon.colcon_core.package_identification:_identify(controls) by extensions ['colcon_pkg']
+[1.348s] Level 1:colcon.colcon_core.package_identification:_identify(controls) by extension 'colcon_pkg'
+[1.349s] Level 1:colcon.colcon_core.package_identification:_identify(controls) by extensions ['colcon_meta']
+[1.349s] Level 1:colcon.colcon_core.package_identification:_identify(controls) by extension 'colcon_meta'
+[1.349s] Level 1:colcon.colcon_core.package_identification:_identify(controls) by extensions ['ros']
+[1.349s] Level 1:colcon.colcon_core.package_identification:_identify(controls) by extension 'ros'
+[1.363s] DEBUG:colcon.colcon_core.package_identification:Package 'controls' with type 'ros.ament_python' and name 'controls'
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(imaging) by extensions ['ignore', 'ignore_ament_install']
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(imaging) by extension 'ignore'
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(imaging) by extension 'ignore_ament_install'
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(imaging) by extensions ['colcon_pkg']
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(imaging) by extension 'colcon_pkg'
+[1.364s] Level 1:colcon.colcon_core.package_identification:_identify(imaging) by extensions ['colcon_meta']
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(imaging) by extension 'colcon_meta'
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(imaging) by extensions ['ros']
+[1.365s] Level 1:colcon.colcon_core.package_identification:_identify(imaging) by extension 'ros'
+[1.369s] DEBUG:colcon.colcon_core.package_identification:Package 'imaging' with type 'ros.ament_cmake' and name 'imaging'
+[1.369s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.370s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.370s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.371s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.372s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.372s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.372s] Level 1:colcon.colcon_core.package_identification:_identify(model_defect) by extensions ['ignore', 'ignore_ament_install']
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(model_defect) by extension 'ignore'
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(model_defect) by extension 'ignore_ament_install'
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(model_defect) by extensions ['colcon_pkg']
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(model_defect) by extension 'colcon_pkg'
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(model_defect) by extensions ['colcon_meta']
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(model_defect) by extension 'colcon_meta'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(model_defect) by extensions ['ros']
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(model_defect) by extension 'ros'
+[1.383s] DEBUG:colcon.colcon_core.package_identification:Package 'model_defect' with type 'ros.ament_python' and name 'model_defect'
+[1.384s] Level 1:colcon.colcon_core.package_identification:_identify(offboard_testing) by extensions ['ignore', 'ignore_ament_install']
+[1.384s] Level 1:colcon.colcon_core.package_identification:_identify(offboard_testing) by extension 'ignore'
+[1.385s] Level 1:colcon.colcon_core.package_identification:_identify(offboard_testing) by extension 'ignore_ament_install'
+[1.385s] Level 1:colcon.colcon_core.package_identification:_identify(offboard_testing) by extensions ['colcon_pkg']
+[1.385s] Level 1:colcon.colcon_core.package_identification:_identify(offboard_testing) by extension 'colcon_pkg'
+[1.386s] Level 1:colcon.colcon_core.package_identification:_identify(offboard_testing) by extensions ['colcon_meta']
+[1.386s] Level 1:colcon.colcon_core.package_identification:_identify(offboard_testing) by extension 'colcon_meta'
+[1.386s] Level 1:colcon.colcon_core.package_identification:_identify(offboard_testing) by extensions ['ros']
+[1.386s] Level 1:colcon.colcon_core.package_identification:_identify(offboard_testing) by extension 'ros'
+[1.391s] DEBUG:colcon.colcon_core.package_identification:Package 'offboard_testing' with type 'ros.ament_python' and name 'offboard_testing'
+[1.391s] Level 1:colcon.colcon_core.package_identification:_identify(road_nav) by extensions ['ignore', 'ignore_ament_install']
+[1.392s] Level 1:colcon.colcon_core.package_identification:_identify(road_nav) by extension 'ignore'
+[1.392s] Level 1:colcon.colcon_core.package_identification:_identify(road_nav) by extension 'ignore_ament_install'
+[1.392s] Level 1:colcon.colcon_core.package_identification:_identify(road_nav) by extensions ['colcon_pkg']
+[1.392s] Level 1:colcon.colcon_core.package_identification:_identify(road_nav) by extension 'colcon_pkg'
+[1.392s] Level 1:colcon.colcon_core.package_identification:_identify(road_nav) by extensions ['colcon_meta']
+[1.393s] Level 1:colcon.colcon_core.package_identification:_identify(road_nav) by extension 'colcon_meta'
+[1.393s] Level 1:colcon.colcon_core.package_identification:_identify(road_nav) by extensions ['ros']
+[1.393s] Level 1:colcon.colcon_core.package_identification:_identify(road_nav) by extension 'ros'
+[1.397s] DEBUG:colcon.colcon_core.package_identification:Package 'road_nav' with type 'ros.ament_python' and name 'road_nav'
+[1.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.506s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.506s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.528s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 269 installed packages in /opt/ros/foxy
+[1.536s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.950s] Level 5:colcon.colcon_core.verb:set package 'controls' build argument 'cmake_args' from command line to 'None'
+[1.950s] Level 5:colcon.colcon_core.verb:set package 'controls' build argument 'cmake_target' from command line to 'None'
+[1.951s] Level 5:colcon.colcon_core.verb:set package 'controls' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.951s] Level 5:colcon.colcon_core.verb:set package 'controls' build argument 'cmake_clean_cache' from command line to 'False'
+[1.951s] Level 5:colcon.colcon_core.verb:set package 'controls' build argument 'cmake_clean_first' from command line to 'False'
+[1.951s] Level 5:colcon.colcon_core.verb:set package 'controls' build argument 'cmake_force_configure' from command line to 'False'
+[1.951s] Level 5:colcon.colcon_core.verb:set package 'controls' build argument 'ament_cmake_args' from command line to 'None'
+[1.951s] Level 5:colcon.colcon_core.verb:set package 'controls' build argument 'catkin_cmake_args' from command line to 'None'
+[1.951s] Level 5:colcon.colcon_core.verb:set package 'controls' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.952s] DEBUG:colcon.colcon_core.verb:Building package 'controls' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/controls', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/controls', 'symlink_install': False, 'test_result_base': None}
+[1.956s] Level 5:colcon.colcon_core.verb:set package 'imaging' build argument 'cmake_args' from command line to 'None'
+[1.957s] Level 5:colcon.colcon_core.verb:set package 'imaging' build argument 'cmake_target' from command line to 'None'
+[1.957s] Level 5:colcon.colcon_core.verb:set package 'imaging' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.957s] Level 5:colcon.colcon_core.verb:set package 'imaging' build argument 'cmake_clean_cache' from command line to 'False'
+[1.957s] Level 5:colcon.colcon_core.verb:set package 'imaging' build argument 'cmake_clean_first' from command line to 'False'
+[1.958s] Level 5:colcon.colcon_core.verb:set package 'imaging' build argument 'cmake_force_configure' from command line to 'False'
+[1.958s] Level 5:colcon.colcon_core.verb:set package 'imaging' build argument 'ament_cmake_args' from command line to 'None'
+[1.958s] Level 5:colcon.colcon_core.verb:set package 'imaging' build argument 'catkin_cmake_args' from command line to 'None'
+[1.958s] Level 5:colcon.colcon_core.verb:set package 'imaging' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.958s] DEBUG:colcon.colcon_core.verb:Building package 'imaging' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging', 'symlink_install': False, 'test_result_base': None}
+[1.963s] Level 5:colcon.colcon_core.verb:set package 'model_defect' build argument 'cmake_args' from command line to 'None'
+[1.963s] Level 5:colcon.colcon_core.verb:set package 'model_defect' build argument 'cmake_target' from command line to 'None'
+[1.964s] Level 5:colcon.colcon_core.verb:set package 'model_defect' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.964s] Level 5:colcon.colcon_core.verb:set package 'model_defect' build argument 'cmake_clean_cache' from command line to 'False'
+[1.964s] Level 5:colcon.colcon_core.verb:set package 'model_defect' build argument 'cmake_clean_first' from command line to 'False'
+[1.964s] Level 5:colcon.colcon_core.verb:set package 'model_defect' build argument 'cmake_force_configure' from command line to 'False'
+[1.964s] Level 5:colcon.colcon_core.verb:set package 'model_defect' build argument 'ament_cmake_args' from command line to 'None'
+[1.964s] Level 5:colcon.colcon_core.verb:set package 'model_defect' build argument 'catkin_cmake_args' from command line to 'None'
+[1.964s] Level 5:colcon.colcon_core.verb:set package 'model_defect' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.964s] DEBUG:colcon.colcon_core.verb:Building package 'model_defect' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/model_defect', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/model_defect', 'symlink_install': False, 'test_result_base': None}
+[1.969s] Level 5:colcon.colcon_core.verb:set package 'offboard_testing' build argument 'cmake_args' from command line to 'None'
+[1.969s] Level 5:colcon.colcon_core.verb:set package 'offboard_testing' build argument 'cmake_target' from command line to 'None'
+[1.970s] Level 5:colcon.colcon_core.verb:set package 'offboard_testing' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.970s] Level 5:colcon.colcon_core.verb:set package 'offboard_testing' build argument 'cmake_clean_cache' from command line to 'False'
+[1.970s] Level 5:colcon.colcon_core.verb:set package 'offboard_testing' build argument 'cmake_clean_first' from command line to 'False'
+[1.970s] Level 5:colcon.colcon_core.verb:set package 'offboard_testing' build argument 'cmake_force_configure' from command line to 'False'
+[1.970s] Level 5:colcon.colcon_core.verb:set package 'offboard_testing' build argument 'ament_cmake_args' from command line to 'None'
+[1.970s] Level 5:colcon.colcon_core.verb:set package 'offboard_testing' build argument 'catkin_cmake_args' from command line to 'None'
+[1.970s] Level 5:colcon.colcon_core.verb:set package 'offboard_testing' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.971s] DEBUG:colcon.colcon_core.verb:Building package 'offboard_testing' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/offboard_testing', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/offboard_testing', 'symlink_install': False, 'test_result_base': None}
+[1.975s] Level 5:colcon.colcon_core.verb:set package 'road_nav' build argument 'cmake_args' from command line to 'None'
+[1.975s] Level 5:colcon.colcon_core.verb:set package 'road_nav' build argument 'cmake_target' from command line to 'None'
+[1.976s] Level 5:colcon.colcon_core.verb:set package 'road_nav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.976s] Level 5:colcon.colcon_core.verb:set package 'road_nav' build argument 'cmake_clean_cache' from command line to 'False'
+[1.976s] Level 5:colcon.colcon_core.verb:set package 'road_nav' build argument 'cmake_clean_first' from command line to 'False'
+[1.976s] Level 5:colcon.colcon_core.verb:set package 'road_nav' build argument 'cmake_force_configure' from command line to 'False'
+[1.976s] Level 5:colcon.colcon_core.verb:set package 'road_nav' build argument 'ament_cmake_args' from command line to 'None'
+[1.976s] Level 5:colcon.colcon_core.verb:set package 'road_nav' build argument 'catkin_cmake_args' from command line to 'None'
+[1.976s] Level 5:colcon.colcon_core.verb:set package 'road_nav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.977s] DEBUG:colcon.colcon_core.verb:Building package 'road_nav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/road_nav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/road_nav', 'symlink_install': False, 'test_result_base': None}
+[1.980s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.003s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/controls' with build type 'ament_python'
+[2.004s] Level 1:colcon.colcon_core.shell:create_environment_hook('controls', 'ament_prefix_path')
+[2.046s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.047s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/share/controls/hook/ament_prefix_path.ps1'
+[2.052s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/share/controls/hook/ament_prefix_path.dsv'
+[2.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/share/controls/hook/ament_prefix_path.sh'
+[2.068s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.068s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.092s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging' with build type 'ament_cmake'
+[2.093s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging'
+[2.102s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.103s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.127s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/model_defect' with build type 'ament_python'
+[2.128s] Level 1:colcon.colcon_core.shell:create_environment_hook('model_defect', 'ament_prefix_path')
+[2.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/share/model_defect/hook/ament_prefix_path.ps1'
+[2.140s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/share/model_defect/hook/ament_prefix_path.dsv'
+[2.143s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/share/model_defect/hook/ament_prefix_path.sh'
+[2.151s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.152s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.175s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/offboard_testing' with build type 'ament_python'
+[2.176s] Level 1:colcon.colcon_core.shell:create_environment_hook('offboard_testing', 'ament_prefix_path')
+[2.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/share/offboard_testing/hook/ament_prefix_path.ps1'
+[2.192s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/share/offboard_testing/hook/ament_prefix_path.dsv'
+[2.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/share/offboard_testing/hook/ament_prefix_path.sh'
+[2.209s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.210s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.638s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/controls'
+[3.645s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.646s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.684s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[5.504s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/model_defect'
+[5.530s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.531s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.973s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/offboard_testing'
+[7.983s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.989s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.501s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/controls': PYTHONPATH=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/controls build --build-base /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/controls/build install --prefix /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls --record /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/controls/install.log --single-version-externally-managed
+[12.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/model_defect': PYTHONPATH=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/model_defect build --build-base /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/model_defect/build install --prefix /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect --record /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/model_defect/install.log --single-version-externally-managed
+[12.683s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/offboard_testing': PYTHONPATH=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/offboard_testing build --build-base /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/offboard_testing/build install --prefix /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing --record /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/offboard_testing/install.log --single-version-externally-managed
+[15.964s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/controls' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/controls build --build-base /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/controls/build install --prefix /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls --record /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/controls/install.log --single-version-externally-managed
+[16.095s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls' for CMake module files
+[16.100s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls' for CMake config files
+[16.115s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/lib'
+[16.117s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/bin'
+[16.118s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/lib/pkgconfig/controls.pc'
+[16.131s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/lib/python3.8/site-packages'
+[16.132s] Level 1:colcon.colcon_core.shell:create_environment_hook('controls', 'pythonpath')
+[16.152s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/share/controls/hook/pythonpath.ps1'
+[16.159s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/share/controls/hook/pythonpath.dsv'
+[16.167s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/share/controls/hook/pythonpath.sh'
+[16.175s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/bin'
+[16.176s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controls)
+[16.197s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/share/controls/package.ps1'
+[16.204s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/share/controls/package.dsv'
+[16.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/share/controls/package.sh'
+[16.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/share/controls/package.bash'
+[16.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/share/controls/package.zsh'
+[16.248s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/share/colcon-core/packages/controls)
+[16.267s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/road_nav' with build type 'ament_python'
+[16.269s] Level 1:colcon.colcon_core.shell:create_environment_hook('road_nav', 'ament_prefix_path')
+[16.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/share/road_nav/hook/ament_prefix_path.ps1'
+[16.293s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/share/road_nav/hook/ament_prefix_path.dsv'
+[16.307s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/share/road_nav/hook/ament_prefix_path.sh'
+[16.320s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[16.332s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[16.437s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect' for CMake module files
+[16.438s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/model_defect' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/model_defect build --build-base /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/model_defect/build install --prefix /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect --record /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/model_defect/install.log --single-version-externally-managed
+[16.457s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect' for CMake config files
+[16.471s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/lib'
+[16.472s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/bin'
+[16.473s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/lib/pkgconfig/model_defect.pc'
+[16.474s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/lib/python3.8/site-packages'
+[16.475s] Level 1:colcon.colcon_core.shell:create_environment_hook('model_defect', 'pythonpath')
+[16.484s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/share/model_defect/hook/pythonpath.ps1'
+[16.501s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/share/model_defect/hook/pythonpath.dsv'
+[16.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/share/model_defect/hook/pythonpath.sh'
+[16.519s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/bin'
+[16.519s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(model_defect)
+[16.528s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/share/model_defect/package.ps1'
+[16.545s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/share/model_defect/package.dsv'
+[16.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/share/model_defect/package.sh'
+[16.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/share/model_defect/package.bash'
+[16.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/share/model_defect/package.zsh'
+[16.573s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/model_defect/share/colcon-core/packages/model_defect)
+[19.040s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/road_nav'
+[19.058s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[19.059s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[19.118s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing' for CMake module files
+[19.120s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/offboard_testing' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/offboard_testing build --build-base /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/offboard_testing/build install --prefix /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing --record /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/offboard_testing/install.log --single-version-externally-managed
+[19.123s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing' for CMake config files
+[19.127s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/lib'
+[19.129s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/bin'
+[19.130s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/lib/pkgconfig/offboard_testing.pc'
+[19.132s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/lib/python3.8/site-packages'
+[19.133s] Level 1:colcon.colcon_core.shell:create_environment_hook('offboard_testing', 'pythonpath')
+[19.143s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/share/offboard_testing/hook/pythonpath.ps1'
+[19.149s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/share/offboard_testing/hook/pythonpath.dsv'
+[19.152s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/share/offboard_testing/hook/pythonpath.sh'
+[19.156s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/bin'
+[19.157s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(offboard_testing)
+[19.167s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/share/offboard_testing/package.ps1'
+[19.173s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/share/offboard_testing/package.dsv'
+[19.180s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/share/offboard_testing/package.sh'
+[19.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/share/offboard_testing/package.bash'
+[19.191s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/share/offboard_testing/package.zsh'
+[19.198s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/offboard_testing/share/colcon-core/packages/offboard_testing)
+[22.058s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/road_nav': PYTHONPATH=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/road_nav build --build-base /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/road_nav/build install --prefix /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav --record /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/road_nav/install.log --single-version-externally-managed
+[26.107s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav' for CMake module files
+[26.109s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/road_nav' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/road_nav build --build-base /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/road_nav/build install --prefix /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav --record /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/road_nav/install.log --single-version-externally-managed
+[26.111s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav' for CMake config files
+[26.115s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/lib'
+[26.116s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/bin'
+[26.116s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/lib/pkgconfig/road_nav.pc'
+[26.118s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/lib/python3.8/site-packages'
+[26.118s] Level 1:colcon.colcon_core.shell:create_environment_hook('road_nav', 'pythonpath')
+[26.126s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/share/road_nav/hook/pythonpath.ps1'
+[26.128s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/share/road_nav/hook/pythonpath.dsv'
+[26.131s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/share/road_nav/hook/pythonpath.sh'
+[26.135s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/bin'
+[26.135s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(road_nav)
+[26.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/share/road_nav/package.ps1'
+[26.148s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/share/road_nav/package.dsv'
+[26.151s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/share/road_nav/package.sh'
+[26.154s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/share/road_nav/package.bash'
+[26.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/share/road_nav/package.zsh'
+[26.159s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/share/colcon-core/packages/road_nav)
+[35.183s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[35.301s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imaging)
+[35.310s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging' for CMake module files
+[35.313s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging' for CMake config files
+[35.314s] Level 1:colcon.colcon_core.shell:create_environment_hook('imaging', 'cmake_prefix_path')
+[35.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/hook/cmake_prefix_path.ps1'
+[35.323s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/hook/cmake_prefix_path.dsv'
+[35.325s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/hook/cmake_prefix_path.sh'
+[35.328s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/lib'
+[35.329s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/bin'
+[35.329s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/lib/pkgconfig/imaging.pc'
+[35.330s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/lib/python3.8/site-packages'
+[35.331s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/bin'
+[35.336s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/package.ps1'
+[35.338s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/package.dsv'
+[35.341s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/package.sh'
+[35.343s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/package.bash'
+[35.345s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/package.zsh'
+[35.346s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/colcon-core/packages/imaging)
+[35.348s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[35.349s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[35.350s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[35.350s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[35.385s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[35.386s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[35.386s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[35.386s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[35.391s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[35.391s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[35.398s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/local_setup.ps1'
+[35.402s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/_local_setup_util_ps1.py'
+[35.410s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/setup.ps1'
+[35.416s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/local_setup.sh'
+[35.420s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/_local_setup_util_sh.py'
+[35.422s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/setup.sh'
+[35.428s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/local_setup.bash'
+[35.432s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/setup.bash'
+[35.438s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/local_setup.zsh'
+[35.442s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/setup.zsh'

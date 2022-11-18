@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../build/model_defect/model_defect.egg-info/PKG-INFO
+../build/model_defect/model_defect.egg-info/SOURCES.txt
+../build/model_defect/model_defect.egg-info/dependency_links.txt
+../build/model_defect/model_defect.egg-info/entry_points.txt
+../build/model_defect/model_defect.egg-info/requires.txt
+../build/model_defect/model_defect.egg-info/top_level.txt
+../build/model_defect/model_defect.egg-info/zip-safe
+model_defect/__init__.py
+model_defect/model_defect_detect.py
+resource/model_defect
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

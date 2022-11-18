@@ -1,0 +1,33 @@
+[0.058s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[0.180s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.285s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.386s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.600s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.618s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.571s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.834s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.849s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.538s] -- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)
+[4.124s] -- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)
+[4.601s] CMake Error at CMakeLists.txt:26 (find_package):
+[4.602s]   By not providing "Findlibseek-thermal.cmake" in CMAKE_MODULE_PATH this
+[4.602s]   project has asked CMake to find a package configuration file provided by
+[4.602s]   "libseek-thermal", but CMake did not find one.
+[4.603s] 
+[4.604s]   Could not find a package configuration file provided by "libseek-thermal"
+[4.604s]   with any of the following names:
+[4.604s] 
+[4.605s]     libseek-thermalConfig.cmake
+[4.605s]     libseek-thermal-config.cmake
+[4.606s] 
+[4.606s]   Add the installation prefix of "libseek-thermal" to CMAKE_PREFIX_PATH or
+[4.606s]   set "libseek-thermal_DIR" to a directory containing one of the above files.
+[4.607s]   If "libseek-thermal" provides a separate development package or SDK, be
+[4.607s]   sure it has been installed.
+[4.608s] 
+[4.608s] 
+[4.616s] -- Configuring incomplete, errors occurred!
+[4.616s] See also "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/CMakeOutput.log".
+[4.617s] See also "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/CMakeError.log".
+[4.643s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[4.649s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '2': /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4

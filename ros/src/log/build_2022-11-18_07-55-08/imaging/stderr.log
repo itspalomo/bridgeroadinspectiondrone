@@ -1,0 +1,14 @@
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:89:47:[m[K [01;31m[Kerror: [m[K‘[01m[KNORM_MINMAX[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::NORM_MINMAX[m[K’?
+   89 |     normalize(frame_u16, frame_u16, 0, 65535, [01;31m[KNORM_MINMAX[m[K);
+      |                                               [01;31m[K^~~~~~~~~~~[m[K
+      |                                               [32m[Kcv::NORM_MINMAX[m[K
+In file included from [01m[K/usr/local/include/opencv4/opencv2/core.hpp:53[m[K,
+                 from [01m[K/usr/local/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:2[m[K:
+[01m[K/usr/local/include/opencv4/opencv2/core/base.hpp:207:18:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::NORM_MINMAX[m[K’ declared here
+  207 |                  [01;36m[KNORM_MINMAX[m[K    = 32 //!< flag
+      |                  [01;36m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/image_pub.dir/build.make:63: CMakeFiles/image_pub.dir/src/image_pub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

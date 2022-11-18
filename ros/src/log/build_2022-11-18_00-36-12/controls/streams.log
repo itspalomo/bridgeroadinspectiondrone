@@ -1,0 +1,21 @@
+[9.292s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/controls': PYTHONPATH=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/controls build --build-base /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/controls/build install --prefix /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls --record /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/controls/install.log --single-version-externally-managed
+[11.549s] running egg_info
+[11.552s] writing ../build/controls/controls.egg-info/PKG-INFO
+[11.559s] writing dependency_links to ../build/controls/controls.egg-info/dependency_links.txt
+[11.561s] writing entry points to ../build/controls/controls.egg-info/entry_points.txt
+[11.562s] writing requirements to ../build/controls/controls.egg-info/requires.txt
+[11.568s] writing top-level names to ../build/controls/controls.egg-info/top_level.txt
+[11.907s] reading manifest file '../build/controls/controls.egg-info/SOURCES.txt'
+[11.913s] writing manifest file '../build/controls/controls.egg-info/SOURCES.txt'
+[11.923s] running build
+[11.924s] running build_py
+[11.925s] running install
+[11.929s] running install_lib
+[11.950s] running install_data
+[11.952s] running install_egg_info
+[11.971s] removing '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/lib/python3.8/site-packages/controls-0.0.0-py3.8.egg-info' (and everything under it)
+[11.972s] Copying ../build/controls/controls.egg-info to /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/lib/python3.8/site-packages/controls-0.0.0-py3.8.egg-info
+[11.989s] running install_scripts
+[12.128s] Installing controls script to /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/lib/controls
+[12.131s] writing list of installed files to '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/controls/install.log'
+[12.758s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/controls' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/controls build --build-base /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/controls/build install --prefix /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/controls --record /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/controls/install.log --single-version-externally-managed

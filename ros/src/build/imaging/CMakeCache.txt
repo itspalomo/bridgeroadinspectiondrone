@@ -257,7 +257,7 @@ OPENSSL_INCLUDE_DIR:PATH=/usr/include
 OPENSSL_SSL_LIBRARY:FILEPATH=/usr/lib/aarch64-linux-gnu/libssl.so
 
 //The directory containing a CMake configuration file for OpenCV.
-OpenCV_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/opencv4
+OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
 
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
@@ -415,9 +415,6 @@ imaging_BINARY_DIR:STATIC=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src
 //Value Computed by CMake
 imaging_SOURCE_DIR:STATIC=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging
 
-//The directory containing a CMake configuration file for libseek-thermal.
-libseek-thermal_DIR:PATH=libseek-thermal_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for libstatistics_collector.
 libstatistics_collector_DIR:PATH=/opt/ros/foxy/share/libstatistics_collector/cmake
 
@@ -513,6 +510,9 @@ rosidl_typesupport_introspection_cpp_DIR:PATH=/opt/ros/foxy/share/rosidl_typesup
 
 //The directory containing a CMake configuration file for seek.
 seek_DIR:PATH=seek_DIR-NOTFOUND
+
+//seek library
+seeklib:FILEPATH=/usr/local/lib/libseek.so
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/foxy/share/sensor_msgs/cmake
@@ -700,7 +700,7 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding FastRTPS
 FIND_PACKAGE_MESSAGE_DETAILS_FastRTPS:INTERNAL=[/opt/ros/foxy/include][/opt/ros/foxy/lib/libfastrtps.so;/opt/ros/foxy/lib/libfastcdr.so][v()]
 //Details about finding OpenCV
-FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][v4.2.0()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr/local][v4.6.0(4.2.0)]
 //Details about finding OpenSSL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/usr/lib/aarch64-linux-gnu/libcrypto.so][/usr/include][c ][v1.1.1f()]
 //Details about finding PythonInterp

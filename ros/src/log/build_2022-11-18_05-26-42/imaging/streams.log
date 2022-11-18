@@ -1,0 +1,41 @@
+[0.062s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[0.186s] CMake Error at CMakeLists.txt:18 (add_subdirectory):
+[0.186s]   add_subdirectory not given a binary directory but the given source
+[0.187s]   directory "/home/ubuntu/ros2_ws/libseek-thermal" is not a subdirectory of
+[0.187s]   "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging".  When
+[0.188s]   specifying an out-of-tree source a binary directory must be explicitly
+[0.189s]   specified.
+[0.189s] 
+[0.190s] 
+[0.190s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.300s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.542s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.790s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.806s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.774s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.054s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.076s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.904s] -- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)
+[4.556s] -- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)
+[5.039s] CMake Error at CMakeLists.txt:28 (find_package):
+[5.040s]   By not providing "Findseek.cmake" in CMAKE_MODULE_PATH this project has
+[5.041s]   asked CMake to find a package configuration file provided by "seek", but
+[5.042s]   CMake did not find one.
+[5.043s] 
+[5.043s]   Could not find a package configuration file provided by "seek" with any of
+[5.045s]   the following names:
+[5.048s] 
+[5.054s]     seekConfig.cmake
+[5.059s]     seek-config.cmake
+[5.060s] 
+[5.061s]   Add the installation prefix of "seek" to CMAKE_PREFIX_PATH or set
+[5.066s]   "seek_DIR" to a directory containing one of the above files.  If "seek"
+[5.068s]   provides a separate development package or SDK, be sure it has been
+[5.072s]   installed.
+[5.082s] 
+[5.083s] 
+[5.084s] -- Configuring incomplete, errors occurred!
+[5.085s] See also "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/CMakeOutput.log".
+[5.086s] See also "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/CMakeError.log".
+[5.089s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[5.093s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4

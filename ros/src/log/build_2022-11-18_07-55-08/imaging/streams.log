@@ -1,0 +1,18 @@
+[1.590s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[3.543s] [35m[1mScanning dependencies of target image_pub[0m
+[3.544s] [ 50%] [32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o[0m
+[27.400s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[27.401s] [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:89:47:[m[K [01;31m[Kerror: [m[K‘[01m[KNORM_MINMAX[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::NORM_MINMAX[m[K’?
+[27.401s]    89 |     normalize(frame_u16, frame_u16, 0, 65535, [01;31m[KNORM_MINMAX[m[K);
+[27.402s]       |                                               [01;31m[K^~~~~~~~~~~[m[K
+[27.403s]       |                                               [32m[Kcv::NORM_MINMAX[m[K
+[27.404s] In file included from [01m[K/usr/local/include/opencv4/opencv2/core.hpp:53[m[K,
+[27.404s]                  from [01m[K/usr/local/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[27.405s]                  from [01m[K/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/src/image_pub.cpp:2[m[K:
+[27.406s] [01m[K/usr/local/include/opencv4/opencv2/core/base.hpp:207:18:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::NORM_MINMAX[m[K’ declared here
+[27.406s]   207 |                  [01;36m[KNORM_MINMAX[m[K    = 32 //!< flag
+[27.407s]       |                  [01;36m[K^~~~~~~~~~~[m[K
+[33.082s] make[2]: *** [CMakeFiles/image_pub.dir/build.make:63: CMakeFiles/image_pub.dir/src/image_pub.cpp.o] Error 1
+[33.083s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/image_pub.dir/all] Error 2
+[33.084s] make: *** [Makefile:141: all] Error 2
+[33.090s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4

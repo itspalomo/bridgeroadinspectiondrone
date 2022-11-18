@@ -1,0 +1,40 @@
+[0.062s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4
+[0.183s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.286s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.415s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.798s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.833s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.858s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.095s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.102s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.828s] -- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)
+[4.429s] -- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)
+[4.712s] CMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:145 (target_link_libraries):
+[4.712s]   The keyword signature for target_link_libraries has already been used with
+[4.713s]   the target "image_pub".  All uses of target_link_libraries with a target
+[4.714s]   must be either all-keyword or all-plain.
+[4.714s] 
+[4.715s]   The uses of the keyword signature are here:
+[4.716s] 
+[4.716s]    * CMakeLists.txt:31 (target_link_libraries)
+[4.717s] 
+[4.717s] Call Stack (most recent call first):
+[4.718s]   CMakeLists.txt:37 (ament_target_dependencies)
+[4.719s] 
+[4.719s] 
+[4.786s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[5.125s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.130s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.131s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging/include>
+[5.131s] -- Configured cppcheck exclude dirs and/or files: 
+[5.136s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.136s] -- Configured cpplint exclude dirs and/or files: 
+[5.139s] -- Added test 'lint_cmake' to check CMake code style
+[5.145s] -- Added test 'uncrustify' to check C / C++ code style
+[5.145s] -- Configured uncrustify additional arguments: 
+[5.147s] -- Added test 'xmllint' to check XML markup files
+[5.166s] -- Configuring incomplete, errors occurred!
+[5.167s] See also "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/CMakeOutput.log".
+[5.167s] See also "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/CMakeError.log".
+[5.195s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[5.200s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging -- -j4 -l4

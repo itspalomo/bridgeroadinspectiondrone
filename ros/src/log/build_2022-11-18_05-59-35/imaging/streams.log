@@ -1,0 +1,59 @@
+[0.060s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging
+[0.447s] -- The C compiler identification is GNU 9.4.0
+[0.717s] -- The CXX compiler identification is GNU 9.4.0
+[0.745s] -- Check for working C compiler: /usr/bin/cc
+[1.202s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.208s] -- Detecting C compiler ABI info
+[1.545s] -- Detecting C compiler ABI info - done
+[1.597s] -- Detecting C compile features
+[1.599s] -- Detecting C compile features - done
+[1.614s] -- Check for working CXX compiler: /usr/bin/c++
+[2.279s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.285s] -- Detecting CXX compiler ABI info
+[2.709s] -- Detecting CXX compiler ABI info - done
+[2.789s] -- Detecting CXX compile features
+[2.791s] -- Detecting CXX compile features - done
+[2.872s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.089s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.090s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.821s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[5.153s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.214s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[5.862s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[6.191s] -- Found FastRTPS: /opt/ros/foxy/include  
+[6.858s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.110s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[7.115s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.119s] -- Looking for pthread.h
+[7.440s] -- Looking for pthread.h - found
+[7.442s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.844s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[7.849s] -- Looking for pthread_create in pthreads
+[8.192s] -- Looking for pthread_create in pthreads - not found
+[8.194s] -- Looking for pthread_create in pthread
+[8.570s] -- Looking for pthread_create in pthread - found
+[8.578s] -- Found Threads: TRUE  
+[9.394s] -- Found OpenCV: /usr/local (found version "4.6.0") 
+[9.410s] -- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)
+[9.956s] -- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)
+[10.444s] CMake Error at CMakeLists.txt:28 (find_package):
+[10.444s]   By not providing "Findseek.cmake" in CMAKE_MODULE_PATH this project has
+[10.445s]   asked CMake to find a package configuration file provided by "seek", but
+[10.445s]   CMake did not find one.
+[10.446s] 
+[10.446s]   Could not find a package configuration file provided by "seek" with any of
+[10.447s]   the following names:
+[10.447s] 
+[10.447s]     seekConfig.cmake
+[10.448s]     seek-config.cmake
+[10.448s] 
+[10.449s]   Add the installation prefix of "seek" to CMAKE_PREFIX_PATH or set
+[10.449s]   "seek_DIR" to a directory containing one of the above files.  If "seek"
+[10.450s]   provides a separate development package or SDK, be sure it has been
+[10.451s]   installed.
+[10.452s] 
+[10.452s] 
+[10.460s] -- Configuring incomplete, errors occurred!
+[10.461s] See also "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/CMakeOutput.log".
+[10.462s] See also "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging/CMakeFiles/CMakeError.log".
+[10.494s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging

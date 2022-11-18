@@ -62,5 +62,5 @@ def cam_ind_test(cam_path: int, count: int, fname: str):
     cap.release()
     cv2.waitKey(1)
 
-#data_collection(0,5, 'vl')
-ir_data_collection('/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/image_processing/vl_pics_10_25/ir')
+data_collection(0,5, 'vl')
+#ir_data_collection('/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/image_processing/vl_pics_10_25/ir')

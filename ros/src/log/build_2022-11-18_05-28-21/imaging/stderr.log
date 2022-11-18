@@ -1,0 +1,27 @@
+CMake Error at CMakeLists.txt:18 (add_subdirectory):
+  add_subdirectory not given a binary directory but the given source
+  directory "/home/ubuntu/ros2_ws/libseek-thermal/build/src" is not a
+  subdirectory of
+  "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/imaging".  When
+  specifying an out-of-tree source a binary directory must be explicitly
+  specified.
+
+
+CMake Error at CMakeLists.txt:28 (find_package):
+  By not providing "Findseek.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "seek", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "seek" with any of
+  the following names:
+
+    seekConfig.cmake
+    seek-config.cmake
+
+  Add the installation prefix of "seek" to CMAKE_PREFIX_PATH or set
+  "seek_DIR" to a directory containing one of the above files.  If "seek"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+
+make: *** [Makefile:266: cmake_check_build_system] Error 1

@@ -65,10 +65,35 @@ class ImagePub : public rclcpp::Node {
     
 };
 
+
 int main(int argc, char *argv[]) {
+
+    cv::Mat frame_u16, frame, avg_frame;
+    LibSeek::SeekThermalPro seekpro;
+    LibSeek::SeekCam* cam;
+    std::string outfile = "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/image_processing/output.png";
+
+    cam = &seekpro;
+
+    if (!cam->open()) {
+        std::cout << "failed to open " << " cam" << std::endl;
+        return -1;
+    }
+
+    cam->retrieve(frame_u16);
+    frame_u16.convertTo(frame, CV_16UC1);
+    frame_u16 = frame;
+
+    cv::Mat frame_g8, outframe;
+
+    normalize(frame_u16, frame_u16, 0, 65535, cv::NORM_MINMAX);
+    frame_u16.convertTo(frame_g8, CV_8UC1, 1.0 / 256.0);
+    applyColorMap(frame_g8, outframe, 4);
+    cv::imwrite(outfile, outframe);
+
     printf("Starting...");
     rclcpp::init(argc, argv);
     rclcpp::spin(std::make_shared<ImagePub>());
-    rclcpp::shutdown();
+    rclcpp::shutdown(); 
     return 0;
 }
