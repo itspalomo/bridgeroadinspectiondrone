@@ -32,11 +32,12 @@ def ir_data_collection(fname: str):
     cap = cv2.VideoCapture(0, cv2.CAP_V4L2)
 
     while(True):
-        os.system('seek_snapshot -t seekpro -o ' +fname+str(i)+'.png -w 3 -c 4')
+        os.system('seek_snapshot -t seekpro -o ' +fname+str(i)+'ir.png -w 3 -c 4')
         print('Photo Collected!')
         ret, frame = cap.read()
-        cv2.imwrite(fname+str(i)+'.jpg', frame)
-        print('Photo Collected!')
+        if ret:
+            cv2.imwrite(fname+str(i)+'.jpg', frame)
+            print('Visible Light Photo Collected!')
         time.sleep(3)
         i += 1
     
@@ -56,11 +57,11 @@ def cam_ind_test(cam_path: int, count: int, fname: str):
             break
         
         # Save Frame by Frame into disk using imwrite method
-        cv2.imwrite(fname+str(i)+'.jpg', frame)
+        cv2.imwrite(fname+str(i)+'vl.png', frame)
         i += 1
     cv2.waitKey(1)
     cap.release()
     cv2.waitKey(1)
 
-data_collection(0,5, 'vl')
-#ir_data_collection('/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/image_processing/vl_pics_10_25/ir')
+#data_collection(0,5, 'vl')
+ir_data_collection('/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/image_processing/vl_pics_10_25/photo_')
