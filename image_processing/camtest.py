@@ -7,7 +7,7 @@ import os
 def data_collection(cam_path: int, count: int, fname: str):
     cap = cv2.VideoCapture(cam_path, cv2.CAP_V4L2)
     
-    i = 0
+    i = 79
 
     while(cap.isOpened()):
         ret, frame = cap.read()
@@ -28,11 +28,11 @@ def data_collection(cam_path: int, count: int, fname: str):
     cv2.waitKey(1)
 
 def ir_data_collection(fname: str):    
-    i = 0
+    i = 79
     cap = cv2.VideoCapture(0, cv2.CAP_V4L2)
 
     while(True):
-        os.system('seek_snapshot -t seekpro -o ' +fname+str(i)+'ir.png -w 3 -c 4')
+        os.system('seek_snapshot -t seekpro -o ' +fname+str(i)+'ir.png -w 3 -c 4 -r 180')
         print('Photo Collected!')
         ret, frame = cap.read()
         if ret:
