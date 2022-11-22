@@ -27,21 +27,35 @@ using namespace std::chrono_literals;
 class ImagePub : public rclcpp::Node {
   public:
     ImagePub() : Node("imagepub"), count_(0) {
+        //Creating the ros topics
         visible_pub =
             this->create_publisher<sensor_msgs::msg::Image>("imagepub/visible_light", 10);
         ir_pub = 
             this->create_publisher<sensor_msgs::msg::Image>("imagepub/seek_thermal", 10);
 
+        //Open the cameras, check if the cameras are working properly
+        //Visible light with index 0 and the v4l2 video backend
+        if (!vl_cam->open(0, cv::CAP_V4L2)) 
+            std::cerr << "ERROR: Could not open visible light camera." << std::endl;
+        
+        //IR, SeekThermal Compact Pro
+        cam = &seekpro;
+        if (!cam->open()) 
+            std::cerr << "Something is wrong with the infrared, could not get frame." << std::endl;
+
+        //Callback function that gets executes at 9Hz because of IR camera constraints.
         timer_ = this->create_wall_timer(
-            100ms, std::bind(&ImagePub::timer_callback, this));
+            111ms , std::bind(&ImagePub::timer_callback, this));
     }
 
   private:
     void timer_callback() {
-         
-        VL_img = get_visible_light(0);
+        
+        //Capture the frame
+        VL_img = get_visible_light();
         IR_img = get_ir_light();
 
+        //Publish new message to each topic
         sensor_msgs::msg::Image::SharedPtr msg_vl = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", VL_img).toImageMsg();
         sensor_msgs::msg::Image::SharedPtr msg_ir = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", VL_img).toImageMsg();
 
@@ -49,13 +63,11 @@ class ImagePub : public rclcpp::Node {
         ir_pub->publish(*msg_ir.get());
     }
 
-    cv::Mat get_visible_light(int cam_index)
+    //Logic to grab a frame from the visible light image sensor
+    cv::Mat get_visible_light()
     {
-        //Check if the cameras are working properly
-        if (!vl_cam->open(cam_index, cv::CAP_V4L2)) 
-            std::cerr << "ERROR: Could not open visible light camera." << std::endl;
-
         cv::Mat visible_light_sensor;
+
         //get the frame and put it into a cv matrix
         *vl_cam >> visible_light_sensor;
         if(visible_light_sensor.empty())
@@ -64,15 +76,13 @@ class ImagePub : public rclcpp::Node {
         return visible_light_sensor;
     }
 
+    //Logic to grab frame from the IR sensor
     cv::Mat get_ir_light()
     {
         cv::Mat frame_u16, frame, avg_frame;
+
+        //location to save picture during testing
         std::string outfile = "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/image_processing/output.png";
-
-        cam = &seekpro;
-
-        if (!cam->open()) 
-            std::cerr << "Something is wrong with the infrared, could not get frame." << std::endl;
 
         cam->retrieve(frame_u16);
         frame_u16.convertTo(frame, CV_16UC1);
@@ -80,10 +90,12 @@ class ImagePub : public rclcpp::Node {
 
         cv::Mat frame_g8, outframe;
 
-        normalize(frame_u16, frame_u16, 0, 65535, cv::NORM_MINMAX);
+        //change type to apply colormap on IR
+        //cv::normalize(frame_u16, frame_u16, 0, 65535, cv::NORM_MINMAX);
         frame_u16.convertTo(frame_g8, CV_8UC1, 1.0 / 256.0);
         applyColorMap(frame_g8, outframe, 4);
-        cv::imwrite(outfile, outframe);
+
+        //cv::imwrite(outfile, outframe);
 
         return outframe;
     }
