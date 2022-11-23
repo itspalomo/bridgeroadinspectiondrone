@@ -49,7 +49,7 @@ class ImagePub : public rclcpp::Node {
 
         //Callback function that gets executes at 9Hz because of IR camera constraints.
         timer_ = this->create_wall_timer(
-            111ms , std::bind(&ImagePub::timer_callback, this));
+            2500ms , std::bind(&ImagePub::timer_callback, this));
     }
 
   private:

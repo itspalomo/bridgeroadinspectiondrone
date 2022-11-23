@@ -32,7 +32,7 @@ class RoadNav(Node):
 
     def vl_callback(self, msg):
         # Display the message on the console
-        self.get_logger().info('Receiving video frame')
+        self.get_logger().info('Receiving visible light frame')
 
         try:
             #convert from ros image to opencv image
@@ -41,13 +41,13 @@ class RoadNav(Node):
             print(e)
         
         # Display image
-        cv2.imwrite("camera.jpg", visible_light_image)
-        print(f'Image written!')
+        cv2.imwrite("/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/data_11_23/visible" + str(self.i) + ".jpg", visible_light_image)
+        self.i += 1
     
 
     def ir_callback(self, msg):
         # Display the message on the console
-        self.get_logger().info('Receiving video frame')
+        self.get_logger().info('Receiving infrared frame')
 
         try:
             #convert from ros image to opencv image
@@ -56,8 +56,7 @@ class RoadNav(Node):
             print(e)
         
         # Display image
-        cv2.imwrite("infra_red.jpg", ir_image)
-        print(f'Image written!')
+        cv2.imwrite("/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/data_11_23/ir" + str(self.i) + ".jpg", ir_image)
 
 
 

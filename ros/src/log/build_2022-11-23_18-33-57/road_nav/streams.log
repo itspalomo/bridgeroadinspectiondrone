@@ -1,0 +1,24 @@
+[9.424s] Invoking command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/road_nav': PYTHONPATH=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/road_nav build --build-base /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/road_nav/build install --prefix /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav --record /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/road_nav/install.log --single-version-externally-managed
+[9.426s] running egg_info
+[9.429s] writing ../build/road_nav/road_nav.egg-info/PKG-INFO
+[9.454s] writing dependency_links to ../build/road_nav/road_nav.egg-info/dependency_links.txt
+[9.455s] writing entry points to ../build/road_nav/road_nav.egg-info/entry_points.txt
+[9.456s] writing requirements to ../build/road_nav/road_nav.egg-info/requires.txt
+[9.457s] writing top-level names to ../build/road_nav/road_nav.egg-info/top_level.txt
+[9.722s] reading manifest file '../build/road_nav/road_nav.egg-info/SOURCES.txt'
+[9.732s] writing manifest file '../build/road_nav/road_nav.egg-info/SOURCES.txt'
+[9.733s] running build
+[9.734s] running build_py
+[9.736s] copying road_nav/road_nav.py -> /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/road_nav/build/lib/road_nav
+[9.736s] running install
+[9.753s] running install_lib
+[9.758s] copying /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/road_nav/build/lib/road_nav/road_nav.py -> /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/lib/python3.8/site-packages/road_nav
+[9.762s] byte-compiling /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/lib/python3.8/site-packages/road_nav/road_nav.py to road_nav.cpython-38.pyc
+[9.901s] running install_data
+[9.904s] running install_egg_info
+[9.933s] removing '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/lib/python3.8/site-packages/road_nav-0.0.0-py3.8.egg-info' (and everything under it)
+[9.940s] Copying ../build/road_nav/road_nav.egg-info to /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/lib/python3.8/site-packages/road_nav-0.0.0-py3.8.egg-info
+[9.956s] running install_scripts
+[10.113s] Installing road_nav script to /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/lib/road_nav
+[10.172s] writing list of installed files to '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/road_nav/install.log'
+[10.373s] Invoked command in '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/road_nav' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/road_nav build --build-base /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/road_nav/build install --prefix /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/road_nav --record /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/road_nav/install.log --single-version-externally-managed
