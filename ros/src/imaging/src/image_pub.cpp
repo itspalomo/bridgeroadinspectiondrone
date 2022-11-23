@@ -22,6 +22,10 @@
 #include <memory>
 #include <stdio.h>
 
+#define SMOOTHING   10
+#define COLORMAP    2
+#define ROTATE      90
+
 using namespace std::chrono_literals;
 
 class ImagePub : public rclcpp::Node {
@@ -57,7 +61,7 @@ class ImagePub : public rclcpp::Node {
 
         //Publish new message to each topic
         sensor_msgs::msg::Image::SharedPtr msg_vl = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", VL_img).toImageMsg();
-        sensor_msgs::msg::Image::SharedPtr msg_ir = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", VL_img).toImageMsg();
+        sensor_msgs::msg::Image::SharedPtr msg_ir = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", IR_img).toImageMsg();
 
         visible_pub->publish(*msg_vl.get());
         ir_pub->publish(*msg_ir.get());
@@ -81,23 +85,63 @@ class ImagePub : public rclcpp::Node {
     {
         cv::Mat frame_u16, frame, avg_frame;
 
-        //location to save picture during testing
-        std::string outfile = "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/image_processing/output.png";
+        // Aquire frames
+        for (int i = 0; i < SMOOTHING; i++) {
+            if (!cam->grab())
+                std::cout << "no more LWIR img" << std::endl;
 
-        cam->retrieve(frame_u16);
-        frame_u16.convertTo(frame, CV_16UC1);
-        frame_u16 = frame;
+            cam->retrieve(frame_u16);
+            frame_u16.convertTo(frame, CV_32FC1);
+
+            if (avg_frame.rows == 0) 
+                frame.copyTo(avg_frame);
+            else
+                avg_frame += frame;
+        }
+
+
+         // Average the collected frames
+        avg_frame /= SMOOTHING;
+        avg_frame.convertTo(frame_u16, CV_16UC1);
 
         cv::Mat frame_g8, outframe;
 
         //change type to apply colormap on IR
-        //cv::normalize(frame_u16, frame_u16, 0, 65535, cv::NORM_MINMAX);
-        frame_u16.convertTo(frame_g8, CV_8UC1, 1.0 / 256.0);
-        applyColorMap(frame_g8, outframe, 4);
+        cv::normalize(frame_u16, frame_u16, 0, 65535, cv::NORM_MINMAX);
 
-        //cv::imwrite(outfile, outframe);
+
+        
+        // Convert seek CV_16UC1 to CV_8UC1
+        frame_u16.convertTo(frame_g8, CV_8UC1, 1.0 / 256.0);
+
+        // Apply colormap: https://docs.opencv.org/master/d3/d50/group__imgproc__colormap.html#ga9a805d8262bcbe273f16be9ea2055a65
+        if (COLORMAP != -1) {
+            applyColorMap(frame_g8, outframe, COLORMAP);
+        }
+        else {
+            cv::cvtColor(frame_g8, outframe, cv::COLOR_GRAY2BGR);
+        }
+
+        // Rotate image
+        if (ROTATE == 90) {
+            transpose(outframe, outframe);
+            flip(outframe, outframe, 1);
+        }
+        else if (ROTATE == 180) {
+            flip(outframe, outframe, -1);
+        }
+        else if (ROTATE == 270) {
+            transpose(outframe, outframe);
+            flip(outframe, outframe, 0);
+        }
 
         return outframe;
+    }
+
+    void test_outfile(cv::Mat frame)
+    {
+        cv::imwrite("testout.jpg", frame);
+        return;
     }
 
 

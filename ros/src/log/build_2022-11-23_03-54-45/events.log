@@ -1,0 +1,386 @@
+[0.000000] (-) TimerEvent: {}
+[0.000851] (-) JobUnselected: {'identifier': 'controls'}
+[0.001139] (-) JobUnselected: {'identifier': 'model_defect'}
+[0.001346] (-) JobUnselected: {'identifier': 'offboard_testing'}
+[0.001544] (-) JobUnselected: {'identifier': 'road_nav'}
+[0.001836] (imaging) JobQueued: {'identifier': 'imaging', 'dependencies': OrderedDict()}
+[0.002106] (imaging) JobStarted: {'identifier': 'imaging'}
+[0.060389] (imaging) JobProgress: {'identifier': 'imaging', 'progress': 'cmake'}
+[0.065739] (imaging) JobProgress: {'identifier': 'imaging', 'progress': 'build'}
+[0.069784] (imaging) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('WORKON_HOME', '/home/ubuntu/.virtualenvs'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.0.0.83 59298 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/bin/6261075646f055b99068d3688932416f2346dd3b/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('VIRTUALENVWRAPPER_PYTHON', '/usr/bin/python3'), ('OLDPWD', '/home/ubuntu/ros2_ws'), ('TERM_PROGRAM_VERSION', '1.73.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-e3d3340b-ff2c-4043-a7fd-8f7c2b009bb6.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.vscode-server/bin/6261075646f055b99068d3688932416f2346dd3b/bin/remote-cli:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-80a56359ea.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.0.83 59298 10.0.0.12 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('VIRTUALENVWRAPPER_VIRTUALENV', '/home/ubuntu/.local/bin/virtualenv'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('VIRTUALENVWRAPPER_ENV_BIN_DIR', 'bin'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.078828] (-) TimerEvent: {}
+[0.179996] (-) TimerEvent: {}
+[0.281239] (-) TimerEvent: {}
+[0.314459] (imaging) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target image_pub\x1b[0m\n'}
+[0.381479] (-) TimerEvent: {}
+[0.482406] (-) TimerEvent: {}
+[0.576436] (imaging) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/image_pub.dir/src/image_pub.cpp.o\x1b[0m\n'}
+[0.582677] (-) TimerEvent: {}
+[0.683677] (-) TimerEvent: {}
+[0.784633] (-) TimerEvent: {}
+[0.885668] (-) TimerEvent: {}
+[0.986668] (-) TimerEvent: {}
+[1.087633] (-) TimerEvent: {}
+[1.188667] (-) TimerEvent: {}
+[1.289629] (-) TimerEvent: {}
+[1.390755] (-) TimerEvent: {}
+[1.491796] (-) TimerEvent: {}
+[1.592811] (-) TimerEvent: {}
+[1.697326] (-) TimerEvent: {}
+[1.801676] (-) TimerEvent: {}
+[1.902800] (-) TimerEvent: {}
+[2.004650] (-) TimerEvent: {}
+[2.106829] (-) TimerEvent: {}
+[2.207804] (-) TimerEvent: {}
+[2.308768] (-) TimerEvent: {}
+[2.409748] (-) TimerEvent: {}
+[2.510684] (-) TimerEvent: {}
+[2.611682] (-) TimerEvent: {}
+[2.712500] (-) TimerEvent: {}
+[2.813819] (-) TimerEvent: {}
+[2.914886] (-) TimerEvent: {}
+[3.015834] (-) TimerEvent: {}
+[3.116828] (-) TimerEvent: {}
+[3.217830] (-) TimerEvent: {}
+[3.318886] (-) TimerEvent: {}
+[3.419892] (-) TimerEvent: {}
+[3.520898] (-) TimerEvent: {}
+[3.621849] (-) TimerEvent: {}
+[3.723146] (-) TimerEvent: {}
+[3.824544] (-) TimerEvent: {}
+[3.925531] (-) TimerEvent: {}
+[4.026848] (-) TimerEvent: {}
+[4.127852] (-) TimerEvent: {}
+[4.228982] (-) TimerEvent: {}
+[4.330162] (-) TimerEvent: {}
+[4.431173] (-) TimerEvent: {}
+[4.532106] (-) TimerEvent: {}
+[4.633192] (-) TimerEvent: {}
+[4.734240] (-) TimerEvent: {}
+[4.835426] (-) TimerEvent: {}
+[4.936437] (-) TimerEvent: {}
+[5.037498] (-) TimerEvent: {}
+[5.138567] (-) TimerEvent: {}
+[5.239590] (-) TimerEvent: {}
+[5.340635] (-) TimerEvent: {}
+[5.441639] (-) TimerEvent: {}
+[5.543233] (-) TimerEvent: {}
+[5.644594] (-) TimerEvent: {}
+[5.749325] (-) TimerEvent: {}
+[5.858781] (-) TimerEvent: {}
+[5.961497] (-) TimerEvent: {}
+[6.065011] (-) TimerEvent: {}
+[6.168653] (-) TimerEvent: {}
+[6.269975] (-) TimerEvent: {}
+[6.372916] (-) TimerEvent: {}
+[6.477100] (-) TimerEvent: {}
+[6.578502] (-) TimerEvent: {}
+[6.679879] (-) TimerEvent: {}
+[6.780943] (-) TimerEvent: {}
+[6.882007] (-) TimerEvent: {}
+[6.983332] (-) TimerEvent: {}
+[7.084849] (-) TimerEvent: {}
+[7.186581] (-) TimerEvent: {}
+[7.293160] (-) TimerEvent: {}
+[7.394271] (-) TimerEvent: {}
+[7.495367] (-) TimerEvent: {}
+[7.596582] (-) TimerEvent: {}
+[7.697605] (-) TimerEvent: {}
+[7.798553] (-) TimerEvent: {}
+[7.899668] (-) TimerEvent: {}
+[8.000703] (-) TimerEvent: {}
+[8.102157] (-) TimerEvent: {}
+[8.203229] (-) TimerEvent: {}
+[8.304213] (-) TimerEvent: {}
+[8.406378] (-) TimerEvent: {}
+[8.510987] (-) TimerEvent: {}
+[8.615357] (-) TimerEvent: {}
+[8.720704] (-) TimerEvent: {}
+[8.822508] (-) TimerEvent: {}
+[8.924051] (-) TimerEvent: {}
+[9.025641] (-) TimerEvent: {}
+[9.126703] (-) TimerEvent: {}
+[9.229766] (-) TimerEvent: {}
+[9.333692] (-) TimerEvent: {}
+[9.438895] (-) TimerEvent: {}
+[9.539815] (-) TimerEvent: {}
+[9.640730] (-) TimerEvent: {}
+[9.741665] (-) TimerEvent: {}
+[9.842528] (-) TimerEvent: {}
+[9.943404] (-) TimerEvent: {}
+[10.044284] (-) TimerEvent: {}
+[10.145154] (-) TimerEvent: {}
+[10.246003] (-) TimerEvent: {}
+[10.346893] (-) TimerEvent: {}
+[10.447719] (-) TimerEvent: {}
+[10.548668] (-) TimerEvent: {}
+[10.649734] (-) TimerEvent: {}
+[10.750976] (-) TimerEvent: {}
+[10.852174] (-) TimerEvent: {}
+[10.953363] (-) TimerEvent: {}
+[11.054430] (-) TimerEvent: {}
+[11.155830] (-) TimerEvent: {}
+[11.257751] (-) TimerEvent: {}
+[11.359108] (-) TimerEvent: {}
+[11.460512] (-) TimerEvent: {}
+[11.563125] (-) TimerEvent: {}
+[11.664117] (-) TimerEvent: {}
+[11.765348] (-) TimerEvent: {}
+[11.867041] (-) TimerEvent: {}
+[11.968202] (-) TimerEvent: {}
+[12.069143] (-) TimerEvent: {}
+[12.170435] (-) TimerEvent: {}
+[12.272307] (-) TimerEvent: {}
+[12.373242] (-) TimerEvent: {}
+[12.474037] (-) TimerEvent: {}
+[12.575349] (-) TimerEvent: {}
+[12.676299] (-) TimerEvent: {}
+[12.777155] (-) TimerEvent: {}
+[12.877992] (-) TimerEvent: {}
+[12.978970] (-) TimerEvent: {}
+[13.080020] (-) TimerEvent: {}
+[13.181030] (-) TimerEvent: {}
+[13.281839] (-) TimerEvent: {}
+[13.382676] (-) TimerEvent: {}
+[13.483481] (-) TimerEvent: {}
+[13.584221] (-) TimerEvent: {}
+[13.684996] (-) TimerEvent: {}
+[13.785738] (-) TimerEvent: {}
+[13.886528] (-) TimerEvent: {}
+[13.987686] (-) TimerEvent: {}
+[14.088902] (-) TimerEvent: {}
+[14.189978] (-) TimerEvent: {}
+[14.293634] (-) TimerEvent: {}
+[14.394559] (-) TimerEvent: {}
+[14.499235] (-) TimerEvent: {}
+[14.603079] (-) TimerEvent: {}
+[14.709007] (-) TimerEvent: {}
+[14.809988] (-) TimerEvent: {}
+[14.912706] (-) TimerEvent: {}
+[15.014485] (-) TimerEvent: {}
+[15.115441] (-) TimerEvent: {}
+[15.217361] (-) TimerEvent: {}
+[15.322307] (-) TimerEvent: {}
+[15.424885] (-) TimerEvent: {}
+[15.528801] (-) TimerEvent: {}
+[15.630072] (-) TimerEvent: {}
+[15.733734] (-) TimerEvent: {}
+[15.838467] (-) TimerEvent: {}
+[15.942020] (-) TimerEvent: {}
+[16.045722] (-) TimerEvent: {}
+[16.147009] (-) TimerEvent: {}
+[16.249359] (-) TimerEvent: {}
+[16.352960] (-) TimerEvent: {}
+[16.456919] (-) TimerEvent: {}
+[16.560834] (-) TimerEvent: {}
+[16.664755] (-) TimerEvent: {}
+[16.769320] (-) TimerEvent: {}
+[16.875698] (-) TimerEvent: {}
+[16.976605] (-) TimerEvent: {}
+[17.077751] (-) TimerEvent: {}
+[17.179476] (-) TimerEvent: {}
+[17.282893] (-) TimerEvent: {}
+[17.385052] (-) TimerEvent: {}
+[17.487211] (-) TimerEvent: {}
+[17.588072] (-) TimerEvent: {}
+[17.691633] (-) TimerEvent: {}
+[17.796117] (-) TimerEvent: {}
+[17.897821] (-) TimerEvent: {}
+[17.998783] (-) TimerEvent: {}
+[18.099734] (-) TimerEvent: {}
+[18.200641] (-) TimerEvent: {}
+[18.301507] (-) TimerEvent: {}
+[18.402862] (-) TimerEvent: {}
+[18.507025] (-) TimerEvent: {}
+[18.608944] (-) TimerEvent: {}
+[18.712815] (-) TimerEvent: {}
+[18.817568] (-) TimerEvent: {}
+[18.918461] (-) TimerEvent: {}
+[19.019446] (-) TimerEvent: {}
+[19.137775] (-) TimerEvent: {}
+[19.240007] (-) TimerEvent: {}
+[19.343790] (-) TimerEvent: {}
+[19.451295] (-) TimerEvent: {}
+[19.556712] (-) TimerEvent: {}
+[19.661762] (-) TimerEvent: {}
+[19.763173] (-) TimerEvent: {}
+[19.864769] (-) TimerEvent: {}
+[19.966045] (-) TimerEvent: {}
+[20.068557] (-) TimerEvent: {}
+[20.171088] (-) TimerEvent: {}
+[20.273206] (-) TimerEvent: {}
+[20.374665] (-) TimerEvent: {}
+[20.476567] (-) TimerEvent: {}
+[20.577884] (-) TimerEvent: {}
+[20.681902] (-) TimerEvent: {}
+[20.786924] (-) TimerEvent: {}
+[20.891312] (-) TimerEvent: {}
+[20.995539] (-) TimerEvent: {}
+[21.100393] (-) TimerEvent: {}
+[21.202866] (-) TimerEvent: {}
+[21.307158] (-) TimerEvent: {}
+[21.408158] (-) TimerEvent: {}
+[21.512204] (-) TimerEvent: {}
+[21.614894] (-) TimerEvent: {}
+[21.718610] (-) TimerEvent: {}
+[21.820033] (-) TimerEvent: {}
+[21.922135] (-) TimerEvent: {}
+[22.032583] (-) TimerEvent: {}
+[22.133578] (-) TimerEvent: {}
+[22.234477] (-) TimerEvent: {}
+[22.335556] (-) TimerEvent: {}
+[22.437062] (-) TimerEvent: {}
+[22.537872] (-) TimerEvent: {}
+[22.638702] (-) TimerEvent: {}
+[22.739552] (-) TimerEvent: {}
+[22.840744] (-) TimerEvent: {}
+[22.941555] (-) TimerEvent: {}
+[23.042436] (-) TimerEvent: {}
+[23.143229] (-) TimerEvent: {}
+[23.244222] (-) TimerEvent: {}
+[23.344968] (-) TimerEvent: {}
+[23.445827] (-) TimerEvent: {}
+[23.546615] (-) TimerEvent: {}
+[23.647464] (-) TimerEvent: {}
+[23.748337] (-) TimerEvent: {}
+[23.849111] (-) TimerEvent: {}
+[23.949897] (-) TimerEvent: {}
+[24.050682] (-) TimerEvent: {}
+[24.151422] (-) TimerEvent: {}
+[24.252138] (-) TimerEvent: {}
+[24.352914] (-) TimerEvent: {}
+[24.453801] (-) TimerEvent: {}
+[24.555094] (-) TimerEvent: {}
+[24.656259] (-) TimerEvent: {}
+[24.757064] (-) TimerEvent: {}
+[24.857833] (-) TimerEvent: {}
+[24.958609] (-) TimerEvent: {}
+[25.059414] (-) TimerEvent: {}
+[25.160177] (-) TimerEvent: {}
+[26.921945] (-) TimerEvent: {}
+[27.023984] (-) TimerEvent: {}
+[27.124976] (-) TimerEvent: {}
+[27.225943] (-) TimerEvent: {}
+[27.326848] (-) TimerEvent: {}
+[27.427694] (-) TimerEvent: {}
+[27.528606] (-) TimerEvent: {}
+[27.630818] (-) TimerEvent: {}
+[27.731717] (-) TimerEvent: {}
+[27.832665] (-) TimerEvent: {}
+[27.934002] (-) TimerEvent: {}
+[28.035212] (-) TimerEvent: {}
+[28.136116] (-) TimerEvent: {}
+[28.236989] (-) TimerEvent: {}
+[28.337937] (-) TimerEvent: {}
+[28.438840] (-) TimerEvent: {}
+[28.539765] (-) TimerEvent: {}
+[28.640637] (-) TimerEvent: {}
+[28.741770] (-) TimerEvent: {}
+[28.842684] (-) TimerEvent: {}
+[28.943601] (-) TimerEvent: {}
+[29.044605] (-) TimerEvent: {}
+[29.146132] (-) TimerEvent: {}
+[29.247112] (-) TimerEvent: {}
+[29.347881] (-) TimerEvent: {}
+[29.448671] (-) TimerEvent: {}
+[29.549470] (-) TimerEvent: {}
+[29.650285] (-) TimerEvent: {}
+[29.751067] (-) TimerEvent: {}
+[29.851723] (-) TimerEvent: {}
+[29.952525] (-) TimerEvent: {}
+[30.053514] (-) TimerEvent: {}
+[30.154561] (-) TimerEvent: {}
+[30.255832] (-) TimerEvent: {}
+[32.532523] (-) TimerEvent: {}
+[32.633839] (-) TimerEvent: {}
+[32.734746] (-) TimerEvent: {}
+[32.835725] (-) TimerEvent: {}
+[32.940100] (-) TimerEvent: {}
+[33.042004] (-) TimerEvent: {}
+[33.126883] (imaging) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable image_pub\x1b[0m\n'}
+[33.142167] (-) TimerEvent: {}
+[33.243160] (-) TimerEvent: {}
+[33.344619] (-) TimerEvent: {}
+[33.445834] (-) TimerEvent: {}
+[33.546970] (-) TimerEvent: {}
+[33.648087] (-) TimerEvent: {}
+[33.749202] (-) TimerEvent: {}
+[33.851147] (-) TimerEvent: {}
+[33.952276] (-) TimerEvent: {}
+[34.053447] (-) TimerEvent: {}
+[34.154671] (-) TimerEvent: {}
+[34.255571] (-) TimerEvent: {}
+[34.356505] (-) TimerEvent: {}
+[34.457485] (-) TimerEvent: {}
+[34.558501] (-) TimerEvent: {}
+[34.659595] (-) TimerEvent: {}
+[34.760489] (-) TimerEvent: {}
+[34.861516] (-) TimerEvent: {}
+[34.962585] (-) TimerEvent: {}
+[35.063725] (-) TimerEvent: {}
+[35.165037] (-) TimerEvent: {}
+[35.265805] (-) TimerEvent: {}
+[37.344035] (imaging) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgcodecs.so.4.2, needed by /usr/local/lib/libseek.so, may conflict with libopencv_imgcodecs.so.406\n'}
+[37.344996] (-) TimerEvent: {}
+[37.347341] (imaging) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgproc.so.4.2, needed by /usr/local/lib/libseek.so, may conflict with libopencv_imgproc.so.406\n'}
+[37.348064] (imaging) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.2, needed by /usr/local/lib/libseek.so, may conflict with libopencv_core.so.406\n'}
+[37.445187] (-) TimerEvent: {}
+[37.545931] (-) TimerEvent: {}
+[37.646733] (-) TimerEvent: {}
+[37.747873] (-) TimerEvent: {}
+[37.766149] (imaging) StdoutLine: {'line': b'[100%] Built target image_pub\n'}
+[37.848125] (-) TimerEvent: {}
+[37.949314] (-) TimerEvent: {}
+[38.050493] (-) TimerEvent: {}
+[38.151416] (-) TimerEvent: {}
+[38.252381] (-) TimerEvent: {}
+[38.354674] (-) TimerEvent: {}
+[38.455751] (-) TimerEvent: {}
+[38.556750] (-) TimerEvent: {}
+[38.658162] (-) TimerEvent: {}
+[38.759926] (-) TimerEvent: {}
+[38.860785] (-) TimerEvent: {}
+[38.961727] (-) TimerEvent: {}
+[39.062589] (-) TimerEvent: {}
+[39.163509] (-) TimerEvent: {}
+[39.264667] (-) TimerEvent: {}
+[39.365899] (-) TimerEvent: {}
+[39.467543] (-) TimerEvent: {}
+[39.568443] (-) TimerEvent: {}
+[39.669321] (-) TimerEvent: {}
+[39.770164] (-) TimerEvent: {}
+[39.871042] (-) TimerEvent: {}
+[39.971890] (-) TimerEvent: {}
+[40.072749] (-) TimerEvent: {}
+[40.173543] (-) TimerEvent: {}
+[40.274304] (-) TimerEvent: {}
+[40.375135] (-) TimerEvent: {}
+[40.897779] (imaging) CommandEnded: {'returncode': 0}
+[40.902734] (-) TimerEvent: {}
+[41.004748] (-) TimerEvent: {}
+[41.036257] (imaging) JobProgress: {'identifier': 'imaging', 'progress': 'install'}
+[41.074601] (imaging) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging'], 'cwd': '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('WORKON_HOME', '/home/ubuntu/.virtualenvs'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.0.0.83 59298 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/bin/6261075646f055b99068d3688932416f2346dd3b/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('VIRTUALENVWRAPPER_PYTHON', '/usr/bin/python3'), ('OLDPWD', '/home/ubuntu/ros2_ws'), ('TERM_PROGRAM_VERSION', '1.73.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-e3d3340b-ff2c-4043-a7fd-8f7c2b009bb6.sock'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/ubuntu/.vscode-server/bin/6261075646f055b99068d3688932416f2346dd3b/bin/remote-cli:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-80a56359ea.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/build/imaging'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.0.83 59298 10.0.0.12 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('VIRTUALENVWRAPPER_VIRTUALENV', '/home/ubuntu/.local/bin/virtualenv'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('VIRTUALENVWRAPPER_ENV_BIN_DIR', 'bin'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[41.105054] (-) TimerEvent: {}
+[41.113436] (imaging) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[41.114784] (imaging) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/lib/imaging/image_pub\n'}
+[41.121934] (imaging) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/lib/imaging/image_pub" to ""\n'}
+[41.122768] (imaging) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/ament_index/resource_index/package_run_dependencies/imaging\n'}
+[41.123549] (imaging) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/ament_index/resource_index/parent_prefix_path/imaging\n'}
+[41.124994] (imaging) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/environment/ament_prefix_path.sh\n'}
+[41.126060] (imaging) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/environment/ament_prefix_path.dsv\n'}
+[41.126955] (imaging) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/environment/path.sh\n'}
+[41.127667] (imaging) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/environment/path.dsv\n'}
+[41.128171] (imaging) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/local_setup.bash\n'}
+[41.128809] (imaging) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/local_setup.sh\n'}
+[41.129530] (imaging) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/local_setup.zsh\n'}
+[41.130178] (imaging) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/local_setup.dsv\n'}
+[41.130867] (imaging) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/package.dsv\n'}
+[41.131636] (imaging) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/ament_index/resource_index/packages/imaging\n'}
+[41.132464] (imaging) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/cmake/imagingConfig.cmake\n'}
+[41.133569] (imaging) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/cmake/imagingConfig-version.cmake\n'}
+[41.135210] (imaging) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ros2_ws/bridgeroadinspectiondrone/ros/src/install/imaging/share/imaging/package.xml\n'}
+[41.137188] (imaging) CommandEnded: {'returncode': 0}
+[41.205226] (-) TimerEvent: {}
+[41.309543] (-) TimerEvent: {}
+[41.398750] (imaging) JobEnded: {'identifier': 'imaging', 'rc': 0}
+[41.407303] (-) EventReactorShutdown: {}

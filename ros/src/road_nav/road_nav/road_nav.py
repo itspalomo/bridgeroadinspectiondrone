@@ -13,20 +13,24 @@ class RoadNav(Node):
         super().__init__('road_nav')
         #self.publisher_ = self.create_publisher(std_msgs.msg.String, 'road_nav/fog_line', 10)
         #self.publisher_ = self.create_publisher(std_msgs.msg.String, 'road_nav/analysis_mode', 10)
-        self.subscription = self.create_subscription(
+        self.vl_sub = self.create_subscription(
             Image_msg,
             'imagepub/visible_light',
-            self.listener_callback,
+            self.vl_callback,
             10)
-        self.subscription  # prevent unused variable warning
-        timer_period = 0.5  # seconds
+        
+        self.ir_sub = self.create_subscription(
+            Image_msg,
+            'imagepub/seek_thermal',
+            self.ir_callback,
+            10)
+        
+        self.vl_sub  # prevent unused variable warning
+        self.ir_sub
         self.i = 0
         self.bridge = CvBridge()
-    
-    # sensor_msgs::msg::Image::SharedPtr msg = 
-    # cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", visible_light_sensor).toImageMsg();
 
-    def listener_callback(self, msg):
+    def vl_callback(self, msg):
         # Display the message on the console
         self.get_logger().info('Receiving video frame')
 
@@ -38,6 +42,21 @@ class RoadNav(Node):
         
         # Display image
         cv2.imwrite("camera.jpg", visible_light_image)
+        print(f'Image written!')
+    
+
+    def ir_callback(self, msg):
+        # Display the message on the console
+        self.get_logger().info('Receiving video frame')
+
+        try:
+            #convert from ros image to opencv image
+            ir_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
+        except CvBridgeError as e:
+            print(e)
+        
+        # Display image
+        cv2.imwrite("infra_red.jpg", ir_image)
         print(f'Image written!')
 
 
