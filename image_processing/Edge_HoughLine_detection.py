@@ -11,7 +11,7 @@ args = vars(ap.parse_args())
 
 #start streaming video
 vs = cv2.VideoCapture(args["media"])
-#vs = cv2.VideoCapture(0)
+#vs = cv2.VideoCapture(0).   #uncomment to analyze live video feed
 
 while True:
     ret,frame = vs.read()
